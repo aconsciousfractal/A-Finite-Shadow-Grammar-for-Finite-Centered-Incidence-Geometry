@@ -1,0 +1,23 @@
+{
+  "paper": "A Finite-Shadow Grammar for Finite Centered Incidence Geometry",
+  "version_date": "2026-07-07",
+  "instance_rows": [
+    {"id":"X01","row":"Type-A poset cones L(P)","admission":"core/prose","boundary":"Type-A chamber context; no new extension-set theorem."},
+    {"id":"X02","row":"Type-A extension tilers","admission":"prose/exhibit","boundary":"Exact-cover context; no Phi-tiling test."},
+    {"id":"X03","row":"subgroup/coset rows","admission":"core exhibit","boundary":"Controls for rank mass and left-ideal background."},
+    {"id":"X04","row":"finite S4 witness","admission":"core exhibit","boundary":"Published bounded witness only."},
+    {"id":"X05","row":"Sudoku/M19 rank loci","admission":"core/prose","boundary":"Controlled M19 exhibit; lat565 open."},
+    {"id":"X06","row":"Latin determinant-defect loci","admission":"prose","boundary":"Centered-operator sibling; no proof import."},
+    {"id":"X07","row":"magic/endpoint defect loci","admission":"future","boundary":"No unresolved finite-field theorem promoted."},
+    {"id":"X08","row":"one-incidence layers I_n(k,l)","admission":"core","boundary":"Type-A theorem boundary; no 5568 bridge."},
+    {"id":"X09","row":"prefix/shadow subsets","admission":"prose","boundary":"Folded into finite-witness provenance."},
+    {"id":"X10","row":"exceptional S6 benchmark","admission":"parked","boundary":"Parked benchmark only; distinct from the public poset-paper P038 tiler."},
+    {"id":"X11","row":"nonconvex Coxeter-pure tilers","admission":"future","boundary":"Needs its own finite-shadow source lock."},
+    {"id":"X12","row":"motion/contact atlas objects","admission":"rejected/future","boundary":"Fails current finite-shadow teeth test."},
+    {"id":"X13","row":"Fourier/Specht fingerprints","admission":"core artifact","boundary":"Descriptive Phi, SNF^L, ranks, rank mass."},
+    {"id":"X14","row":"grammar interface","admission":"prose/meta","boundary":"Organizes rows; not a theorem by itself."},
+    {"id":"X15","row":"signed Type-B/C shadows B_n <= S_{2n}","admission":"core artifact","boundary":"Bounded signed source; no broader Coxeter claim."},
+    {"id":"X16","row":"modular centered operators","admission":"future","boundary":"Reserved for later modular route."},
+    {"id":"X17","row":"signed reversal noncentral layer","admission":"pointer only","boundary":"Separate signed-reversal route only; no theorem import here."}
+  ]
+}

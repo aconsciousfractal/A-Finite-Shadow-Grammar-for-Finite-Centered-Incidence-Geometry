@@ -1,0 +1,74 @@
+\section{Signed Type-B/C Source Rows}
+
+The signed source row comes from the companion signed Type-B/C dependency artifact.  It works with the finite shadow \(B_n\leq S_{2n}\), using the pair model for signed coordinates.  Standard Coxeter background for signed permutations is classical\cite{BjornerBrenti2005}.
+
+The signed incidence rows \(BI_n(k,l)\) record positive fixed signed pairs and sign-flip-in-place pairs.  The signed artifact verifies that the same fingerprint channel can process these rows through the ambient symmetric group.  The manuscript uses this as a bounded second finite-shadow instance.
+
+\begin{table}[ht]
+\centering
+\caption{Signed finite-shadow rows recorded in the signed replay.}
+\label{tab:signed-rankmass}
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+row & ambient & \(|X|\) & \(\rankmass(X)\) \\
+\midrule
+\(BI_3(0,0)\) & \(S_6\) & 16 & 90 \\
+\(BI_3(0,1)\) & \(S_6\) & 12 & 300 \\
+\(BI_3(1,0)\) & \(S_6\) & 12 & 300 \\
+hash-ordered size-\(|B_3|\) control & \(S_6\) & 48 & 715 \\
+\(BI_4(0,1)\) & \(S_8\) & 64 & 10710 \\
+\(BI_4(1,1)\) & \(S_8\) & 48 & 17220 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The fourth row of \cref{tab:signed-rankmass} is not an unspecified random draw: it is the deterministic hash-ordered size-\(B_3\) control recorded by the signed artifact.  Its role is only to show that the signed rows are not being compared against a moving baseline.
+
+The first place where \cref{prop:standard-block-balance} genuinely crosses type is the signed mirror-union.  Put
+\[
+  Y^B_n=BI_n(1,0)\sqcup BI_n(0,1)\subseteq B_n\leq S_{2n}.
+\]
+Let \(D_m\) denote the number of derangements of \(m\) letters.
+
+\begin{proposition}[signed mirror-union balance source row]\label{prop:signed-mirror-union-balance}
+For \(n\geq 3\), the signed mirror-union satisfies
+\[
+  |Y^B_n|=n2^nD_{n-1},\qquad
+  N_{Y^B_n}=2^{n-1}D_{n-1}J_{2n}.
+\]
+Equivalently, the ambient standard block vanishes:
+\[
+  M_{(2n-1,1)}(Y^B_n)=0.
+\]
+\end{proposition}
+
+\begin{proof}[Source-locked proof sketch]
+The signed source lock decomposes the ambient permutation module \(\mathbb{C}^{2n}\) into the constant line plus two nontrivial signed constituents: a pair-standard channel and a reflection channel.  For a single layer \(BI_n(k,l)\), the pair-standard scalar is proportional to \(k+l-1\), while the reflection scalar is proportional to \(k-l\).  Thus a single nonempty layer cannot kill both channels.  The two layers \(BI_n(1,0)\) and \(BI_n(0,1)\) each kill the pair-standard channel, and their equal sizes make the reflection scalars cancel in the union.  \Cref{prop:standard-block-balance} then gives the displayed position-value balance and the vanishing of \(M_{(2n-1,1)}\).
+\end{proof}
+
+For example, at \(n=3,4,5,6\) the signed-balance check gives \(|Y^B_n|=24,128,1440,16896\) and constants \(4,16,144,1408\), respectively.  This is the concrete signed use of the standard-block dictionary: Type A balances a single one-incidence layer in its mature theorem row, while the signed row balances a mirror-union because the ambient standard splits into two signed channels.
+
+The row \(BI_3(0,0)\) compresses to the sign-subgroup index background.  The mixed rows, such as \(BI_3(0,1)\) and \(BI_4(0,1)\), are the bounded signal for this paper: they are neither random-sized full support nor a promoted closed formula.  They show that the finite-shadow interface sees signed incidence structure while keeping the signed artifact as a bounded dependency.
+
+The signed value witness gives the signed analogue of the Type-A value witness.  In one-line notation on \(S_6\),
+\[
+  X_A=\{123465,124365\},\qquad
+  X_B=\{123465,214356\}.
+\]
+Equivalently, inside \(B_3\), these are \(X_A=s_3\langle s_2\rangle\) and \(X_B=s_3\langle s_1s_2s_3\rangle\).  They have the same signed-cycle histogram and the same rank mass, but the standard block over \(S_6\) separates them.
+
+\begin{table}[ht]
+\centering
+\caption{Signed value witness: same signed histogram, different standard block.}
+\label{tab:p14-value-witness}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+row & \(\rankmass\) & \(\rank_\mathbb{Q}M_{(5,1)}\) & \(\SNFL_{(5,1)}\) \\
+\midrule
+\(X_A\) & 360 & 4 & \((1,2,2,2,0)\) \\
+\(X_B\) & 360 & 2 & \((1,1,0,0,0)\) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+No broader Coxeter-group statement is made in this section.  The signed row is a source-locked finite artifact and a grammar test.

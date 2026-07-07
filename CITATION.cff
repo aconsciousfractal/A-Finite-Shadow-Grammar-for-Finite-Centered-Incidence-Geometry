@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it as below. Repository documentation is MIT-licensed; paper text and PDF artifacts are CC-BY-4.0 as specified in LICENSE."
+title: "A Finite-Shadow Grammar for Finite Centered Incidence Geometry"
+type: software
+authors:
+  - family-names: Babanskyy
+    given-names: Oleksiy
+    orcid: "https://orcid.org/0009-0001-6176-6208"
+repository-code: "https://github.com/aconsciousfractal/A-Finite-Shadow-Grammar-for-Finite-Centered-Incidence-Geometry"
+license: MIT
+date-released: "2026-07-07"
+preferred-citation:
+  type: article
+  title: "A Finite-Shadow Grammar for Finite Centered Incidence Geometry"
+  authors:
+    - family-names: Babanskyy
+      given-names: Oleksiy
+      orcid: "https://orcid.org/0009-0001-6176-6208"
+  year: 2026
+keywords:
+  - finite-incidence-geometry
+  - finite-shadows
+  - symmetric-groups
+  - specht-modules
+  - centered-operators
+  - signed-permutations

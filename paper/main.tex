@@ -1,0 +1,73 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% A Finite-Shadow Grammar for Finite Centered Incidence Geometry
+%% Author: Oleksiy Babanskyy
+%% Public manuscript package snapshot.
+%% Build target: pdflatex, bibtex, pdflatex, pdflatex.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt,a4paper]{article}
+\pdfinfoomitdate=1
+\pdfsuppressptexinfo=-1
+\pdftrailerid{}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{lmodern}
+\usepackage[protrusion=true,expansion=false]{microtype}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs,array,enumitem,geometry,longtable,placeins}
+\geometry{margin=2.5cm}
+\usepackage{xurl}
+\usepackage[hidelinks]{hyperref}
+\usepackage[nameinlink,capitalise]{cleveref}
+\Urlmuskip=0mu plus 2mu\relax
+\setlength{\emergencystretch}{3em}
+
+\input{macros}
+
+\hypersetup{
+  pdftitle={A Finite-Shadow Grammar for Finite Centered Incidence Geometry},
+  pdfauthor={Oleksiy Babanskyy},
+  pdfsubject={finite centered incidence geometry, finite shadows, symmetric groups, Fourier fingerprints},
+  pdfkeywords={finite incidence geometry, symmetric groups, finite shadows, Specht modules, centered operators}
+}
+
+\title{A Finite-Shadow Grammar for Finite Centered Incidence Geometry}
+\author{Oleksiy Babanskyy}
+\date{}
+
+\begin{document}
+\pagestyle{plain}
+\maketitle
+
+\begin{abstract}
+\input{abstract}
+\end{abstract}
+
+\smallskip
+\noindent\textbf{Keywords:} finite centered incidence geometry; finite shadows; symmetric groups; Specht fingerprints; centered operators; signed permutations.
+
+\smallskip
+\noindent\textbf{MSC 2020:} 05A05; 05E10; 05E18; 20B30; 20C30.
+
+\input{sections/01_introduction}
+\input{sections/02_finite_shadow_grammar}
+\input{sections/03_fingerprint_channel}
+\input{sections/04_type_a_source_rows}
+\input{sections/05_signed_type_bc_source_rows}
+\input{sections/06_abd_grammar_contrast}
+\input{sections/07_value_and_limits_of_phi}
+\input{sections/08_boundaries_and_future_routes}
+
+\appendix
+\input{appendices/A_source_instance_manifest}
+\FloatBarrier
+\input{appendices/B_reproducibility_notes}
+
+\section*{Data and Code Availability}
+The companion repository contains the LaTeX source, compiled PDF, source manifest, claim-boundary notes, and SHA-256 manifest for this paper snapshot.  The finite computations cited here are either in the cited public companion repositories or recorded as source-locked dependency artifacts summarized by the source manifest; this repository does not claim a standalone replay engine for every upstream row.
+
+\bibliographystyle{alpha}
+\bibliography{refs}
+
+\end{document}
