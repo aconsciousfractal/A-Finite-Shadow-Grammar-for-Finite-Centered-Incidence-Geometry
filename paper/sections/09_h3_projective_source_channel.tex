@@ -1,0 +1,54 @@
+\section{A Projective \texorpdfstring{\(H_3\)}{H3} Source-Channel Exhibit}
+\label{sec:h3-source-channel}
+
+The projective \(F_4\) row shows that the admitted source layer can change the centered-rank reading on one finite set.  The next exhibit gives the same lesson in a non-crystallographic rank-three source, but with a different channel split: matroid-flat incidence versus Gram-angle geometry.
+
+Let \(\Pi_{15}\) be the 15 antipodal pairs in the \(H_3\) root system, constructed over \(\mathbb Q(\phi)\) with \(\phi^2=\phi+1\).  The source package uses the simple-root Gram matrix
+\[
+\begin{pmatrix}
+2&-\phi&0\\
+-\phi&2&-1\\
+0&-1&2
+\end{pmatrix},
+\]
+generates the 30 roots, and passes to projective pairs.  The rank-two flats have sizes \(2,3,5\), and the finite proof spine colors the \(\binom{15}{2}=105\) unordered pairs in two ways: by flat size and by squared Gram value.  Classical root-system and matroid background is standard; see \cite{BjornerBrenti2005,DutourSikiricFeliksonTumarkin2008RootMatroids}.  The statements below are used only as a finite source-channel exhibit for this 15-point shadow.
+
+\begin{proposition}[source channels in the projective \(H_3\) shadow]
+\label{prop:h3-source-channel}
+For the source-locked projective \(H_3\) shadow \(\Pi_{15}\), the bundled public replay certifies the following bounded facts.
+\begin{enumerate}[label=\textup{(\alph*)},leftmargin=*]
+  \item The automorphism group of the flat-size edge coloring has order \(120\); denote this row by \(G_{\mathrm{mat}}\).
+  \item The automorphism group of the Gram edge coloring has order \(60\), equal to the geometric projective row \(G_{\mathrm{geo}}=G_{\mathrm{gram}}\).
+  \item The complementary row \(G_{\mathrm{ng}}=G_{\mathrm{mat}}\setminus G_{\mathrm{geo}}\) has \(60\) elements.  Every element of this row preserves the flat-size channel, and no element preserves the Gram-color channel.
+  \item The ordinary standard Specht block \((14,1)\) is blind on all four rows \(G_{\mathrm{mat}},G_{\mathrm{geo}},G_{\mathrm{ng}},G_{\mathrm{gram}}\).  Higher ordinary \(S_{15}\) Specht blocks do see the subgroup difference; the first separator is \((13,2)\), with ranks \(2,3,3\) on \(G_{\mathrm{mat}},G_{\mathrm{geo}},G_{\mathrm{ng}}\), respectively.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}[Source-locked proof sketch]
+The bundled public replay audits an exported finite payload computed exactly over \(\mathbb Q(\phi)\).  It uses the two 105-edge color payloads and recomputes the full color-preserving permutation groups in \(S_{15}\).  The flat-size payload has automorphism group \(G_{\mathrm{mat}}\) of order \(120\); the Gram payload has automorphism group \(G_{\mathrm{geo}}=G_{\mathrm{gram}}\) of order \(60\).  The same replay checks that \(G_{\mathrm{mat}}=G_{\mathrm{geo}}\sqcup G_{\mathrm{ng}}\) and that the non-geometric coset contains no Gram-color-preserving element.  The same public replay also verifies the displayed ordinary standard and \((13,2)\) rank readings; the full source package contains the broader ordinary \(S_{15}\) rank scout.  It is descriptive fingerprint data; the source-channel separation is the preceding color-automorphism calculation.
+\end{proof}
+
+A display witness is the involution
+\[
+  \tau=\texttt{ACBLMONHKJIDEGF}=(B\ C)(D\ L)(E\ M)(F\ O)(G\ N)(I\ K).
+\]
+It preserves all flat families and flat-size colors, but changes the Gram color of the edge \(AD\) from \(1+\phi\) to the color of \(AL\), namely \(2-\phi\).  In the source replay, this witness changes Gram colors on 60 edges.
+
+\begin{table}[!htbp]
+\centering
+\caption{Evidence carried by the projective \(H_3\) source-channel exhibit.}
+\label{tab:h3-source-channel}
+\begin{tabular}{@{}L{0.22\textwidth}L{0.25\textwidth}L{0.24\textwidth}L{0.21\textwidth}@{}}
+\toprule
+channel & row or diagnostic & certified finite fact & grammar reading \\
+\midrule
+flat-size channel & \(G_{\mathrm{mat}}\) & automorphism order \(120\) & matroid-flat source symmetry \\
+Gram channel & \(G_{\mathrm{geo}}=G_{\mathrm{gram}}\) & automorphism order \(60\) & geometric angle symmetry \\
+non-geometric coset & \(G_{\mathrm{ng}}\) & preserves flats, changes Gram colors & same carrier, different source channel \\
+ordinary standard block & Specht \((14,1)\) & rank \(0\) on all target rows & negative control: standard layer is blind \\
+higher ordinary block & Specht \((13,2)\) & ranks \(2,3,3\) & descriptive higher fingerprint sees the split \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Thus the \(H_3\) row contributes one compact lesson to the grammar: a finite root shadow may be balanced in the ordinary standard layer while its source channels still define different FCIG rows.  The exhibit is not a theorem about all \(H_3\) rows, all non-crystallographic Coxeter systems, root-system matroids, classifiers, or tilers.

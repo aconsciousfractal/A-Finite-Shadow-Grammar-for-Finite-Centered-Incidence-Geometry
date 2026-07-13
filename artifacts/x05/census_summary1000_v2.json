@@ -1,0 +1,29 @@
+{
+  "seed": 12345,
+  "negative_control": 2,
+  "sudoku": {
+    "n": 1000,
+    "type_dist": {
+      "2": 988,
+      "3": 6,
+      "4": 6
+    },
+    "type4_frac": 0.006
+  },
+  "latin": {
+    "n": 1000,
+    "type_dist": {
+      "2": 995,
+      "3": 5
+    },
+    "type4_frac": 0.0
+  },
+  "m19_equiv": {
+    "n": 8,
+    "type_dist": {
+      "4": 8
+    },
+    "type4_frac": 1.0
+  },
+  "elapsed_min": 26.4
+}

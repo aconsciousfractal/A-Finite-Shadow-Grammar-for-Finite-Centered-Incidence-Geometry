@@ -1,0 +1,78 @@
+{
+  "artifact": "h4_projective_source_channel_replay",
+  "boundary": [
+    "This seed is a finite replay payload, not a general H4 or 600-cell theorem.",
+    "The 60 points are projective points, i.e. antipodal pairs of H4 roots.",
+    "The replay checks color-channel automorphism counts, pair-orbit counts, and the displayed pair witness only."
+  ],
+  "checks": {
+    "flat_size_automorphism_order_is_14400": true,
+    "flat_size_histogram_matches_seed": true,
+    "flat_size_pair_orbit_count_is_3": true,
+    "gram_automorphism_order_is_7200": true,
+    "gram_histogram_matches_seed": true,
+    "gram_square_pair_orbit_count_is_4": true,
+    "points_are_60": true,
+    "unordered_pairs_are_1770": true,
+    "witness_gram_colors_are_distinct": true,
+    "witness_gram_colors_match_seed": true,
+    "witness_not_same_gram_square_orbit": true,
+    "witness_same_flat_size_orbit": true
+  },
+  "counts": {
+    "flat_size_automorphism_order": 14400,
+    "flat_size_base_image_count": 28800,
+    "flat_size_base_size": 6,
+    "flat_size_histogram": {
+      "2": 450,
+      "3": 600,
+      "5": 720
+    },
+    "flat_size_pair_orbit_count": 3,
+    "gram_square_automorphism_order": 7200,
+    "gram_square_base_image_count": 7200,
+    "gram_square_base_size": 4,
+    "gram_square_color_histogram": {
+      "0": 450,
+      "1": 600,
+      "2": 360,
+      "3": 360
+    },
+    "gram_square_pair_orbit_count": 4,
+    "points": 60,
+    "unordered_pairs": 1770
+  },
+  "paper": "A Finite-Shadow Grammar for Finite Centered Incidence Geometry",
+  "pass": true,
+  "resolving_bases": {
+    "flat_size": [
+      "E60_00",
+      "E60_45",
+      "E60_25",
+      "E60_08",
+      "E60_03",
+      "E60_01"
+    ],
+    "gram_square": [
+      "E60_00",
+      "E60_21",
+      "E60_01",
+      "E60_02"
+    ]
+  },
+  "status": "PASS",
+  "witness": {
+    "gram_color_a": "1/2|-1/4t",
+    "gram_color_b": "1/4|1/4t",
+    "pair_a": [
+      "E60_00",
+      "E60_21"
+    ],
+    "pair_b": [
+      "E60_00",
+      "E60_33"
+    ],
+    "same_flat_size_orbit": true,
+    "same_gram_square_orbit": false
+  }
+}

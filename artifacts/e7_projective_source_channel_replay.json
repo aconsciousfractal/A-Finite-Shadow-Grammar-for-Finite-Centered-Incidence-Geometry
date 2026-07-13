@@ -1,0 +1,479 @@
+{
+  "artifact": "e7_projective_source_channel_replay",
+  "boundary": [
+    "no standalone E7 theorem",
+    "no Sp_6(2) theorem",
+    "no reflection-subgroup classification",
+    "no root-system matroid novelty claim",
+    "no E8 or Type-E family theorem",
+    "no 56-weight/Gosset/minuscule route",
+    "no classifier",
+    "no tiling"
+  ],
+  "checks": {
+    "flat_channel_gram_counter": true,
+    "flat_channel_no_mismatch": true,
+    "flat_channel_pair_counter": true,
+    "main_A5_orbits": true,
+    "main_A5_rank_separator": true,
+    "main_A5_same_order": true,
+    "main_A5_same_type": true,
+    "negative_reflection_rows_full_rank": true,
+    "projective_pair_count": true,
+    "reflection_formula_31I_plus_A": true,
+    "reflection_rank": true,
+    "root_count": true,
+    "simple_generators_symplectic": true,
+    "source_orbit_transitive": true,
+    "source_order": true,
+    "sp6_upper_bound_order": true,
+    "srg_degree": true,
+    "srg_edge_count": true,
+    "srg_lambda": true,
+    "srg_mu": true,
+    "srg_vertices": true,
+    "support_witnesses_rank_separate": true
+  },
+  "counts": {
+    "projective_pairs": 63,
+    "roots": 126,
+    "source_projective_order": 1451520,
+    "sp6_upper_bound_order": 1451520,
+    "type_II_roots": 70,
+    "type_I_roots": 56
+  },
+  "flat_channel": {
+    "flat_size_to_gram": {
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ]
+    },
+    "gram_counter": {
+      "0": 945,
+      "1": 1008
+    },
+    "gram_to_flat_size": {
+      "0": [
+        2
+      ],
+      "1": [
+        3
+      ]
+    },
+    "mismatch_count": 0,
+    "mismatches_first_10": [],
+    "pair_flat_size_counter": {
+      "2": 945,
+      "3": 1008
+    },
+    "unique_flat_size_counter": {
+      "2": 945,
+      "3": 336
+    },
+    "unordered_pair_count": 1953
+  },
+  "graph": {
+    "degree_values": [
+      32
+    ],
+    "edge_count": 1008,
+    "lambda_values": [
+      16
+    ],
+    "mu_values": [
+      16
+    ],
+    "vertices": 63
+  },
+  "main_A5_witness": {
+    "A": {
+      "abstract_type": "A5",
+      "aggregate_matrix_sha256": "b16a912e74f4335f7018edbfda20ea8ea8203b46011226e1e60402e65b7585d8",
+      "label": "Par_12345",
+      "orbit_sizes_on_Pi63": [
+        1,
+        6,
+        6,
+        15,
+        15,
+        20
+      ],
+      "order": 720,
+      "rank_U27": 3,
+      "rank_U35": 2,
+      "rank_additivity_check": true,
+      "rank_std": 5,
+      "row_col_sums_ok": true
+    },
+    "B": {
+      "abstract_type": "A5",
+      "aggregate_matrix_sha256": "c3dcf49a4d52b9aa59e8ad2c7af46a652e85b05dda16b59cbb93e8856c4a6dd0",
+      "label": "Par_12347",
+      "orbit_sizes_on_Pi63": [
+        1,
+        1,
+        1,
+        15,
+        15,
+        15,
+        15
+      ],
+      "order": 720,
+      "rank_U27": 3,
+      "rank_U35": 3,
+      "rank_additivity_check": true,
+      "rank_std": 6,
+      "row_col_sums_ok": true
+    }
+  },
+  "model": {
+    "carrier": "63 projective E7 root pairs from the doubled 8-coordinate E7 root model",
+    "flat_channel": "rank-2 projective flat size is a recoding of the Gram-square channel",
+    "graph_channel": "squared Gram value 1 gives the projective root graph",
+    "row_channel": "centered ranks on U27 and U35 for selected embedded parabolic subgroup rows",
+    "source_action": "projective Weyl action reconstructed as a matrix group over F2^6"
+  },
+  "negative_reflection_controls": [
+    {
+      "abstract_type": "A5",
+      "label": "RefSub_12345",
+      "orbit_sizes_on_Pi63": [
+        1,
+        6,
+        6,
+        15,
+        15,
+        20
+      ],
+      "parabolic_order": 720,
+      "parent_parabolic": "Par_12345",
+      "rank_U27": 27,
+      "rank_U35": 35,
+      "rank_additivity_check": true,
+      "rank_std": 62,
+      "reflection_count": 15
+    },
+    {
+      "abstract_type": "A5",
+      "label": "RefSub_12347",
+      "orbit_sizes_on_Pi63": [
+        1,
+        1,
+        1,
+        15,
+        15,
+        15,
+        15
+      ],
+      "parabolic_order": 720,
+      "parent_parabolic": "Par_12347",
+      "rank_U27": 27,
+      "rank_U35": 35,
+      "rank_additivity_check": true,
+      "rank_std": 62,
+      "reflection_count": 15
+    },
+    {
+      "abstract_type": "A1+A1+A1",
+      "label": "RefSub_135",
+      "orbit_sizes_on_Pi63": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        8
+      ],
+      "parabolic_order": 8,
+      "parent_parabolic": "Par_135",
+      "rank_U27": 27,
+      "rank_U35": 35,
+      "rank_additivity_check": true,
+      "rank_std": 62,
+      "reflection_count": 3
+    },
+    {
+      "abstract_type": "A1+A1+A1",
+      "label": "RefSub_137",
+      "orbit_sizes_on_Pi63": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "parabolic_order": 8,
+      "parent_parabolic": "Par_137",
+      "rank_U27": 27,
+      "rank_U35": 35,
+      "rank_additivity_check": true,
+      "rank_std": 62,
+      "reflection_count": 3
+    },
+    {
+      "abstract_type": "A3+A1",
+      "label": "RefSub_1235",
+      "orbit_sizes_on_Pi63": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        4,
+        4,
+        4,
+        4,
+        6,
+        6,
+        8,
+        8,
+        12
+      ],
+      "parabolic_order": 48,
+      "parent_parabolic": "Par_1235",
+      "rank_U27": 27,
+      "rank_U35": 35,
+      "rank_additivity_check": true,
+      "rank_std": 62,
+      "reflection_count": 7
+    },
+    {
+      "abstract_type": "A3+A1",
+      "label": "RefSub_1237",
+      "orbit_sizes_on_Pi63": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        6,
+        6,
+        6,
+        6,
+        8,
+        8,
+        8,
+        8
+      ],
+      "parabolic_order": 48,
+      "parent_parabolic": "Par_1237",
+      "rank_U27": 27,
+      "rank_U35": 35,
+      "rank_additivity_check": true,
+      "rank_std": 62,
+      "reflection_count": 7
+    }
+  ],
+  "paper": "A Finite-Shadow Grammar for Finite Centered Incidence Geometry",
+  "pass": true,
+  "payload_sha256_without_this_field": "8dd3a86d12238ab677f03f10e4142061854b5820185085ddcadf8983426d0d48",
+  "reflection_row": {
+    "aggregate_matrix_sha256": "c60cc677a7a62c7c58a3654a34b41dbf0e3b683e55a52261fc43743af8ac5372",
+    "identity": "N_Ref = 31I + A",
+    "rank_U27": 27,
+    "rank_U35": 35,
+    "rank_std": 62,
+    "spectrum_U27": {
+      "is_scalar": true,
+      "scalar": 35
+    },
+    "spectrum_U35": {
+      "is_scalar": true,
+      "scalar": 27
+    }
+  },
+  "source_decomposition": {
+    "U27": 27,
+    "U35": 35,
+    "V_std": 62,
+    "constant": 1
+  },
+  "status": "PASS",
+  "support_witnesses": [
+    [
+      {
+        "abstract_type": "A1+A1+A1",
+        "aggregate_matrix_sha256": "0e21d1c712069aca63fc3985566fef24fe58d4e6d05fb5acc59161a828d9c8de",
+        "label": "Par_135",
+        "orbit_sizes_on_Pi63": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          8
+        ],
+        "order": 8,
+        "rank_U27": 12,
+        "rank_U35": 13,
+        "rank_additivity_check": true,
+        "rank_std": 25,
+        "row_col_sums_ok": true
+      },
+      {
+        "abstract_type": "A1+A1+A1",
+        "aggregate_matrix_sha256": "bf83a6956225685a861d88dd81d530d39b365c5e437342aca7d8ff664519d3ee",
+        "label": "Par_137",
+        "orbit_sizes_on_Pi63": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "order": 8,
+        "rank_U27": 12,
+        "rank_U35": 14,
+        "rank_additivity_check": true,
+        "rank_std": 26,
+        "row_col_sums_ok": true
+      }
+    ],
+    [
+      {
+        "abstract_type": "A3+A1",
+        "aggregate_matrix_sha256": "7d5d673d46b931f92fed347440b2f71849fcb71d38ea3e1138b08d42e71c7272",
+        "label": "Par_1235",
+        "orbit_sizes_on_Pi63": [
+          1,
+          1,
+          1,
+          2,
+          2,
+          4,
+          4,
+          4,
+          4,
+          6,
+          6,
+          8,
+          8,
+          12
+        ],
+        "order": 48,
+        "rank_U27": 7,
+        "rank_U35": 6,
+        "rank_additivity_check": true,
+        "rank_std": 13,
+        "row_col_sums_ok": true
+      },
+      {
+        "abstract_type": "A3+A1",
+        "aggregate_matrix_sha256": "835cf7d3e688fe77675c92a9cf112099a3fb9ab8651eb6d40244d4ecc1429b01",
+        "label": "Par_1237",
+        "orbit_sizes_on_Pi63": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          6,
+          6,
+          6,
+          6,
+          8,
+          8,
+          8,
+          8
+        ],
+        "order": 48,
+        "rank_U27": 7,
+        "rank_U35": 7,
+        "rank_additivity_check": true,
+        "rank_std": 14,
+        "row_col_sums_ok": true
+      }
+    ]
+  ]
+}

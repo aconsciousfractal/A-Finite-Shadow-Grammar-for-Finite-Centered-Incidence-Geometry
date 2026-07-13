@@ -1,0 +1,60 @@
+\section{A Length-Colored \texorpdfstring{\(G_2\)}{G2} Root Shadow}
+\label{sec:g2-source-channel}
+
+The dihedral row of \cref{prop:dihedral-standard-rows} is an uncolored vertex-shadow row.  The bounded \(G_2\) row records a different source feature.  The finite set is the twelve-root shadow
+\[
+  \Omega=\Omega_{\mathrm{s}}\sqcup \Omega_{\mathrm{l}},
+  \qquad |\Omega_{\mathrm{s}}|=|\Omega_{\mathrm{l}}|=6,
+\]
+where the two six-cycles are the short and long roots.  The Weyl group \(W(G_2)\) acts on \(\Omega\) and preserves the two length blocks.  This section uses only that finite action and the elementary rank-two Coxeter background\cite{BjornerBrenti2005}.  It is not a general Weyl-group theorem.
+
+Let \(\mathbf 1_{\mathrm{s}}\) and \(\mathbf 1_{\mathrm{l}}\) be the two block indicators, and put
+\[
+  u_{\mathrm{len}}=\mathbf 1_{\mathrm{s}}-\mathbf 1_{\mathrm{l}}.
+\]
+The centered permutation module decomposes as
+\[
+  \mathbb Q^{\Omega}=\mathbb Q\mathbf 1\oplus \mathbb Q u_{\mathrm{len}}
+    \oplus V_{\mathrm{s}}^0\oplus V_{\mathrm{l}}^0.
+\]
+The line \(\mathbb Q u_{\mathrm{len}}\) is the obstruction that does not exist in the uncolored dihedral vertex row.
+
+\begin{proposition}[source-channel ranks in the length-colored \(G_2\) shadow]
+\label{prop:g2-source-channel}
+For the source-locked \(G_2\) root shadow above, the following bounded statements hold.
+\begin{enumerate}[label=\textup{(\alph*)},leftmargin=*]
+  \item Global centered balance on all twelve roots is blocked by the length line \(\mathbb Q u_{\mathrm{len}}\), because every admitted row preserves short and long roots separately.
+  \item After orbit-centering on \(\Omega_{\mathrm{s}}\) and \(\Omega_{\mathrm{l}}\), the full Weyl row, the rotation row, and the full reflection row are balanced on both blocks.  The short-axis and long-axis half-reflection rows have orbit-centered rank \(2\), one rank-one defect on each length block.
+  \item For two-mirror rows \(X_a=\{\tau_0,\tau_a\}\), the restrictions to the short and long blocks are two copies of the dihedral \(m=6\) row.  Hence
+  \[
+    \operatorname{rank}_{\mathrm{orbit}}(X_a)=2r(a),
+    \qquad
+    \operatorname{rank}_{\mathrm{global}}(X_a)=1+2r(a),
+  \]
+  where \(r(a)\) is the dihedral centered rank from \cref{prop:dihedral-standard-rows} for \(m=6\).
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}[Source-locked proof sketch]
+The first assertion is the source-partition obstruction: each permutation matrix is block diagonal with respect to \(\Omega_{\mathrm{s}}\sqcup\Omega_{\mathrm{l}}\), so the length line survives global centering.  The orbit-centered statements remove the two block constants separately; on each six-cycle the action reduces to the dihedral calculation already recorded in \cref{prop:dihedral-standard-rows}.  A half-reflection row fixes one parity pattern on the short block and one on the long block, giving two independent rank-one defects.  A two-mirror row restricts to two identical copies of the \(m=6\) two-mirror calculation, and the global channel adds back exactly the length line.
+\end{proof}
+
+The source partition is also necessary for comparison.  If the length labels are forgotten, a short-axis half-reflection row and a long-axis half-reflection row are ambient-conjugate inside the uncolored symmetric group on \(\Omega\).  The source profile distinguishes them: one fixes short roots on its axis and the other fixes long roots.  Thus uncolored ambient conjugacy is too coarse for this row, while the source-aware grammar keeps the data that the finite shadow came with.
+
+\begin{table}[!htbp]
+\centering
+\caption{What the length-colored \(G_2\) row contributes to the grammar.}
+\label{tab:g2-source-channel}
+\begin{tabular}{@{}L{0.23\textwidth}L{0.31\textwidth}L{0.34\textwidth}@{}}
+\toprule
+feature & finite fact & grammar reading \\
+\midrule
+length line & \(u_{\mathrm{len}}\) survives global centering & source partitions can be genuine channels, not annotations \\
+orbit-centered balance & full Weyl, rotation, and reflection rows balance on each length block & centering must sometimes be blockwise rather than global \\
+two-mirror transfer & ranks are two copies of the \(m=6\) dihedral row plus the length line globally & the dihedral transfer only applies after the source blocks are kept \\
+source-profile witness & short-axis and long-axis rows are ambient-conjugate after forgetting length & uncolored symmetric-group conjugacy can erase source information \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The boundary is strict.  This is a length-colored finite-shadow exhibit, not a theorem about arbitrary Weyl groups, affine arrangements, or projective quotients.  The uncolored dodecagon is a useful control, but it is not a replacement source for the \(G_2\) row, because it removes exactly the short/long channel that explains the ranks above.

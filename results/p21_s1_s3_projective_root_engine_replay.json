@@ -1,0 +1,77 @@
+{
+  "central_inversion_in_w48": true,
+  "central_inversion_projective_is_identity": true,
+  "engine": "p21_f4_projective_root_engine.py",
+  "expected": {
+    "central_inversion_in_w48": true,
+    "central_inversion_projective_is_identity": true,
+    "g_proj_global_centered_rank_scout": 1,
+    "g_proj_length_centered_rank_scout": 0,
+    "g_proj_orbit_sizes": [
+      12,
+      12
+    ],
+    "g_proj_order": 576,
+    "g_proj_preserves_length": true,
+    "projective_length_counts": {
+      "long": 12,
+      "short": 12
+    },
+    "projective_pair_count": 24,
+    "signed_length_counts": {
+      "long": 24,
+      "short": 24
+    },
+    "signed_root_count": 48,
+    "w48_order": 1152
+  },
+  "g_proj_global_centered_rank_scout": 1,
+  "g_proj_length_centered_rank_scout": 0,
+  "g_proj_orbit_sizes": [
+    12,
+    12
+  ],
+  "g_proj_order": 576,
+  "g_proj_preserves_length": true,
+  "matroid_layer_status": "LOCKED_IN_S5_SEPARATE_GATE",
+  "pass": true,
+  "projective_length_counts": {
+    "long": 12,
+    "short": 12
+  },
+  "projective_pair_count": 24,
+  "route_id": "P21",
+  "scope": "geometric_projective_weyl_layer_only",
+  "signed_length_counts": {
+    "long": 24,
+    "short": 24
+  },
+  "signed_root_count": 48,
+  "simple_roots_scaled": [
+    [
+      0,
+      2,
+      -2,
+      0
+    ],
+    [
+      0,
+      0,
+      2,
+      -2
+    ],
+    [
+      0,
+      0,
+      0,
+      2
+    ],
+    [
+      1,
+      -1,
+      -1,
+      -1
+    ]
+  ],
+  "w48_order": 1152
+}

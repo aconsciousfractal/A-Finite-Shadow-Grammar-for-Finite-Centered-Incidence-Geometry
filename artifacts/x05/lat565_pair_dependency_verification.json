@@ -1,0 +1,127 @@
+{
+  "field_checks": {
+    "Gamma_rank_size": 62,
+    "coset_size": 32,
+    "stored_center_size": 4,
+    "stored_exponent": 4,
+    "stored_group_order": 32,
+    "stored_order_dist": {
+      "1": 1,
+      "2": 19,
+      "4": 12
+    },
+    "tag": "latin",
+    "type": 3
+  },
+  "grid_id": "lat565",
+  "group_mechanism": {
+    "K_cap_G0_order": 8,
+    "abelian": false,
+    "center_size": 4,
+    "exponent": 4,
+    "generated_equals_stored_group": true,
+    "generated_intersection_stored_group": 32,
+    "generated_order": 32,
+    "generators_one_based_cycles": {
+      "r": "(1,3,9,7)(2,6,8,4)",
+      "s": "(2,4)(3,7)(6,8)",
+      "t": "(4,6)"
+    },
+    "order_distribution": {
+      "1": 1,
+      "2": 19,
+      "4": 12
+    },
+    "preserves_corner_edge_center_partition": true,
+    "rs_equals_K_cap_G0": true,
+    "rs_generated_order": 8,
+    "stored_coset_is_left_K_pi": true,
+    "stored_coset_is_right_pi_K": false
+  },
+  "interpretation_boundary": {
+    "explains_all_rank_drops": false,
+    "explains_structured_order_32_coset": true,
+    "paper_safe_reading": "lat565 is a second X05 mechanism: paired-row proportional dependency, not G0 magic-band dependency.",
+    "remaining_rank_drops_outside_coset": 30
+  },
+  "pair_dependency": {
+    "allowed_lambdas": [
+      "-2",
+      "-1",
+      "-1/2",
+      "1/2",
+      "1",
+      "2"
+    ],
+    "criterion_count": 32,
+    "criterion_equals_stored_coset": true,
+    "criterion_intersection_stored_coset": 32,
+    "lambda_distribution": {
+      "-1": 8,
+      "-1/2": 4,
+      "-2": 4,
+      "1": 8,
+      "1/2": 4,
+      "2": 4
+    },
+    "pi0_lambda": "-2",
+    "pi0_one_based": [
+      2,
+      8,
+      1,
+      4,
+      3,
+      9,
+      5,
+      7,
+      6
+    ],
+    "pi0_p": [
+      0,
+      0,
+      2,
+      0,
+      0,
+      2,
+      -2,
+      0,
+      -2
+    ],
+    "pi0_q": [
+      0,
+      0,
+      -4,
+      0,
+      0,
+      -4,
+      4,
+      0,
+      4
+    ],
+    "row_pairs_one_based": [
+      [
+        1,
+        8
+      ],
+      [
+        6,
+        9
+      ]
+    ]
+  },
+  "rank_locus_replay": {
+    "criterion_standard_rank_distribution": {
+      "7": 32
+    },
+    "det_candidate_count": 62,
+    "exact_rank_drop_count": 62,
+    "matches_stored_Gamma_rank_size": true,
+    "rank_drops_outside_pair_coset": 30,
+    "stored_coset_standard_rank_distribution": {
+      "7": 32
+    },
+    "stored_coset_subset_of_rank_locus": true
+  },
+  "source": "experiments\\m19_hidden_coset_census\\census_rows1000 v2.json",
+  "status": "PASS"
+}

@@ -1,0 +1,2336 @@
+{
+  "title": "lat565 global rank-drop linearization diagnostic",
+  "date": "2026-07-07",
+  "grid_id": "lat565",
+  "rank_locus_size": 62,
+  "decomposition_counts": {
+    "R22_sporadic_residual": 22,
+    "C8_second_pair_equality": 8,
+    "C32_pair_coset": 32
+  },
+  "linearization_definition": {
+    "centered_value_vector": "x_gamma(s)=gamma(s)-5, a permutation of -4,...,4 with sum zero",
+    "row_certificate": "a^T E_{gamma,L}=0 iff W_row(a) x_gamma=0, where W_row(a)[j,s]=sum_{i:L[i,j]=s} a_i",
+    "column_certificate": "E_{gamma,L} b=0 iff W_col(b) x_gamma=0, where W_col(b)[i,s]=sum_{j:L[i,j]=s} b_j",
+    "nullity": "nullity_on_centered_value_space = 9 - rank([W; 1...1])"
+  },
+  "C32_slope_templates": [
+    {
+      "name": "C32 slope lambda=-2",
+      "side": "row",
+      "coefficients_1based_order": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        2,
+        1
+      ],
+      "coefficient_sum": 6,
+      "rank_W": 7,
+      "rank_with_sum_zero_row": 7,
+      "nullity_on_centered_value_space": 2,
+      "permutation_solution_count_in_S9": 4,
+      "example_solutions_1based": [
+        [
+          2,
+          8,
+          1,
+          4,
+          3,
+          9,
+          5,
+          7,
+          6
+        ],
+        [
+          4,
+          6,
+          9,
+          2,
+          3,
+          1,
+          5,
+          7,
+          8
+        ],
+        [
+          6,
+          4,
+          1,
+          8,
+          7,
+          9,
+          5,
+          3,
+          2
+        ],
+        [
+          8,
+          2,
+          9,
+          6,
+          7,
+          1,
+          5,
+          3,
+          4
+        ]
+      ],
+      "block": "C32_pair_coset",
+      "lambda": "-2"
+    },
+    {
+      "name": "C32 slope lambda=-1",
+      "side": "row",
+      "coefficients_1based_order": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "coefficient_sum": 4,
+      "rank_W": 7,
+      "rank_with_sum_zero_row": 7,
+      "nullity_on_centered_value_space": 2,
+      "permutation_solution_count_in_S9": 8,
+      "example_solutions_1based": [
+        [
+          2,
+          8,
+          1,
+          6,
+          3,
+          9,
+          5,
+          7,
+          4
+        ],
+        [
+          2,
+          8,
+          3,
+          4,
+          1,
+          7,
+          5,
+          9,
+          6
+        ],
+        [
+          4,
+          6,
+          1,
+          8,
+          7,
+          9,
+          5,
+          3,
+          2
+        ],
+        [
+          4,
+          6,
+          7,
+          2,
+          1,
+          3,
+          5,
+          9,
+          8
+        ],
+        [
+          6,
+          4,
+          3,
+          8,
+          9,
+          7,
+          5,
+          1,
+          2
+        ],
+        [
+          6,
+          4,
+          9,
+          2,
+          3,
+          1,
+          5,
+          7,
+          8
+        ],
+        [
+          8,
+          2,
+          7,
+          6,
+          9,
+          3,
+          5,
+          1,
+          4
+        ],
+        [
+          8,
+          2,
+          9,
+          4,
+          7,
+          1,
+          5,
+          3,
+          6
+        ]
+      ],
+      "block": "C32_pair_coset",
+      "lambda": "-1"
+    },
+    {
+      "name": "C32 slope lambda=-1/2",
+      "side": "row",
+      "coefficients_1based_order": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        1,
+        2
+      ],
+      "coefficient_sum": 6,
+      "rank_W": 7,
+      "rank_with_sum_zero_row": 7,
+      "nullity_on_centered_value_space": 2,
+      "permutation_solution_count_in_S9": 4,
+      "example_solutions_1based": [
+        [
+          2,
+          8,
+          3,
+          6,
+          1,
+          7,
+          5,
+          9,
+          4
+        ],
+        [
+          4,
+          6,
+          3,
+          8,
+          9,
+          7,
+          5,
+          1,
+          2
+        ],
+        [
+          6,
+          4,
+          7,
+          2,
+          1,
+          3,
+          5,
+          9,
+          8
+        ],
+        [
+          8,
+          2,
+          7,
+          4,
+          9,
+          3,
+          5,
+          1,
+          6
+        ]
+      ],
+      "block": "C32_pair_coset",
+      "lambda": "-1/2"
+    },
+    {
+      "name": "C32 slope lambda=1/2",
+      "side": "row",
+      "coefficients_1based_order": [
+        -1,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        -1,
+        2
+      ],
+      "coefficient_sum": 2,
+      "rank_W": 7,
+      "rank_with_sum_zero_row": 7,
+      "nullity_on_centered_value_space": 2,
+      "permutation_solution_count_in_S9": 4,
+      "example_solutions_1based": [
+        [
+          2,
+          8,
+          7,
+          6,
+          9,
+          3,
+          5,
+          1,
+          4
+        ],
+        [
+          4,
+          6,
+          7,
+          8,
+          1,
+          3,
+          5,
+          9,
+          2
+        ],
+        [
+          6,
+          4,
+          3,
+          2,
+          9,
+          7,
+          5,
+          1,
+          8
+        ],
+        [
+          8,
+          2,
+          3,
+          4,
+          1,
+          7,
+          5,
+          9,
+          6
+        ]
+      ],
+      "block": "C32_pair_coset",
+      "lambda": "1/2"
+    },
+    {
+      "name": "C32 slope lambda=1",
+      "side": "row",
+      "coefficients_1based_order": [
+        -1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        1
+      ],
+      "coefficient_sum": 0,
+      "rank_W": 6,
+      "rank_with_sum_zero_row": 7,
+      "nullity_on_centered_value_space": 2,
+      "permutation_solution_count_in_S9": 8,
+      "example_solutions_1based": [
+        [
+          2,
+          8,
+          7,
+          4,
+          9,
+          3,
+          5,
+          1,
+          6
+        ],
+        [
+          2,
+          8,
+          9,
+          6,
+          7,
+          1,
+          5,
+          3,
+          4
+        ],
+        [
+          4,
+          6,
+          3,
+          2,
+          9,
+          7,
+          5,
+          1,
+          8
+        ],
+        [
+          4,
+          6,
+          9,
+          8,
+          3,
+          1,
+          5,
+          7,
+          2
+        ],
+        [
+          6,
+          4,
+          1,
+          2,
+          7,
+          9,
+          5,
+          3,
+          8
+        ],
+        [
+          6,
+          4,
+          7,
+          8,
+          1,
+          3,
+          5,
+          9,
+          2
+        ],
+        [
+          8,
+          2,
+          1,
+          4,
+          3,
+          9,
+          5,
+          7,
+          6
+        ],
+        [
+          8,
+          2,
+          3,
+          6,
+          1,
+          7,
+          5,
+          9,
+          4
+        ]
+      ],
+      "block": "C32_pair_coset",
+      "lambda": "1"
+    },
+    {
+      "name": "C32 slope lambda=2",
+      "side": "row",
+      "coefficients_1based_order": [
+        -2,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -2,
+        1
+      ],
+      "coefficient_sum": -2,
+      "rank_W": 7,
+      "rank_with_sum_zero_row": 7,
+      "nullity_on_centered_value_space": 2,
+      "permutation_solution_count_in_S9": 4,
+      "example_solutions_1based": [
+        [
+          2,
+          8,
+          9,
+          4,
+          7,
+          1,
+          5,
+          3,
+          6
+        ],
+        [
+          4,
+          6,
+          1,
+          2,
+          7,
+          9,
+          5,
+          3,
+          8
+        ],
+        [
+          6,
+          4,
+          9,
+          8,
+          3,
+          1,
+          5,
+          7,
+          2
+        ],
+        [
+          8,
+          2,
+          1,
+          6,
+          3,
+          9,
+          5,
+          7,
+          4
+        ]
+      ],
+      "block": "C32_pair_coset",
+      "lambda": "2"
+    }
+  ],
+  "C8_template": {
+    "name": "C8 row parallelogram R1-R3-R4+R7",
+    "side": "row",
+    "coefficients_1based_order": [
+      1,
+      0,
+      -1,
+      -1,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "coefficient_sum": 0,
+    "rank_W": 5,
+    "rank_with_sum_zero_row": 6,
+    "nullity_on_centered_value_space": 3,
+    "permutation_solution_count_in_S9": 8,
+    "example_solutions_1based": [
+      [
+        1,
+        8,
+        6,
+        2,
+        5,
+        7,
+        3,
+        9,
+        4
+      ],
+      [
+        1,
+        9,
+        8,
+        6,
+        3,
+        4,
+        2,
+        5,
+        7
+      ],
+      [
+        4,
+        2,
+        9,
+        5,
+        8,
+        1,
+        6,
+        3,
+        7
+      ],
+      [
+        5,
+        4,
+        3,
+        1,
+        7,
+        8,
+        6,
+        9,
+        2
+      ],
+      [
+        5,
+        6,
+        7,
+        9,
+        3,
+        2,
+        4,
+        1,
+        8
+      ],
+      [
+        6,
+        8,
+        1,
+        5,
+        2,
+        9,
+        4,
+        7,
+        3
+      ],
+      [
+        9,
+        1,
+        2,
+        4,
+        7,
+        6,
+        8,
+        5,
+        3
+      ],
+      [
+        9,
+        2,
+        4,
+        8,
+        5,
+        3,
+        7,
+        1,
+        6
+      ]
+    ],
+    "block": "C8_second_pair_equality"
+  },
+  "R22_isolated_pair_templates": [
+    {
+      "name": "R22 isolated complement pair 0",
+      "side": "col",
+      "coefficients_1based_order": [
+        5,
+        -3,
+        0,
+        6,
+        3,
+        -2,
+        2,
+        -5,
+        -4
+      ],
+      "coefficient_sum": 2,
+      "rank_W": 8,
+      "rank_with_sum_zero_row": 8,
+      "nullity_on_centered_value_space": 1,
+      "permutation_solution_count_in_S9": 2,
+      "example_solutions_1based": [
+        [
+          1,
+          4,
+          5,
+          7,
+          2,
+          9,
+          6,
+          3,
+          8
+        ],
+        [
+          9,
+          6,
+          5,
+          3,
+          8,
+          1,
+          4,
+          7,
+          2
+        ]
+      ],
+      "block": "R22_sporadic_residual",
+      "representative_perm_1based": [
+        1,
+        4,
+        5,
+        7,
+        2,
+        9,
+        6,
+        3,
+        8
+      ],
+      "complement_perm_1based": [
+        9,
+        6,
+        5,
+        3,
+        8,
+        1,
+        4,
+        7,
+        2
+      ],
+      "support_1based": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "support_size": 8,
+      "max_abs_coeff": 6,
+      "l1_coeff": 30,
+      "preferred_side_from_kernel": "right"
+    },
+    {
+      "name": "R22 isolated complement pair 1",
+      "side": "row",
+      "coefficients_1based_order": [
+        2,
+        3,
+        0,
+        -1,
+        -4,
+        -3,
+        0,
+        2,
+        3
+      ],
+      "coefficient_sum": 2,
+      "rank_W": 8,
+      "rank_with_sum_zero_row": 8,
+      "nullity_on_centered_value_space": 1,
+      "permutation_solution_count_in_S9": 2,
+      "example_solutions_1based": [
+        [
+          3,
+          6,
+          5,
+          9,
+          1,
+          4,
+          8,
+          7,
+          2
+        ],
+        [
+          7,
+          4,
+          5,
+          1,
+          9,
+          6,
+          2,
+          3,
+          8
+        ]
+      ],
+      "block": "R22_sporadic_residual",
+      "representative_perm_1based": [
+        3,
+        6,
+        5,
+        9,
+        1,
+        4,
+        8,
+        7,
+        2
+      ],
+      "complement_perm_1based": [
+        7,
+        4,
+        5,
+        1,
+        9,
+        6,
+        2,
+        3,
+        8
+      ],
+      "support_1based": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        8,
+        9
+      ],
+      "support_size": 7,
+      "max_abs_coeff": 4,
+      "l1_coeff": 18,
+      "preferred_side_from_kernel": "left"
+    },
+    {
+      "name": "R22 isolated complement pair 2",
+      "side": "col",
+      "coefficients_1based_order": [
+        8,
+        -58,
+        -39,
+        0,
+        22,
+        0,
+        10,
+        -74,
+        11
+      ],
+      "coefficient_sum": -120,
+      "rank_W": 8,
+      "rank_with_sum_zero_row": 8,
+      "nullity_on_centered_value_space": 1,
+      "permutation_solution_count_in_S9": 2,
+      "example_solutions_1based": [
+        [
+          3,
+          8,
+          1,
+          4,
+          2,
+          9,
+          6,
+          5,
+          7
+        ],
+        [
+          7,
+          2,
+          9,
+          6,
+          8,
+          1,
+          4,
+          5,
+          3
+        ]
+      ],
+      "block": "R22_sporadic_residual",
+      "representative_perm_1based": [
+        3,
+        8,
+        1,
+        4,
+        2,
+        9,
+        6,
+        5,
+        7
+      ],
+      "complement_perm_1based": [
+        7,
+        2,
+        9,
+        6,
+        8,
+        1,
+        4,
+        5,
+        3
+      ],
+      "support_1based": [
+        1,
+        2,
+        3,
+        5,
+        7,
+        8,
+        9
+      ],
+      "support_size": 7,
+      "max_abs_coeff": 74,
+      "l1_coeff": 222,
+      "preferred_side_from_kernel": "right"
+    },
+    {
+      "name": "R22 isolated complement pair 3",
+      "side": "col",
+      "coefficients_1based_order": [
+        5,
+        0,
+        9,
+        -4,
+        0,
+        -8,
+        1,
+        4,
+        -5
+      ],
+      "coefficient_sum": 2,
+      "rank_W": 8,
+      "rank_with_sum_zero_row": 8,
+      "nullity_on_centered_value_space": 1,
+      "permutation_solution_count_in_S9": 2,
+      "example_solutions_1based": [
+        [
+          4,
+          3,
+          6,
+          2,
+          8,
+          5,
+          1,
+          7,
+          9
+        ],
+        [
+          6,
+          7,
+          4,
+          8,
+          2,
+          5,
+          9,
+          3,
+          1
+        ]
+      ],
+      "block": "R22_sporadic_residual",
+      "representative_perm_1based": [
+        4,
+        3,
+        6,
+        2,
+        8,
+        5,
+        1,
+        7,
+        9
+      ],
+      "complement_perm_1based": [
+        6,
+        7,
+        4,
+        8,
+        2,
+        5,
+        9,
+        3,
+        1
+      ],
+      "support_1based": [
+        1,
+        3,
+        4,
+        6,
+        7,
+        8,
+        9
+      ],
+      "support_size": 7,
+      "max_abs_coeff": 9,
+      "l1_coeff": 36,
+      "preferred_side_from_kernel": "right"
+    },
+    {
+      "name": "R22 isolated complement pair 4",
+      "side": "row",
+      "coefficients_1based_order": [
+        26,
+        57,
+        60,
+        39,
+        42,
+        -63,
+        -45,
+        62,
+        0
+      ],
+      "coefficient_sum": 178,
+      "rank_W": 8,
+      "rank_with_sum_zero_row": 8,
+      "nullity_on_centered_value_space": 1,
+      "permutation_solution_count_in_S9": 2,
+      "example_solutions_1based": [
+        [
+          4,
+          3,
+          7,
+          1,
+          5,
+          6,
+          2,
+          8,
+          9
+        ],
+        [
+          6,
+          7,
+          3,
+          9,
+          5,
+          4,
+          8,
+          2,
+          1
+        ]
+      ],
+      "block": "R22_sporadic_residual",
+      "representative_perm_1based": [
+        4,
+        3,
+        7,
+        1,
+        5,
+        6,
+        2,
+        8,
+        9
+      ],
+      "complement_perm_1based": [
+        6,
+        7,
+        3,
+        9,
+        5,
+        4,
+        8,
+        2,
+        1
+      ],
+      "support_1based": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "support_size": 8,
+      "max_abs_coeff": 63,
+      "l1_coeff": 394,
+      "preferred_side_from_kernel": "left"
+    },
+    {
+      "name": "R22 isolated complement pair 5",
+      "side": "col",
+      "coefficients_1based_order": [
+        1,
+        -1,
+        2,
+        1,
+        0,
+        2,
+        0,
+        0,
+        -1
+      ],
+      "coefficient_sum": 4,
+      "rank_W": 8,
+      "rank_with_sum_zero_row": 8,
+      "nullity_on_centered_value_space": 1,
+      "permutation_solution_count_in_S9": 2,
+      "example_solutions_1based": [
+        [
+          4,
+          6,
+          2,
+          1,
+          5,
+          7,
+          8,
+          9,
+          3
+        ],
+        [
+          6,
+          4,
+          8,
+          9,
+          5,
+          3,
+          2,
+          1,
+          7
+        ]
+      ],
+      "block": "R22_sporadic_residual",
+      "representative_perm_1based": [
+        4,
+        6,
+        2,
+        1,
+        5,
+        7,
+        8,
+        9,
+        3
+      ],
+      "complement_perm_1based": [
+        6,
+        4,
+        8,
+        9,
+        5,
+        3,
+        2,
+        1,
+        7
+      ],
+      "support_1based": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        9
+      ],
+      "support_size": 6,
+      "max_abs_coeff": 2,
+      "l1_coeff": 8,
+      "preferred_side_from_kernel": "right"
+    },
+    {
+      "name": "R22 isolated complement pair 6",
+      "side": "col",
+      "coefficients_1based_order": [
+        42,
+        -28,
+        0,
+        17,
+        -41,
+        -29,
+        -44,
+        -15,
+        26
+      ],
+      "coefficient_sum": -72,
+      "rank_W": 8,
+      "rank_with_sum_zero_row": 8,
+      "nullity_on_centered_value_space": 1,
+      "permutation_solution_count_in_S9": 2,
+      "example_solutions_1based": [
+        [
+          4,
+          6,
+          8,
+          9,
+          1,
+          5,
+          2,
+          3,
+          7
+        ],
+        [
+          6,
+          4,
+          2,
+          1,
+          9,
+          5,
+          8,
+          7,
+          3
+        ]
+      ],
+      "block": "R22_sporadic_residual",
+      "representative_perm_1based": [
+        4,
+        6,
+        8,
+        9,
+        1,
+        5,
+        2,
+        3,
+        7
+      ],
+      "complement_perm_1based": [
+        6,
+        4,
+        2,
+        1,
+        9,
+        5,
+        8,
+        7,
+        3
+      ],
+      "support_1based": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "support_size": 8,
+      "max_abs_coeff": 44,
+      "l1_coeff": 242,
+      "preferred_side_from_kernel": "right"
+    },
+    {
+      "name": "R22 isolated complement pair 7",
+      "side": "col",
+      "coefficients_1based_order": [
+        0,
+        1,
+        2,
+        0,
+        3,
+        5,
+        4,
+        0,
+        1
+      ],
+      "coefficient_sum": 16,
+      "rank_W": 8,
+      "rank_with_sum_zero_row": 8,
+      "nullity_on_centered_value_space": 1,
+      "permutation_solution_count_in_S9": 2,
+      "example_solutions_1based": [
+        [
+          4,
+          8,
+          3,
+          9,
+          2,
+          1,
+          5,
+          6,
+          7
+        ],
+        [
+          6,
+          2,
+          7,
+          1,
+          8,
+          9,
+          5,
+          4,
+          3
+        ]
+      ],
+      "block": "R22_sporadic_residual",
+      "representative_perm_1based": [
+        4,
+        8,
+        3,
+        9,
+        2,
+        1,
+        5,
+        6,
+        7
+      ],
+      "complement_perm_1based": [
+        6,
+        2,
+        7,
+        1,
+        8,
+        9,
+        5,
+        4,
+        3
+      ],
+      "support_1based": [
+        2,
+        3,
+        5,
+        6,
+        7,
+        9
+      ],
+      "support_size": 6,
+      "max_abs_coeff": 5,
+      "l1_coeff": 16,
+      "preferred_side_from_kernel": "right"
+    },
+    {
+      "name": "R22 isolated complement pair 8",
+      "side": "row",
+      "coefficients_1based_order": [
+        2,
+        3,
+        3,
+        0,
+        -1,
+        3,
+        0,
+        -3,
+        0
+      ],
+      "coefficient_sum": 7,
+      "rank_W": 8,
+      "rank_with_sum_zero_row": 8,
+      "nullity_on_centered_value_space": 1,
+      "permutation_solution_count_in_S9": 2,
+      "example_solutions_1based": [
+        [
+          4,
+          9,
+          1,
+          6,
+          7,
+          8,
+          3,
+          2,
+          5
+        ],
+        [
+          6,
+          1,
+          9,
+          4,
+          3,
+          2,
+          7,
+          8,
+          5
+        ]
+      ],
+      "block": "R22_sporadic_residual",
+      "representative_perm_1based": [
+        4,
+        9,
+        1,
+        6,
+        7,
+        8,
+        3,
+        2,
+        5
+      ],
+      "complement_perm_1based": [
+        6,
+        1,
+        9,
+        4,
+        3,
+        2,
+        7,
+        8,
+        5
+      ],
+      "support_1based": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        8
+      ],
+      "support_size": 6,
+      "max_abs_coeff": 3,
+      "l1_coeff": 15,
+      "preferred_side_from_kernel": "left"
+    },
+    {
+      "name": "R22 isolated complement pair 9",
+      "side": "col",
+      "coefficients_1based_order": [
+        3,
+        5,
+        2,
+        0,
+        3,
+        2,
+        0,
+        5,
+        0
+      ],
+      "coefficient_sum": 20,
+      "rank_W": 8,
+      "rank_with_sum_zero_row": 8,
+      "nullity_on_centered_value_space": 1,
+      "permutation_solution_count_in_S9": 2,
+      "example_solutions_1based": [
+        [
+          5,
+          4,
+          7,
+          1,
+          8,
+          3,
+          6,
+          9,
+          2
+        ],
+        [
+          5,
+          6,
+          3,
+          9,
+          2,
+          7,
+          4,
+          1,
+          8
+        ]
+      ],
+      "block": "R22_sporadic_residual",
+      "representative_perm_1based": [
+        5,
+        4,
+        7,
+        1,
+        8,
+        3,
+        6,
+        9,
+        2
+      ],
+      "complement_perm_1based": [
+        5,
+        6,
+        3,
+        9,
+        2,
+        7,
+        4,
+        1,
+        8
+      ],
+      "support_1based": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        8
+      ],
+      "support_size": 6,
+      "max_abs_coeff": 5,
+      "l1_coeff": 20,
+      "preferred_side_from_kernel": "right"
+    },
+    {
+      "name": "R22 isolated complement pair 10",
+      "side": "row",
+      "coefficients_1based_order": [
+        0,
+        3,
+        -1,
+        3,
+        4,
+        -1,
+        0,
+        0,
+        1
+      ],
+      "coefficient_sum": 9,
+      "rank_W": 8,
+      "rank_with_sum_zero_row": 8,
+      "nullity_on_centered_value_space": 1,
+      "permutation_solution_count_in_S9": 2,
+      "example_solutions_1based": [
+        [
+          5,
+          4,
+          8,
+          2,
+          6,
+          1,
+          9,
+          7,
+          3
+        ],
+        [
+          5,
+          6,
+          2,
+          8,
+          4,
+          9,
+          1,
+          3,
+          7
+        ]
+      ],
+      "block": "R22_sporadic_residual",
+      "representative_perm_1based": [
+        5,
+        4,
+        8,
+        2,
+        6,
+        1,
+        9,
+        7,
+        3
+      ],
+      "complement_perm_1based": [
+        5,
+        6,
+        2,
+        8,
+        4,
+        9,
+        1,
+        3,
+        7
+      ],
+      "support_1based": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        9
+      ],
+      "support_size": 6,
+      "max_abs_coeff": 4,
+      "l1_coeff": 13,
+      "preferred_side_from_kernel": "left"
+    }
+  ],
+  "pair_proportionality_scan_among_rankdrops": {
+    "row": [
+      {
+        "count": 8,
+        "pair_A": [
+          1,
+          6
+        ],
+        "pair_B": [
+          8,
+          9
+        ],
+        "lambda": "-1",
+        "C32_hits": 8,
+        "C8_hits": 0,
+        "R22_hits": 0
+      },
+      {
+        "count": 8,
+        "pair_A": [
+          1,
+          7
+        ],
+        "pair_B": [
+          3,
+          4
+        ],
+        "lambda": "1",
+        "C32_hits": 0,
+        "C8_hits": 8,
+        "R22_hits": 0
+      },
+      {
+        "count": 8,
+        "pair_A": [
+          1,
+          8
+        ],
+        "pair_B": [
+          6,
+          9
+        ],
+        "lambda": "-1",
+        "C32_hits": 8,
+        "C8_hits": 0,
+        "R22_hits": 0
+      },
+      {
+        "count": 8,
+        "pair_A": [
+          1,
+          8
+        ],
+        "pair_B": [
+          6,
+          9
+        ],
+        "lambda": "1",
+        "C32_hits": 8,
+        "C8_hits": 0,
+        "R22_hits": 0
+      },
+      {
+        "count": 8,
+        "pair_A": [
+          1,
+          9
+        ],
+        "pair_B": [
+          6,
+          8
+        ],
+        "lambda": "-1",
+        "C32_hits": 8,
+        "C8_hits": 0,
+        "R22_hits": 0
+      },
+      {
+        "count": 4,
+        "pair_A": [
+          1,
+          8
+        ],
+        "pair_B": [
+          6,
+          9
+        ],
+        "lambda": "-1/2",
+        "C32_hits": 4,
+        "C8_hits": 0,
+        "R22_hits": 0
+      },
+      {
+        "count": 4,
+        "pair_A": [
+          1,
+          8
+        ],
+        "pair_B": [
+          6,
+          9
+        ],
+        "lambda": "-2",
+        "C32_hits": 4,
+        "C8_hits": 0,
+        "R22_hits": 0
+      },
+      {
+        "count": 4,
+        "pair_A": [
+          1,
+          8
+        ],
+        "pair_B": [
+          6,
+          9
+        ],
+        "lambda": "1/2",
+        "C32_hits": 4,
+        "C8_hits": 0,
+        "R22_hits": 0
+      },
+      {
+        "count": 4,
+        "pair_A": [
+          1,
+          8
+        ],
+        "pair_B": [
+          6,
+          9
+        ],
+        "lambda": "2",
+        "C32_hits": 4,
+        "C8_hits": 0,
+        "R22_hits": 0
+      }
+    ],
+    "col": []
+  },
+  "small_support_kernel_scan_support_le_4_coeff_le_3": [
+    {
+      "side": "row",
+      "count": 8,
+      "coefficients": [
+        1,
+        0,
+        -1,
+        -1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "C32_hits": 0,
+      "C8_hits": 8,
+      "R22_hits": 0
+    },
+    {
+      "side": "row",
+      "count": 8,
+      "coefficients": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        1,
+        -1
+      ],
+      "C32_hits": 8,
+      "C8_hits": 0,
+      "R22_hits": 0
+    },
+    {
+      "side": "row",
+      "count": 8,
+      "coefficients": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "C32_hits": 8,
+      "C8_hits": 0,
+      "R22_hits": 0
+    },
+    {
+      "side": "row",
+      "count": 4,
+      "coefficients": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        -2,
+        0,
+        1,
+        -2
+      ],
+      "C32_hits": 4,
+      "C8_hits": 0,
+      "R22_hits": 0
+    },
+    {
+      "side": "row",
+      "count": 4,
+      "coefficients": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        1,
+        2
+      ],
+      "C32_hits": 4,
+      "C8_hits": 0,
+      "R22_hits": 0
+    },
+    {
+      "side": "row",
+      "count": 4,
+      "coefficients": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        2,
+        -1
+      ],
+      "C32_hits": 4,
+      "C8_hits": 0,
+      "R22_hits": 0
+    },
+    {
+      "side": "row",
+      "count": 4,
+      "coefficients": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        2,
+        1
+      ],
+      "C32_hits": 4,
+      "C8_hits": 0,
+      "R22_hits": 0
+    }
+  ],
+  "stabilizer_and_quotient_diagnostics": {
+    "full_rank_locus": {
+      "size": 62,
+      "left_stabilizer_order": 2,
+      "left_stabilizer_order_distribution": {
+        "1": 1,
+        "2": 1
+      },
+      "right_stabilizer_order": 1,
+      "right_stabilizer_order_distribution": {
+        "1": 1
+      },
+      "pairwise_quotient_frequency_distribution": [
+        [
+          62,
+          2
+        ],
+        [
+          32,
+          30
+        ],
+        [
+          2,
+          28
+        ],
+        [
+          1,
+          2704
+        ]
+      ],
+      "top_pairwise_quotients_1based": [
+        [
+          62,
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        ],
+        [
+          62,
+          [
+            9,
+            8,
+            7,
+            6,
+            5,
+            4,
+            3,
+            2,
+            1
+          ]
+        ],
+        [
+          32,
+          [
+            1,
+            4,
+            7,
+            2,
+            5,
+            8,
+            3,
+            6,
+            9
+          ]
+        ],
+        [
+          32,
+          [
+            3,
+            2,
+            1,
+            6,
+            5,
+            4,
+            9,
+            8,
+            7
+          ]
+        ],
+        [
+          32,
+          [
+            9,
+            4,
+            3,
+            8,
+            5,
+            2,
+            7,
+            6,
+            1
+          ]
+        ],
+        [
+          32,
+          [
+            1,
+            4,
+            7,
+            8,
+            5,
+            2,
+            3,
+            6,
+            9
+          ]
+        ]
+      ]
+    },
+    "C32_pair_coset": {
+      "size": 32,
+      "left_stabilizer_order": 32,
+      "left_stabilizer_order_distribution": {
+        "1": 1,
+        "2": 19,
+        "4": 12
+      },
+      "right_stabilizer_order": 32,
+      "right_stabilizer_order_distribution": {
+        "1": 1,
+        "2": 19,
+        "4": 12
+      },
+      "pairwise_quotient_frequency_distribution": [
+        [
+          32,
+          32
+        ]
+      ],
+      "top_pairwise_quotients_1based": [
+        [
+          32,
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        ],
+        [
+          32,
+          [
+            1,
+            4,
+            7,
+            2,
+            5,
+            8,
+            3,
+            6,
+            9
+          ]
+        ],
+        [
+          32,
+          [
+            3,
+            2,
+            1,
+            6,
+            5,
+            4,
+            9,
+            8,
+            7
+          ]
+        ],
+        [
+          32,
+          [
+            9,
+            4,
+            3,
+            8,
+            5,
+            2,
+            7,
+            6,
+            1
+          ]
+        ],
+        [
+          32,
+          [
+            1,
+            4,
+            7,
+            8,
+            5,
+            2,
+            3,
+            6,
+            9
+          ]
+        ],
+        [
+          32,
+          [
+            1,
+            8,
+            3,
+            4,
+            5,
+            6,
+            7,
+            2,
+            9
+          ]
+        ]
+      ]
+    },
+    "C8_second_pair_equality": {
+      "size": 8,
+      "left_stabilizer_order": 2,
+      "left_stabilizer_order_distribution": {
+        "1": 1,
+        "2": 1
+      },
+      "right_stabilizer_order": 1,
+      "right_stabilizer_order_distribution": {
+        "1": 1
+      },
+      "pairwise_quotient_frequency_distribution": [
+        [
+          8,
+          2
+        ],
+        [
+          2,
+          16
+        ],
+        [
+          1,
+          16
+        ]
+      ],
+      "top_pairwise_quotients_1based": [
+        [
+          8,
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        ],
+        [
+          8,
+          [
+            9,
+            8,
+            7,
+            6,
+            5,
+            4,
+            3,
+            2,
+            1
+          ]
+        ],
+        [
+          2,
+          [
+            5,
+            6,
+            7,
+            8,
+            9,
+            1,
+            2,
+            3,
+            4
+          ]
+        ],
+        [
+          2,
+          [
+            1,
+            3,
+            5,
+            7,
+            9,
+            2,
+            4,
+            6,
+            8
+          ]
+        ],
+        [
+          2,
+          [
+            5,
+            4,
+            3,
+            2,
+            1,
+            9,
+            8,
+            7,
+            6
+          ]
+        ],
+        [
+          2,
+          [
+            9,
+            7,
+            5,
+            3,
+            1,
+            8,
+            6,
+            4,
+            2
+          ]
+        ]
+      ]
+    },
+    "R22_sporadic_residual": {
+      "size": 22,
+      "left_stabilizer_order": 2,
+      "left_stabilizer_order_distribution": {
+        "1": 1,
+        "2": 1
+      },
+      "right_stabilizer_order": 1,
+      "right_stabilizer_order_distribution": {
+        "1": 1
+      },
+      "pairwise_quotient_frequency_distribution": [
+        [
+          22,
+          2
+        ],
+        [
+          1,
+          440
+        ]
+      ],
+      "top_pairwise_quotients_1based": [
+        [
+          22,
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        ],
+        [
+          22,
+          [
+            9,
+            8,
+            7,
+            6,
+            5,
+            4,
+            3,
+            2,
+            1
+          ]
+        ],
+        [
+          1,
+          [
+            3,
+            6,
+            2,
+            7,
+            4,
+            9,
+            5,
+            8,
+            1
+          ]
+        ],
+        [
+          1,
+          [
+            7,
+            4,
+            8,
+            3,
+            6,
+            1,
+            5,
+            2,
+            9
+          ]
+        ],
+        [
+          1,
+          [
+            1,
+            3,
+            9,
+            8,
+            2,
+            4,
+            7,
+            5,
+            6
+          ]
+        ],
+        [
+          1,
+          [
+            6,
+            9,
+            5,
+            2,
+            3,
+            4,
+            1,
+            7,
+            8
+          ]
+        ]
+      ]
+    },
+    "R30_outside_C32": {
+      "size": 30,
+      "left_stabilizer_order": 2,
+      "left_stabilizer_order_distribution": {
+        "1": 1,
+        "2": 1
+      },
+      "right_stabilizer_order": 1,
+      "right_stabilizer_order_distribution": {
+        "1": 1
+      },
+      "pairwise_quotient_frequency_distribution": [
+        [
+          30,
+          2
+        ],
+        [
+          2,
+          16
+        ],
+        [
+          1,
+          808
+        ]
+      ],
+      "top_pairwise_quotients_1based": [
+        [
+          30,
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        ],
+        [
+          30,
+          [
+            9,
+            8,
+            7,
+            6,
+            5,
+            4,
+            3,
+            2,
+            1
+          ]
+        ],
+        [
+          2,
+          [
+            5,
+            4,
+            3,
+            2,
+            1,
+            9,
+            8,
+            7,
+            6
+          ]
+        ],
+        [
+          2,
+          [
+            5,
+            6,
+            7,
+            8,
+            9,
+            1,
+            2,
+            3,
+            4
+          ]
+        ],
+        [
+          2,
+          [
+            9,
+            7,
+            5,
+            3,
+            1,
+            8,
+            6,
+            4,
+            2
+          ]
+        ],
+        [
+          2,
+          [
+            1,
+            3,
+            5,
+            7,
+            9,
+            2,
+            4,
+            6,
+            8
+          ]
+        ]
+      ]
+    }
+  },
+  "interpretation": {
+    "main": "The global object is not one hidden group. It is a finite union of value-linear certificates: six C32 slope cells, one C8 row-parallelogram cell, and eleven nullity-one isolated complement-pair cells.",
+    "why_R22_is_sporadic": "For every R22 preferred certificate, rank([W;1])=8, so the centered value solution space is one-dimensional; its intersection with the permutation value shell is exactly two points, gamma and value-complement gamma.",
+    "negative_tests": "No column pair-proportionality family appears; the support<=4 small-coefficient scan returns only C32/C8 row templates and no R22 family; R22 pairwise quotients have only identity and complement at frequency 22."
+  }
+}

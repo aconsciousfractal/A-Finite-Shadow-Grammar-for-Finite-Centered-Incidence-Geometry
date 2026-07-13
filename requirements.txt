@@ -1,1 +1,6 @@
-# No Python dependencies are required for this interface package.
+# Pinned environment for the bounded public evidence routes.
+sympy==1.14.0
+
+# Used only by the optional X05 full-census regeneration; the default frozen
+# X05 audit and the S43 fresh-copy replay do not run that regeneration.
+numpy==2.4.2

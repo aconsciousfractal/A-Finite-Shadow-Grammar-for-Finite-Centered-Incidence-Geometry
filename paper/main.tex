@@ -2,7 +2,7 @@
 %% A Finite-Shadow Grammar for Finite Centered Incidence Geometry
 %% Author: Oleksiy Babanskyy
 %% Public manuscript package snapshot.
-%% Build target: pdflatex, bibtex, pdflatex, pdflatex.
+%% Build target: pdflatex, bibtex, pdflatex, pdflatex, pdflatex.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \documentclass[11pt,a4paper]{article}
 \pdfinfoomitdate=1
@@ -29,7 +29,7 @@
   pdftitle={A Finite-Shadow Grammar for Finite Centered Incidence Geometry},
   pdfauthor={Oleksiy Babanskyy},
   pdfsubject={finite centered incidence geometry, finite shadows, symmetric groups, Fourier fingerprints},
-  pdfkeywords={finite incidence geometry, symmetric groups, finite shadows, Specht modules, centered operators}
+  pdfkeywords={finite incidence geometry, symmetric groups, finite shadows, Specht modules, centered operators, modular centered channels, source partitions, G2 root shadows, F4 root shadows, H3 root shadows, H4 root shadows, D5 root shadows, E6 root shadows, E7 root shadows, E8 root shadows}
 }
 
 \title{A Finite-Shadow Grammar for Finite Centered Incidence Geometry}
@@ -45,7 +45,7 @@
 \end{abstract}
 
 \smallskip
-\noindent\textbf{Keywords:} finite centered incidence geometry; finite shadows; symmetric groups; Specht fingerprints; centered operators; signed permutations.
+\noindent\textbf{Keywords:} finite centered incidence geometry; finite shadows; symmetric groups; Specht fingerprints; centered operators; modular centered channels; signed permutations; dihedral groups; source partitions; G2 root shadows; F4 root shadows; H3 root shadows; H4 root shadows; D5 root shadows; E6 root shadows; E7 root shadows; E8 root shadows.
 
 \smallskip
 \noindent\textbf{MSC 2020:} 05A05; 05E10; 05E18; 20B30; 20C30.
@@ -53,11 +53,21 @@
 \input{sections/01_introduction}
 \input{sections/02_finite_shadow_grammar}
 \input{sections/03_fingerprint_channel}
+\input{sections/03b_modular_centered_channels}
 \input{sections/04_type_a_source_rows}
 \input{sections/05_signed_type_bc_source_rows}
-\input{sections/06_abd_grammar_contrast}
-\input{sections/07_value_and_limits_of_phi}
-\input{sections/08_boundaries_and_future_routes}
+\input{sections/06_dihedral_vertex_shadows}
+\input{sections/07_g2_length_colored_root_shadow}
+\input{sections/08_f4_projective_root_shadow}
+\input{sections/09_h3_projective_source_channel}
+\input{sections/10_h4_projective_source_channel}
+\input{sections/11_d5_projective_root_shadow_control}
+\input{sections/12_e6_projective_root_shadow_control}
+\input{sections/13_e7_projective_root_shadow_control}
+\input{sections/14_e8_projective_root_shadow_subsystem_separator}
+\input{sections/15_abd_grammar_contrast}
+\input{sections/16_value_and_limits_of_phi}
+\input{sections/17_boundaries_and_future_routes}
 
 \appendix
 \input{appendices/A_source_instance_manifest}
@@ -65,7 +75,7 @@
 \input{appendices/B_reproducibility_notes}
 
 \section*{Data and Code Availability}
-The companion repository contains the LaTeX source, compiled PDF, source manifest, claim-boundary notes, and SHA-256 manifest for this paper snapshot.  The finite computations cited here are either in the cited public companion repositories or recorded as source-locked dependency artifacts summarized by the source manifest; this repository does not claim a standalone replay engine for every upstream row.
+The companion repository contains the LaTeX source, compiled PDF, source manifest, claim-boundary notes, and SHA-256 manifest for this paper snapshot.  The finite computations cited here are either in the cited public companion repositories or recorded as source-locked companion source packages summarized by the source manifest; this repository does not claim a standalone replay engine for every upstream row.
 
 \bibliographystyle{alpha}
 \bibliography{refs}

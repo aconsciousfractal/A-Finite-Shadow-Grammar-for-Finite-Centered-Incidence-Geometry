@@ -1,0 +1,1444 @@
+{
+  "artifact": "e6_projective_source_channel_replay",
+  "carrier": "Pi_36 projective E6 root-pairs",
+  "checks": {
+    "all_row_col_sums_ok": true,
+    "aut_gamma_order_51840": true,
+    "basis15_dim": true,
+    "basis20_dim": true,
+    "candidate_row_count_67": true,
+    "circuit_aut_equals_weyl_by_sandwich": true,
+    "circuit_aut_order_51840": true,
+    "circuit_derived_graph_matches_gamma": true,
+    "core_rows_present": true,
+    "flat_size_aut_order_51840": true,
+    "flat_size_channel_collapse": true,
+    "flat_size_pair_count_630": true,
+    "gamma_parameters_36_20_10_12": true,
+    "gamma_srg_identity": true,
+    "named_witness_same_size_rank_split": true,
+    "named_witness_types": true,
+    "parabolic_row_count_63": true,
+    "projective_pair_count_36": true,
+    "root_count_72": true,
+    "same_size_orbit_split_count_zero": true,
+    "same_type_size_rank_split_count_zero": true,
+    "three_circuit_count_120": true,
+    "weyl_group_order_51840": true
+  },
+  "circuit_channel": {
+    "derived_graph_aut_order": 51840,
+    "derived_graph_edge_count": 360,
+    "derived_graph_matches_gamma": true,
+    "derived_graph_resolving_base": [
+      0,
+      1,
+      2,
+      3,
+      7,
+      4
+    ],
+    "pair_circuit_incidence_by_gram": {
+      "0": {
+        "0": 270
+      },
+      "1": {
+        "1": 360
+      }
+    },
+    "point_circuit_degree_counter": {
+      "10": 36
+    },
+    "point_circuit_degree_values": [
+      10
+    ],
+    "sample_circuits_first_12": [
+      [
+        0,
+        1,
+        35
+      ],
+      [
+        0,
+        2,
+        30
+      ],
+      [
+        0,
+        3,
+        28
+      ],
+      [
+        0,
+        4,
+        26
+      ],
+      [
+        0,
+        5,
+        23
+      ],
+      [
+        0,
+        6,
+        21
+      ],
+      [
+        0,
+        7,
+        19
+      ],
+      [
+        0,
+        8,
+        18
+      ],
+      [
+        0,
+        10,
+        17
+      ],
+      [
+        0,
+        12,
+        16
+      ],
+      [
+        1,
+        2,
+        31
+      ],
+      [
+        1,
+        3,
+        29
+      ]
+    ],
+    "simple_generators_preserve_circuit_set": true,
+    "three_circuit_count": 120,
+    "weyl_projective_order": 51840
+  },
+  "engine": {
+    "aut_gamma_order": 51840,
+    "aut_gamma_resolving_base": [
+      0,
+      1,
+      2,
+      3,
+      7,
+      4
+    ],
+    "gamma_parameters": {
+      "degree_counter": {
+        "20": 36
+      },
+      "degree_values": [
+        20
+      ],
+      "edge_count": 360,
+      "lambda_values": [
+        10
+      ],
+      "mu_values": [
+        12
+      ],
+      "nonedge_count": 270,
+      "vertices": 36
+    },
+    "gamma_srg_identity": true,
+    "pair_abs_inner_counter": {
+      "0": 270,
+      "1": 360
+    },
+    "projective_pair_count": 36,
+    "root_count": 72,
+    "weyl_projective_order": 51840
+  },
+  "flat_size_channel": {
+    "automorphism_order": 51840,
+    "closure_examples": {
+      "gram_0_flat_2": {
+        "closure_indices": [
+          0,
+          9
+        ],
+        "closure_size": 2,
+        "pair": [
+          0,
+          9
+        ]
+      },
+      "gram_1_flat_3": {
+        "closure_indices": [
+          0,
+          1,
+          35
+        ],
+        "closure_size": 3,
+        "pair": [
+          0,
+          1
+        ]
+      }
+    },
+    "flat_size_counter": {
+      "2": 270,
+      "3": 360
+    },
+    "gram_color_counter": {
+      "0": 270,
+      "1": 360
+    },
+    "mapping_flat_size_to_gram": {
+      "2": [
+        0
+      ],
+      "3": [
+        1
+      ]
+    },
+    "mapping_gram_to_flat_size": {
+      "0": [
+        2
+      ],
+      "1": [
+        3
+      ]
+    },
+    "mismatch_count": 0,
+    "mismatches_first_10": [],
+    "pair_count": 630,
+    "reason": "flat-size coloring is a bijective recoding of the Gram/projective-root graph coloring"
+  },
+  "pass": true,
+  "payload_sha256_without_this_field": "c99ef14ad2dc5e495f367be9abb800ede430cb16e5ea594fc6aea603126c5d1c",
+  "public_boundary": {
+    "nonclaims": [
+      "not a standalone E6 theorem",
+      "not a same-type witness",
+      "not a same-size/same-orbit witness",
+      "not a Schlaefli or 27-line route",
+      "not a classifier or tiling test"
+    ],
+    "not_same_orbit": true,
+    "not_same_type": true,
+    "reading": "same-size/same-standard-rank parabolic rows can have different U20/U15 splits"
+  },
+  "source_row_channel": {
+    "candidate_rows": 67,
+    "channel_dimensions": {
+      "U15": 15,
+      "U20": 20,
+      "V_std": 35,
+      "constant": 1
+    },
+    "parabolic_rows": 63,
+    "rank_profile_counter": {
+      "std0_u0_0": 2,
+      "std11_u7_4": 10,
+      "std13_u8_5": 5,
+      "std15_u10_5": 5,
+      "std18_u11_7": 10,
+      "std1_u1_0": 2,
+      "std25_u15_10": 6,
+      "std2_u1_1": 2,
+      "std35_u20_15": 2,
+      "std3_u2_1": 2,
+      "std3_u3_0": 1,
+      "std4_u3_1": 4,
+      "std5_u3_2": 1,
+      "std6_u4_2": 4,
+      "std7_u4_3": 1,
+      "std8_u5_3": 5,
+      "std8_u6_2": 5
+    },
+    "sample_rows_first_12": [
+      {
+        "kind": "subgroup",
+        "label": "G",
+        "orbit_sizes_on_Pi36": [
+          36
+        ],
+        "rank_U15": 0,
+        "rank_U20": 0,
+        "rank_std": 0,
+        "row_col_sums_ok": true,
+        "row_size": 51840
+      },
+      {
+        "kind": "subgroup",
+        "label": "Stab_p0",
+        "orbit_sizes_on_Pi36": [
+          1,
+          15,
+          20
+        ],
+        "rank_U15": 1,
+        "rank_U20": 1,
+        "rank_std": 2,
+        "row_col_sums_ok": true,
+        "row_size": 1440
+      },
+      {
+        "kind": "finite_subset",
+        "label": "Ref",
+        "orbit_sizes_on_Pi36": null,
+        "rank_U15": 15,
+        "rank_U20": 20,
+        "rank_std": 35,
+        "row_col_sums_ok": true,
+        "row_size": 36
+      },
+      {
+        "kind": "finite_subset",
+        "label": "Simp",
+        "orbit_sizes_on_Pi36": null,
+        "rank_U15": 15,
+        "rank_U20": 20,
+        "rank_std": 35,
+        "row_col_sums_ok": true,
+        "row_size": 6
+      },
+      {
+        "kind": "subgroup",
+        "label": "Par_0",
+        "orbit_sizes_on_Pi36": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "parabolic_type": "A1",
+        "rank_U15": 10,
+        "rank_U20": 15,
+        "rank_std": 25,
+        "row_col_sums_ok": true,
+        "row_size": 2
+      },
+      {
+        "kind": "subgroup",
+        "label": "Par_1",
+        "orbit_sizes_on_Pi36": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "parabolic_type": "A1",
+        "rank_U15": 10,
+        "rank_U20": 15,
+        "rank_std": 25,
+        "row_col_sums_ok": true,
+        "row_size": 2
+      },
+      {
+        "kind": "subgroup",
+        "label": "Par_2",
+        "orbit_sizes_on_Pi36": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "parabolic_type": "A1",
+        "rank_U15": 10,
+        "rank_U20": 15,
+        "rank_std": 25,
+        "row_col_sums_ok": true,
+        "row_size": 2
+      },
+      {
+        "kind": "subgroup",
+        "label": "Par_3",
+        "orbit_sizes_on_Pi36": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "parabolic_type": "A1",
+        "rank_U15": 10,
+        "rank_U20": 15,
+        "rank_std": 25,
+        "row_col_sums_ok": true,
+        "row_size": 2
+      },
+      {
+        "kind": "subgroup",
+        "label": "Par_4",
+        "orbit_sizes_on_Pi36": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "parabolic_type": "A1",
+        "rank_U15": 10,
+        "rank_U20": 15,
+        "rank_std": 25,
+        "row_col_sums_ok": true,
+        "row_size": 2
+      },
+      {
+        "kind": "subgroup",
+        "label": "Par_5",
+        "orbit_sizes_on_Pi36": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "parabolic_type": "A1",
+        "rank_U15": 10,
+        "rank_U20": 15,
+        "rank_std": 25,
+        "row_col_sums_ok": true,
+        "row_size": 2
+      },
+      {
+        "kind": "subgroup",
+        "label": "Par_01",
+        "orbit_sizes_on_Pi36": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "parabolic_type": "A2",
+        "rank_U15": 5,
+        "rank_U20": 10,
+        "rank_std": 15,
+        "row_col_sums_ok": true,
+        "row_size": 6
+      },
+      {
+        "kind": "subgroup",
+        "label": "Par_02",
+        "orbit_sizes_on_Pi36": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          4,
+          4,
+          4
+        ],
+        "parabolic_type": "A1+A1",
+        "rank_U15": 7,
+        "rank_U20": 11,
+        "rank_std": 18,
+        "row_col_sums_ok": true,
+        "row_size": 4
+      }
+    ]
+  },
+  "status": "PASS",
+  "witnesses": {
+    "named_witness_Par_012_vs_Par_0135": {
+      "A": {
+        "kind": "subgroup",
+        "label": "Par_012",
+        "orbit_sizes_on_Pi36": [
+          1,
+          1,
+          4,
+          4,
+          4,
+          4,
+          6,
+          6,
+          6
+        ],
+        "parabolic_type": "A3",
+        "rank_U15": 2,
+        "rank_U20": 6,
+        "rank_std": 8,
+        "row_col_sums_ok": true,
+        "row_size": 24
+      },
+      "B": {
+        "kind": "subgroup",
+        "label": "Par_0135",
+        "orbit_sizes_on_Pi36": [
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          6,
+          6,
+          12
+        ],
+        "parabolic_type": "A2+A1+A1",
+        "rank_U15": 3,
+        "rank_U20": 5,
+        "rank_std": 8,
+        "row_col_sums_ok": true,
+        "row_size": 24
+      }
+    },
+    "same_rank_split_count": 27,
+    "same_size_orbit_split_count": 0,
+    "same_size_rank_split_count": 25,
+    "same_size_rank_split_first_20": [
+      {
+        "A": "Par_012",
+        "A_orbits": [
+          1,
+          1,
+          4,
+          4,
+          4,
+          4,
+          6,
+          6,
+          6
+        ],
+        "A_size": 24,
+        "A_split_U20_U15": [
+          6,
+          2
+        ],
+        "A_type": "A3",
+        "B": "Par_0135",
+        "B_orbits": [
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          6,
+          6,
+          12
+        ],
+        "B_size": 24,
+        "B_split_U20_U15": [
+          5,
+          3
+        ],
+        "B_type": "A2+A1+A1",
+        "rank_std_A": 8,
+        "rank_std_B": 8
+      },
+      {
+        "A": "Par_012",
+        "A_orbits": [
+          1,
+          1,
+          4,
+          4,
+          4,
+          4,
+          6,
+          6,
+          6
+        ],
+        "A_size": 24,
+        "A_split_U20_U15": [
+          6,
+          2
+        ],
+        "A_type": "A3",
+        "B": "Par_0145",
+        "B_orbits": [
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          6,
+          6,
+          12
+        ],
+        "B_size": 24,
+        "B_split_U20_U15": [
+          5,
+          3
+        ],
+        "B_type": "A2+A1+A1",
+        "rank_std_A": 8,
+        "rank_std_B": 8
+      },
+      {
+        "A": "Par_012",
+        "A_orbits": [
+          1,
+          1,
+          4,
+          4,
+          4,
+          4,
+          6,
+          6,
+          6
+        ],
+        "A_size": 24,
+        "A_split_U20_U15": [
+          6,
+          2
+        ],
+        "A_type": "A3",
+        "B": "Par_0245",
+        "B_orbits": [
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          6,
+          6,
+          12
+        ],
+        "B_size": 24,
+        "B_split_U20_U15": [
+          5,
+          3
+        ],
+        "B_type": "A2+A1+A1",
+        "rank_std_A": 8,
+        "rank_std_B": 8
+      },
+      {
+        "A": "Par_012",
+        "A_orbits": [
+          1,
+          1,
+          4,
+          4,
+          4,
+          4,
+          6,
+          6,
+          6
+        ],
+        "A_size": 24,
+        "A_split_U20_U15": [
+          6,
+          2
+        ],
+        "A_type": "A3",
+        "B": "Par_0345",
+        "B_orbits": [
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          6,
+          6,
+          12
+        ],
+        "B_size": 24,
+        "B_split_U20_U15": [
+          5,
+          3
+        ],
+        "B_type": "A2+A1+A1",
+        "rank_std_A": 8,
+        "rank_std_B": 8
+      },
+      {
+        "A": "Par_012",
+        "A_orbits": [
+          1,
+          1,
+          4,
+          4,
+          4,
+          4,
+          6,
+          6,
+          6
+        ],
+        "A_size": 24,
+        "A_split_U20_U15": [
+          6,
+          2
+        ],
+        "A_type": "A3",
+        "B": "Par_1345",
+        "B_orbits": [
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          6,
+          6,
+          12
+        ],
+        "B_size": 24,
+        "B_split_U20_U15": [
+          5,
+          3
+        ],
+        "B_type": "A2+A1+A1",
+        "rank_std_A": 8,
+        "rank_std_B": 8
+      },
+      {
+        "A": "Par_123",
+        "A_orbits": [
+          1,
+          1,
+          4,
+          4,
+          4,
+          4,
+          6,
+          6,
+          6
+        ],
+        "A_size": 24,
+        "A_split_U20_U15": [
+          6,
+          2
+        ],
+        "A_type": "A3",
+        "B": "Par_0135",
+        "B_orbits": [
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          6,
+          6,
+          12
+        ],
+        "B_size": 24,
+        "B_split_U20_U15": [
+          5,
+          3
+        ],
+        "B_type": "A2+A1+A1",
+        "rank_std_A": 8,
+        "rank_std_B": 8
+      },
+      {
+        "A": "Par_123",
+        "A_orbits": [
+          1,
+          1,
+          4,
+          4,
+          4,
+          4,
+          6,
+          6,
+          6
+        ],
+        "A_size": 24,
+        "A_split_U20_U15": [
+          6,
+          2
+        ],
+        "A_type": "A3",
+        "B": "Par_0145",
+        "B_orbits": [
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          6,
+          6,
+          12
+        ],
+        "B_size": 24,
+        "B_split_U20_U15": [
+          5,
+          3
+        ],
+        "B_type": "A2+A1+A1",
+        "rank_std_A": 8,
+        "rank_std_B": 8
+      },
+      {
+        "A": "Par_123",
+        "A_orbits": [
+          1,
+          1,
+          4,
+          4,
+          4,
+          4,
+          6,
+          6,
+          6
+        ],
+        "A_size": 24,
+        "A_split_U20_U15": [
+          6,
+          2
+        ],
+        "A_type": "A3",
+        "B": "Par_0245",
+        "B_orbits": [
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          6,
+          6,
+          12
+        ],
+        "B_size": 24,
+        "B_split_U20_U15": [
+          5,
+          3
+        ],
+        "B_type": "A2+A1+A1",
+        "rank_std_A": 8,
+        "rank_std_B": 8
+      },
+      {
+        "A": "Par_123",
+        "A_orbits": [
+          1,
+          1,
+          4,
+          4,
+          4,
+          4,
+          6,
+          6,
+          6
+        ],
+        "A_size": 24,
+        "A_split_U20_U15": [
+          6,
+          2
+        ],
+        "A_type": "A3",
+        "B": "Par_0345",
+        "B_orbits": [
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          6,
+          6,
+          12
+        ],
+        "B_size": 24,
+        "B_split_U20_U15": [
+          5,
+          3
+        ],
+        "B_type": "A2+A1+A1",
+        "rank_std_A": 8,
+        "rank_std_B": 8
+      },
+      {
+        "A": "Par_123",
+        "A_orbits": [
+          1,
+          1,
+          4,
+          4,
+          4,
+          4,
+          6,
+          6,
+          6
+        ],
+        "A_size": 24,
+        "A_split_U20_U15": [
+          6,
+          2
+        ],
+        "A_type": "A3",
+        "B": "Par_1345",
+        "B_orbits": [
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          6,
+          6,
+          12
+        ],
+        "B_size": 24,
+        "B_split_U20_U15": [
+          5,
+          3
+        ],
+        "B_type": "A2+A1+A1",
+        "rank_std_A": 8,
+        "rank_std_B": 8
+      },
+      {
+        "A": "Par_125",
+        "A_orbits": [
+          1,
+          1,
+          4,
+          4,
+          4,
+          4,
+          6,
+          6,
+          6
+        ],
+        "A_size": 24,
+        "A_split_U20_U15": [
+          6,
+          2
+        ],
+        "A_type": "A3",
+        "B": "Par_0135",
+        "B_orbits": [
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          6,
+          6,
+          12
+        ],
+        "B_size": 24,
+        "B_split_U20_U15": [
+          5,
+          3
+        ],
+        "B_type": "A2+A1+A1",
+        "rank_std_A": 8,
+        "rank_std_B": 8
+      },
+      {
+        "A": "Par_125",
+        "A_orbits": [
+          1,
+          1,
+          4,
+          4,
+          4,
+          4,
+          6,
+          6,
+          6
+        ],
+        "A_size": 24,
+        "A_split_U20_U15": [
+          6,
+          2
+        ],
+        "A_type": "A3",
+        "B": "Par_0145",
+        "B_orbits": [
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          6,
+          6,
+          12
+        ],
+        "B_size": 24,
+        "B_split_U20_U15": [
+          5,
+          3
+        ],
+        "B_type": "A2+A1+A1",
+        "rank_std_A": 8,
+        "rank_std_B": 8
+      },
+      {
+        "A": "Par_125",
+        "A_orbits": [
+          1,
+          1,
+          4,
+          4,
+          4,
+          4,
+          6,
+          6,
+          6
+        ],
+        "A_size": 24,
+        "A_split_U20_U15": [
+          6,
+          2
+        ],
+        "A_type": "A3",
+        "B": "Par_0245",
+        "B_orbits": [
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          6,
+          6,
+          12
+        ],
+        "B_size": 24,
+        "B_split_U20_U15": [
+          5,
+          3
+        ],
+        "B_type": "A2+A1+A1",
+        "rank_std_A": 8,
+        "rank_std_B": 8
+      },
+      {
+        "A": "Par_125",
+        "A_orbits": [
+          1,
+          1,
+          4,
+          4,
+          4,
+          4,
+          6,
+          6,
+          6
+        ],
+        "A_size": 24,
+        "A_split_U20_U15": [
+          6,
+          2
+        ],
+        "A_type": "A3",
+        "B": "Par_0345",
+        "B_orbits": [
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          6,
+          6,
+          12
+        ],
+        "B_size": 24,
+        "B_split_U20_U15": [
+          5,
+          3
+        ],
+        "B_type": "A2+A1+A1",
+        "rank_std_A": 8,
+        "rank_std_B": 8
+      },
+      {
+        "A": "Par_125",
+        "A_orbits": [
+          1,
+          1,
+          4,
+          4,
+          4,
+          4,
+          6,
+          6,
+          6
+        ],
+        "A_size": 24,
+        "A_split_U20_U15": [
+          6,
+          2
+        ],
+        "A_type": "A3",
+        "B": "Par_1345",
+        "B_orbits": [
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          6,
+          6,
+          12
+        ],
+        "B_size": 24,
+        "B_split_U20_U15": [
+          5,
+          3
+        ],
+        "B_type": "A2+A1+A1",
+        "rank_std_A": 8,
+        "rank_std_B": 8
+      },
+      {
+        "A": "Par_234",
+        "A_orbits": [
+          1,
+          1,
+          4,
+          4,
+          4,
+          4,
+          6,
+          6,
+          6
+        ],
+        "A_size": 24,
+        "A_split_U20_U15": [
+          6,
+          2
+        ],
+        "A_type": "A3",
+        "B": "Par_0135",
+        "B_orbits": [
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          6,
+          6,
+          12
+        ],
+        "B_size": 24,
+        "B_split_U20_U15": [
+          5,
+          3
+        ],
+        "B_type": "A2+A1+A1",
+        "rank_std_A": 8,
+        "rank_std_B": 8
+      },
+      {
+        "A": "Par_234",
+        "A_orbits": [
+          1,
+          1,
+          4,
+          4,
+          4,
+          4,
+          6,
+          6,
+          6
+        ],
+        "A_size": 24,
+        "A_split_U20_U15": [
+          6,
+          2
+        ],
+        "A_type": "A3",
+        "B": "Par_0145",
+        "B_orbits": [
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          6,
+          6,
+          12
+        ],
+        "B_size": 24,
+        "B_split_U20_U15": [
+          5,
+          3
+        ],
+        "B_type": "A2+A1+A1",
+        "rank_std_A": 8,
+        "rank_std_B": 8
+      },
+      {
+        "A": "Par_234",
+        "A_orbits": [
+          1,
+          1,
+          4,
+          4,
+          4,
+          4,
+          6,
+          6,
+          6
+        ],
+        "A_size": 24,
+        "A_split_U20_U15": [
+          6,
+          2
+        ],
+        "A_type": "A3",
+        "B": "Par_0245",
+        "B_orbits": [
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          6,
+          6,
+          12
+        ],
+        "B_size": 24,
+        "B_split_U20_U15": [
+          5,
+          3
+        ],
+        "B_type": "A2+A1+A1",
+        "rank_std_A": 8,
+        "rank_std_B": 8
+      },
+      {
+        "A": "Par_234",
+        "A_orbits": [
+          1,
+          1,
+          4,
+          4,
+          4,
+          4,
+          6,
+          6,
+          6
+        ],
+        "A_size": 24,
+        "A_split_U20_U15": [
+          6,
+          2
+        ],
+        "A_type": "A3",
+        "B": "Par_0345",
+        "B_orbits": [
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          6,
+          6,
+          12
+        ],
+        "B_size": 24,
+        "B_split_U20_U15": [
+          5,
+          3
+        ],
+        "B_type": "A2+A1+A1",
+        "rank_std_A": 8,
+        "rank_std_B": 8
+      },
+      {
+        "A": "Par_234",
+        "A_orbits": [
+          1,
+          1,
+          4,
+          4,
+          4,
+          4,
+          6,
+          6,
+          6
+        ],
+        "A_size": 24,
+        "A_split_U20_U15": [
+          6,
+          2
+        ],
+        "A_type": "A3",
+        "B": "Par_1345",
+        "B_orbits": [
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          6,
+          6,
+          12
+        ],
+        "B_size": 24,
+        "B_split_U20_U15": [
+          5,
+          3
+        ],
+        "B_type": "A2+A1+A1",
+        "rank_std_A": 8,
+        "rank_std_B": 8
+      }
+    ],
+    "same_type_size_rank_split_count": 0
+  }
+}

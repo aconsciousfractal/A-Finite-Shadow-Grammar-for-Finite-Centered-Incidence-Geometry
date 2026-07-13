@@ -1,0 +1,253 @@
+{
+  "boundary": "S5 is a bounded orbit-centered rank theorem-support gate for the locked P20 rows only; it is not a general Weyl theorem or classifier claim.",
+  "current_next_gate_after_s6": "P20-S7 length-aware fingerprint witness",
+  "failures": [],
+  "gate": "P20-S5",
+  "historical_next_gate_at_s5_closeout": "P20-S6 two-mirror root-shadow transfer",
+  "project": "P20_g2_hexagonal_weyl_shadows",
+  "records": [
+    {
+      "long_block_col_sums": [
+        12,
+        12,
+        12,
+        12,
+        12,
+        12
+      ],
+      "long_block_row_sums": [
+        12,
+        12,
+        12,
+        12,
+        12,
+        12
+      ],
+      "long_centered_scaled_rank_Q": 0,
+      "long_parity_mode": null,
+      "long_standard_rank_Q": 0,
+      "long_uniform_multiplicity": 2,
+      "orbit_centered_rank_Q": 0,
+      "row_id": "W",
+      "short_block_col_sums": [
+        12,
+        12,
+        12,
+        12,
+        12,
+        12
+      ],
+      "short_block_row_sums": [
+        12,
+        12,
+        12,
+        12,
+        12,
+        12
+      ],
+      "short_centered_scaled_rank_Q": 0,
+      "short_parity_mode": null,
+      "short_standard_rank_Q": 0,
+      "short_uniform_multiplicity": 2,
+      "size": 12,
+      "status": "PASS"
+    },
+    {
+      "long_block_col_sums": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "long_block_row_sums": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "long_centered_scaled_rank_Q": 0,
+      "long_parity_mode": null,
+      "long_standard_rank_Q": 0,
+      "long_uniform_multiplicity": 1,
+      "orbit_centered_rank_Q": 0,
+      "row_id": "C",
+      "short_block_col_sums": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "short_block_row_sums": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "short_centered_scaled_rank_Q": 0,
+      "short_parity_mode": null,
+      "short_standard_rank_Q": 0,
+      "short_uniform_multiplicity": 1,
+      "size": 6,
+      "status": "PASS"
+    },
+    {
+      "long_block_col_sums": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "long_block_row_sums": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "long_centered_scaled_rank_Q": 0,
+      "long_parity_mode": null,
+      "long_standard_rank_Q": 0,
+      "long_uniform_multiplicity": 1,
+      "orbit_centered_rank_Q": 0,
+      "row_id": "F",
+      "short_block_col_sums": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "short_block_row_sums": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "short_centered_scaled_rank_Q": 0,
+      "short_parity_mode": null,
+      "short_standard_rank_Q": 0,
+      "short_uniform_multiplicity": 1,
+      "size": 6,
+      "status": "PASS"
+    },
+    {
+      "long_block_col_sums": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "long_block_row_sums": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "long_centered_scaled_rank_Q": 1,
+      "long_parity_mode": "opposite_parity",
+      "long_standard_rank_Q": 1,
+      "long_uniform_multiplicity": null,
+      "orbit_centered_rank_Q": 2,
+      "row_id": "F_short_axis",
+      "short_block_col_sums": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "short_block_row_sums": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "short_centered_scaled_rank_Q": 1,
+      "short_parity_mode": "same_parity",
+      "short_standard_rank_Q": 1,
+      "short_uniform_multiplicity": null,
+      "size": 3,
+      "status": "PASS"
+    },
+    {
+      "long_block_col_sums": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "long_block_row_sums": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "long_centered_scaled_rank_Q": 1,
+      "long_parity_mode": "same_parity",
+      "long_standard_rank_Q": 1,
+      "long_uniform_multiplicity": null,
+      "orbit_centered_rank_Q": 2,
+      "row_id": "F_long_axis",
+      "short_block_col_sums": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "short_block_row_sums": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "short_centered_scaled_rank_Q": 1,
+      "short_parity_mode": "opposite_parity",
+      "short_standard_rank_Q": 1,
+      "short_uniform_multiplicity": null,
+      "size": 3,
+      "status": "PASS"
+    }
+  ],
+  "status": "PASS",
+  "theorem_support": {
+    "orbit_balanced_rows": [
+      "W",
+      "C",
+      "F"
+    ],
+    "reflection_half_class_rows": [
+      "F_short_axis",
+      "F_long_axis"
+    ],
+    "statement": "W, C, and F vanish on V_short^0 + V_long^0; each reflection half-class has rank 1 on each length orbit and rank 2 on the orbit-centered channel."
+  }
+}

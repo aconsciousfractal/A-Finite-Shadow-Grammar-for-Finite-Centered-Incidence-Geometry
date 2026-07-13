@@ -1,0 +1,704 @@
+{
+  "b4_recompute": {
+    "all_rank_mass_matches": true,
+    "all_size_matches": true,
+    "expected_row_count": 11,
+    "row_count": 11,
+    "rows": [
+      {
+        "ambient_N": 8,
+        "k": 0,
+        "l": 0,
+        "n": 4,
+        "object_id": "BI4_0_0",
+        "prime": 1000003,
+        "rank_mass_matches": true,
+        "rank_mass_recomputed_left_ideal_mod_p": 2520,
+        "rank_mass_s6_5": 2520,
+        "size_matches": true,
+        "size_recomputed": 144,
+        "size_s6_5": 144
+      },
+      {
+        "ambient_N": 8,
+        "k": 0,
+        "l": 1,
+        "n": 4,
+        "object_id": "BI4_0_1",
+        "prime": 1000003,
+        "rank_mass_matches": true,
+        "rank_mass_recomputed_left_ideal_mod_p": 10710,
+        "rank_mass_s6_5": 10710,
+        "size_matches": true,
+        "size_recomputed": 64,
+        "size_s6_5": 64
+      },
+      {
+        "ambient_N": 8,
+        "k": 0,
+        "l": 2,
+        "n": 4,
+        "object_id": "BI4_0_2",
+        "prime": 1000003,
+        "rank_mass_matches": true,
+        "rank_mass_recomputed_left_ideal_mod_p": 20580,
+        "rank_mass_s6_5": 20580,
+        "size_matches": true,
+        "size_recomputed": 24,
+        "size_s6_5": 24
+      },
+      {
+        "ambient_N": 8,
+        "k": 0,
+        "l": 4,
+        "n": 4,
+        "object_id": "BI4_0_4",
+        "prime": 1000003,
+        "rank_mass_matches": true,
+        "rank_mass_recomputed_left_ideal_mod_p": 40320,
+        "rank_mass_s6_5": 40320,
+        "size_matches": true,
+        "size_recomputed": 1,
+        "size_s6_5": 1
+      },
+      {
+        "ambient_N": 8,
+        "k": 1,
+        "l": 0,
+        "n": 4,
+        "object_id": "BI4_1_0",
+        "prime": 1000003,
+        "rank_mass_matches": true,
+        "rank_mass_recomputed_left_ideal_mod_p": 10710,
+        "rank_mass_s6_5": 10710,
+        "size_matches": true,
+        "size_recomputed": 64,
+        "size_s6_5": 64
+      },
+      {
+        "ambient_N": 8,
+        "k": 1,
+        "l": 1,
+        "n": 4,
+        "object_id": "BI4_1_1",
+        "prime": 1000003,
+        "rank_mass_matches": true,
+        "rank_mass_recomputed_left_ideal_mod_p": 17220,
+        "rank_mass_s6_5": 17220,
+        "size_matches": true,
+        "size_recomputed": 48,
+        "size_s6_5": 48
+      },
+      {
+        "ambient_N": 8,
+        "k": 1,
+        "l": 3,
+        "n": 4,
+        "object_id": "BI4_1_3",
+        "prime": 1000003,
+        "rank_mass_matches": true,
+        "rank_mass_recomputed_left_ideal_mod_p": 25200,
+        "rank_mass_s6_5": 25200,
+        "size_matches": true,
+        "size_recomputed": 4,
+        "size_s6_5": 4
+      },
+      {
+        "ambient_N": 8,
+        "k": 2,
+        "l": 0,
+        "n": 4,
+        "object_id": "BI4_2_0",
+        "prime": 1000003,
+        "rank_mass_matches": true,
+        "rank_mass_recomputed_left_ideal_mod_p": 20580,
+        "rank_mass_s6_5": 20580,
+        "size_matches": true,
+        "size_recomputed": 24,
+        "size_s6_5": 24
+      },
+      {
+        "ambient_N": 8,
+        "k": 2,
+        "l": 2,
+        "n": 4,
+        "object_id": "BI4_2_2",
+        "prime": 1000003,
+        "rank_mass_matches": true,
+        "rank_mass_recomputed_left_ideal_mod_p": 20160,
+        "rank_mass_s6_5": 20160,
+        "size_matches": true,
+        "size_recomputed": 6,
+        "size_s6_5": 6
+      },
+      {
+        "ambient_N": 8,
+        "k": 3,
+        "l": 1,
+        "n": 4,
+        "object_id": "BI4_3_1",
+        "prime": 1000003,
+        "rank_mass_matches": true,
+        "rank_mass_recomputed_left_ideal_mod_p": 25200,
+        "rank_mass_s6_5": 25200,
+        "size_matches": true,
+        "size_recomputed": 4,
+        "size_s6_5": 4
+      },
+      {
+        "ambient_N": 8,
+        "k": 4,
+        "l": 0,
+        "n": 4,
+        "object_id": "BI4_4_0",
+        "prime": 1000003,
+        "rank_mass_matches": true,
+        "rank_mass_recomputed_left_ideal_mod_p": 40320,
+        "rank_mass_s6_5": 40320,
+        "size_matches": true,
+        "size_recomputed": 1,
+        "size_s6_5": 1
+      }
+    ],
+    "second_prime_check": {
+      "expected_rank_mass": 2520,
+      "matches": true,
+      "object_id": "BI4_0_0",
+      "prime": 1000033,
+      "rank_mass_second_prime": 2520,
+      "scope_note": "second-prime modular replay for the high-value zero-zero candidate row; not a proof over Q by itself"
+    },
+    "seconds": 125.20822
+  },
+  "boundary_scan": {
+    "boundary_note": "Keyword scan only; S7 report also states the public boundary explicitly.",
+    "stale_s6_5_next_absent": true,
+    "stale_s6_5_next_hits": []
+  },
+  "candidate_formula": {
+    "all_match": true,
+    "candidate_statement": "rank_mass(BI_n(0,0))=(2n)!/2^n",
+    "checked_n": [
+      2,
+      3,
+      4
+    ],
+    "checks": [
+      {
+        "ambient_N": 4,
+        "matches": true,
+        "n": 2,
+        "predicted_factorial_over_2n": 6,
+        "rank_mass": 6
+      },
+      {
+        "ambient_N": 6,
+        "matches": true,
+        "n": 3,
+        "predicted_factorial_over_2n": 90,
+        "rank_mass": 90
+      },
+      {
+        "ambient_N": 8,
+        "matches": true,
+        "n": 4,
+        "predicted_factorial_over_2n": 2520,
+        "rank_mass": 2520
+      }
+    ],
+    "proof_obligation": "Requires a uniform left-ideal rank proof and prior-art lock before theorem wording.",
+    "status": "FINITE_EVIDENCE_ONLY"
+  },
+  "mirror_checks": [
+    {
+      "n": 4,
+      "pair": "(0,0)<->(0,0)",
+      "rank_mass_pair": [
+        2520,
+        2520
+      ],
+      "same_rank_mass": true,
+      "same_size": true
+    },
+    {
+      "n": 4,
+      "pair": "(0,1)<->(1,0)",
+      "rank_mass_pair": [
+        10710,
+        10710
+      ],
+      "same_rank_mass": true,
+      "same_size": true
+    },
+    {
+      "n": 4,
+      "pair": "(0,2)<->(2,0)",
+      "rank_mass_pair": [
+        20580,
+        20580
+      ],
+      "same_rank_mass": true,
+      "same_size": true
+    },
+    {
+      "n": 4,
+      "pair": "(0,4)<->(4,0)",
+      "rank_mass_pair": [
+        40320,
+        40320
+      ],
+      "same_rank_mass": true,
+      "same_size": true
+    },
+    {
+      "n": 4,
+      "pair": "(1,1)<->(1,1)",
+      "rank_mass_pair": [
+        17220,
+        17220
+      ],
+      "same_rank_mass": true,
+      "same_size": true
+    },
+    {
+      "n": 4,
+      "pair": "(1,3)<->(3,1)",
+      "rank_mass_pair": [
+        25200,
+        25200
+      ],
+      "same_rank_mass": true,
+      "same_size": true
+    },
+    {
+      "n": 4,
+      "pair": "(2,2)<->(2,2)",
+      "rank_mass_pair": [
+        20160,
+        20160
+      ],
+      "same_rank_mass": true,
+      "same_size": true
+    }
+  ],
+  "s4_surface": {
+    "all_rank_mass_matches": true,
+    "all_signed_histogram_matches": true,
+    "all_size_matches": true,
+    "object_count_atlas": 24,
+    "object_count_rebuilt": 24,
+    "rows": [
+      {
+        "ambient_N": 4,
+        "n": 2,
+        "object_id": "B2_subgroup_shadow",
+        "prime": 1000003,
+        "rank_mass_atlas": 3,
+        "rank_mass_matches": true,
+        "rank_mass_recomputed_left_ideal_mod_p": 3,
+        "signed_histogram_matches": true,
+        "size_atlas": 8,
+        "size_matches": true,
+        "size_recomputed": 8
+      },
+      {
+        "ambient_N": 6,
+        "n": 3,
+        "object_id": "B3_signed_class_p1_m1m1",
+        "prime": 1000003,
+        "rank_mass_atlas": 720,
+        "rank_mass_matches": true,
+        "rank_mass_recomputed_left_ideal_mod_p": 720,
+        "signed_histogram_matches": true,
+        "size_atlas": 3,
+        "size_matches": true,
+        "size_recomputed": 3
+      },
+      {
+        "ambient_N": 6,
+        "n": 3,
+        "object_id": "B3_signed_class_p1p1_m1",
+        "prime": 1000003,
+        "rank_mass_atlas": 720,
+        "rank_mass_matches": true,
+        "rank_mass_recomputed_left_ideal_mod_p": 720,
+        "signed_histogram_matches": true,
+        "size_atlas": 3,
+        "size_matches": true,
+        "size_recomputed": 3
+      },
+      {
+        "ambient_N": 6,
+        "n": 3,
+        "object_id": "B3_subgroup_shadow",
+        "prime": 1000003,
+        "rank_mass_atlas": 15,
+        "rank_mass_matches": true,
+        "rank_mass_recomputed_left_ideal_mod_p": 15,
+        "signed_histogram_matches": true,
+        "size_atlas": 48,
+        "size_matches": true,
+        "size_recomputed": 48
+      },
+      {
+        "ambient_N": 4,
+        "n": 2,
+        "object_id": "BI2_0_0",
+        "prime": 1000003,
+        "rank_mass_atlas": 6,
+        "rank_mass_matches": true,
+        "rank_mass_recomputed_left_ideal_mod_p": 6,
+        "signed_histogram_matches": true,
+        "size_atlas": 4,
+        "size_matches": true,
+        "size_recomputed": 4
+      },
+      {
+        "ambient_N": 4,
+        "n": 2,
+        "object_id": "BI2_0_2",
+        "prime": 1000003,
+        "rank_mass_atlas": 24,
+        "rank_mass_matches": true,
+        "rank_mass_recomputed_left_ideal_mod_p": 24,
+        "signed_histogram_matches": true,
+        "size_atlas": 1,
+        "size_matches": true,
+        "size_recomputed": 1
+      },
+      {
+        "ambient_N": 4,
+        "n": 2,
+        "object_id": "BI2_1_1",
+        "prime": 1000003,
+        "rank_mass_atlas": 12,
+        "rank_mass_matches": true,
+        "rank_mass_recomputed_left_ideal_mod_p": 12,
+        "signed_histogram_matches": true,
+        "size_atlas": 2,
+        "size_matches": true,
+        "size_recomputed": 2
+      },
+      {
+        "ambient_N": 4,
+        "n": 2,
+        "object_id": "BI2_2_0",
+        "prime": 1000003,
+        "rank_mass_atlas": 24,
+        "rank_mass_matches": true,
+        "rank_mass_recomputed_left_ideal_mod_p": 24,
+        "signed_histogram_matches": true,
+        "size_atlas": 1,
+        "size_matches": true,
+        "size_recomputed": 1
+      },
+      {
+        "ambient_N": 6,
+        "n": 3,
+        "object_id": "BI3_0_0",
+        "prime": 1000003,
+        "rank_mass_atlas": 90,
+        "rank_mass_matches": true,
+        "rank_mass_recomputed_left_ideal_mod_p": 90,
+        "signed_histogram_matches": true,
+        "size_atlas": 16,
+        "size_matches": true,
+        "size_recomputed": 16
+      },
+      {
+        "ambient_N": 6,
+        "n": 3,
+        "object_id": "BI3_0_1",
+        "prime": 1000003,
+        "rank_mass_atlas": 300,
+        "rank_mass_matches": true,
+        "rank_mass_recomputed_left_ideal_mod_p": 300,
+        "signed_histogram_matches": true,
+        "size_atlas": 12,
+        "size_matches": true,
+        "size_recomputed": 12
+      },
+      {
+        "ambient_N": 6,
+        "n": 3,
+        "object_id": "BI3_0_3",
+        "prime": 1000003,
+        "rank_mass_atlas": 720,
+        "rank_mass_matches": true,
+        "rank_mass_recomputed_left_ideal_mod_p": 720,
+        "signed_histogram_matches": true,
+        "size_atlas": 1,
+        "size_matches": true,
+        "size_recomputed": 1
+      },
+      {
+        "ambient_N": 6,
+        "n": 3,
+        "object_id": "BI3_1_0",
+        "prime": 1000003,
+        "rank_mass_atlas": 300,
+        "rank_mass_matches": true,
+        "rank_mass_recomputed_left_ideal_mod_p": 300,
+        "signed_histogram_matches": true,
+        "size_atlas": 12,
+        "size_matches": true,
+        "size_recomputed": 12
+      },
+      {
+        "ambient_N": 6,
+        "n": 3,
+        "object_id": "BI3_1_2",
+        "prime": 1000003,
+        "rank_mass_atlas": 720,
+        "rank_mass_matches": true,
+        "rank_mass_recomputed_left_ideal_mod_p": 720,
+        "signed_histogram_matches": true,
+        "size_atlas": 3,
+        "size_matches": true,
+        "size_recomputed": 3
+      },
+      {
+        "ambient_N": 6,
+        "n": 3,
+        "object_id": "BI3_2_1",
+        "prime": 1000003,
+        "rank_mass_atlas": 720,
+        "rank_mass_matches": true,
+        "rank_mass_recomputed_left_ideal_mod_p": 720,
+        "signed_histogram_matches": true,
+        "size_atlas": 3,
+        "size_matches": true,
+        "size_recomputed": 3
+      },
+      {
+        "ambient_N": 6,
+        "n": 3,
+        "object_id": "BI3_3_0",
+        "prime": 1000003,
+        "rank_mass_atlas": 720,
+        "rank_mass_matches": true,
+        "rank_mass_recomputed_left_ideal_mod_p": 720,
+        "signed_histogram_matches": true,
+        "size_atlas": 1,
+        "size_matches": true,
+        "size_recomputed": 1
+      },
+      {
+        "ambient_N": 6,
+        "n": 3,
+        "object_id": "S15_X_A_s3_H_s2",
+        "prime": 1000003,
+        "rank_mass_atlas": 360,
+        "rank_mass_matches": true,
+        "rank_mass_recomputed_left_ideal_mod_p": 360,
+        "signed_histogram_matches": true,
+        "size_atlas": 2,
+        "size_matches": true,
+        "size_recomputed": 2
+      },
+      {
+        "ambient_N": 6,
+        "n": 3,
+        "object_id": "S15_X_B_s3_H_s1s2s3",
+        "prime": 1000003,
+        "rank_mass_atlas": 360,
+        "rank_mass_matches": true,
+        "rank_mass_recomputed_left_ideal_mod_p": 360,
+        "signed_histogram_matches": true,
+        "size_atlas": 2,
+        "size_matches": true,
+        "size_recomputed": 2
+      },
+      {
+        "ambient_N": 4,
+        "n": 2,
+        "object_id": "S4_deterministic_random_size_B2",
+        "prime": 1000003,
+        "rank_mass_atlas": 24,
+        "rank_mass_matches": true,
+        "rank_mass_recomputed_left_ideal_mod_p": 24,
+        "signed_histogram_matches": true,
+        "size_atlas": 8,
+        "size_matches": true,
+        "size_recomputed": 8
+      },
+      {
+        "ambient_N": 4,
+        "n": 2,
+        "object_id": "S4_full_group",
+        "prime": 1000003,
+        "rank_mass_atlas": 1,
+        "rank_mass_matches": true,
+        "rank_mass_recomputed_left_ideal_mod_p": 1,
+        "signed_histogram_matches": true,
+        "size_atlas": 24,
+        "size_matches": true,
+        "size_recomputed": 24
+      },
+      {
+        "ambient_N": 4,
+        "n": 2,
+        "object_id": "S4_transposition_class",
+        "prime": 1000003,
+        "rank_mass_atlas": 20,
+        "rank_mass_matches": true,
+        "rank_mass_recomputed_left_ideal_mod_p": 20,
+        "signed_histogram_matches": true,
+        "size_atlas": 6,
+        "size_matches": true,
+        "size_recomputed": 6
+      },
+      {
+        "ambient_N": 6,
+        "n": 3,
+        "object_id": "S6_deterministic_random_size_2",
+        "prime": 1000003,
+        "rank_mass_atlas": 360,
+        "rank_mass_matches": true,
+        "rank_mass_recomputed_left_ideal_mod_p": 360,
+        "signed_histogram_matches": true,
+        "size_atlas": 2,
+        "size_matches": true,
+        "size_recomputed": 2
+      },
+      {
+        "ambient_N": 6,
+        "n": 3,
+        "object_id": "S6_deterministic_random_size_B3",
+        "prime": 1000003,
+        "rank_mass_atlas": 715,
+        "rank_mass_matches": true,
+        "rank_mass_recomputed_left_ideal_mod_p": 715,
+        "signed_histogram_matches": true,
+        "size_atlas": 48,
+        "size_matches": true,
+        "size_recomputed": 48
+      },
+      {
+        "ambient_N": 6,
+        "n": 3,
+        "object_id": "S6_full_group",
+        "prime": 1000003,
+        "rank_mass_atlas": 1,
+        "rank_mass_matches": true,
+        "rank_mass_recomputed_left_ideal_mod_p": 1,
+        "signed_histogram_matches": true,
+        "size_atlas": 720,
+        "size_matches": true,
+        "size_recomputed": 720
+      },
+      {
+        "ambient_N": 6,
+        "n": 3,
+        "object_id": "S6_transposition_class",
+        "prime": 1000003,
+        "rank_mass_atlas": 464,
+        "rank_mass_matches": true,
+        "rank_mass_recomputed_left_ideal_mod_p": 464,
+        "signed_histogram_matches": true,
+        "size_atlas": 15,
+        "size_matches": true,
+        "size_recomputed": 15
+      }
+    ],
+    "s1_5_standard_witness": {
+      "first_difference_lambda_5_1": true,
+      "rank_pair": [
+        4,
+        2
+      ],
+      "rank_pair_expected": [
+        4,
+        2
+      ],
+      "rank_pair_matches_expected": true,
+      "rows": [
+        {
+          "atlas_rank_Q": 4,
+          "atlas_snf_lattice_divisors": [
+            1,
+            2,
+            2,
+            2,
+            0
+          ],
+          "lambda": "5,1",
+          "object_id": "S15_X_A_s3_H_s2",
+          "rank_matches_atlas": true,
+          "snf_note": "SNF is lattice-qualified; matching is useful but rank is the invariant check.",
+          "standard_lattice_snf": [
+            1,
+            2,
+            2,
+            2,
+            0
+          ],
+          "standard_rank_recomputed": 4
+        },
+        {
+          "atlas_rank_Q": 2,
+          "atlas_snf_lattice_divisors": [
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "lambda": "5,1",
+          "object_id": "S15_X_B_s3_H_s1s2s3",
+          "rank_matches_atlas": true,
+          "snf_note": "SNF is lattice-qualified; matching is useful but rank is the invariant check.",
+          "standard_lattice_snf": [
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "standard_rank_recomputed": 2
+        }
+      ],
+      "same_rank_mass_expected": true,
+      "same_signed_histogram": true
+    },
+    "seconds": 35.031615
+  },
+  "summary": {
+    "boundary": "independent recompute only; no theorem, no B4 atlas promotion, no classification, no tiling criterion, no native-B equivalence, no Type-D/affine/general-Weyl claim",
+    "candidate_formula": "rank_mass(BI_n(0,0))=(2n)!/2^n",
+    "checks": {
+      "b4_rank_mass_checks_pass": true,
+      "b4_row_count_matches": true,
+      "b4_size_checks_pass": true,
+      "b4_zero_zero_second_prime_pass": true,
+      "mirror_checks_pass": true,
+      "no_b4_atlas_promoted": true,
+      "no_native_b_equivalence_promoted": true,
+      "no_theorem_promoted": true,
+      "s1_5_standard_rank_pair_matches_expected": true,
+      "s4_object_count_matches": true,
+      "s4_rank_mass_left_ideal_checks_pass": true,
+      "s4_signed_histogram_checks_pass": true,
+      "s4_size_checks_pass": true,
+      "stale_s6_5_next_absent": true,
+      "zero_zero_candidate_matches_n_2_3_4": true
+    },
+    "date_utc": "2026-07-06",
+    "decision": "GO_TO_S7_5_NATIVE_BRANCHING_SCOUT_AND_PRIOR_ART_GATE",
+    "gate": "P14-S7",
+    "mirror_checks_pass": true,
+    "next_task": "P14-S7.5 native branching comparison scout, unless the S7 red-team blocks it.",
+    "runtime": {
+      "b4_seconds": 125.20822,
+      "prime_main": 1000003,
+      "prime_second": 1000033,
+      "python_implementation": "CPython",
+      "python_version": "3.14.3",
+      "s4_seconds": 35.031615,
+      "total_seconds": 160.299346
+    },
+    "status": "PASS"
+  },
+  "next_task": "P14-S7.5 native branching comparison scout and prior-art gate.",
+  "post_s7b_interpretation": "S7B passed after this recompute: BI_n(0,0) is read as sign-subgroup index/background; mixed layers are the bounded non-index signal."
+}

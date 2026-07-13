@@ -11,3 +11,7 @@ __pycache__/
 *.synctex.gz
 texput.log
 paper/main.pdf
+m19_census/
+artifacts/public_verify_result.json
+artifacts/.verify/
+artifacts/.public_verify_result.*.tmp

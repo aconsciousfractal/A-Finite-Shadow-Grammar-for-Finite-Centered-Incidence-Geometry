@@ -1,0 +1,141 @@
+{
+  "boundary": [
+    "standard simple-parabolic rows only",
+    "not a full E8 root-subsystem classification",
+    "not a reflection-subgroup classification theorem"
+  ],
+  "checks": {
+    "a5_normalizer_consistency": true,
+    "all_multi_group_orbits_complete": true,
+    "all_multi_group_placements_conjugate": true,
+    "multi_placement_groups": true,
+    "s9_rows": true
+  },
+  "date": "2026-07-09",
+  "highlighted_groups": {
+    "A5|720": {
+      "abstract_type": "A5",
+      "all_placements_in_representative_orbit": true,
+      "full_weyl_consistency": "|N_W(A5)|=17280=720*24, matching W(A5)*W(A2+A1)",
+      "full_weyl_normalizer_order": 17280,
+      "gproj_orbit_size": 40320,
+      "labels": [
+        "Par_12345",
+        "Par_12347",
+        "Par_23456",
+        "Par_23458"
+      ],
+      "orbit_complete": true,
+      "orbit_size_profile": [
+        1,
+        1,
+        1,
+        1,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        15,
+        15,
+        15,
+        15,
+        20
+      ],
+      "placement_count": 4,
+      "placements_in_orbit": {
+        "Par_12345": true,
+        "Par_12347": true,
+        "Par_23456": true,
+        "Par_23458": true
+      },
+      "projective_normalizer_order": 8640,
+      "rank_U35": 6,
+      "rank_U84": 8,
+      "rank_std": 14,
+      "representative": "Par_12345",
+      "row_size_or_order": 720
+    },
+    "A6|5040": {
+      "abstract_type": "A6",
+      "all_placements_in_representative_orbit": true,
+      "gproj_orbit_size": 34560,
+      "labels": [
+        "Par_123456",
+        "Par_123457",
+        "Par_234568"
+      ],
+      "orbit_complete": true,
+      "orbit_size_profile": [
+        1,
+        7,
+        7,
+        7,
+        21,
+        21,
+        21,
+        35
+      ],
+      "placement_count": 3,
+      "placements_in_orbit": {
+        "Par_123456": true,
+        "Par_123457": true,
+        "Par_234568": true
+      },
+      "rank_U35": 3,
+      "rank_U84": 4,
+      "rank_std": 7,
+      "representative": "Par_123456",
+      "row_size_or_order": 5040
+    },
+    "D5|1920": {
+      "abstract_type": "D5",
+      "all_placements_in_representative_orbit": true,
+      "gproj_orbit_size": 7560,
+      "labels": [
+        "Par_12348",
+        "Par_12378"
+      ],
+      "orbit_complete": true,
+      "orbit_size_profile": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        10,
+        10,
+        10,
+        16,
+        16,
+        16,
+        16,
+        20
+      ],
+      "placement_count": 2,
+      "placements_in_orbit": {
+        "Par_12348": true,
+        "Par_12378": true
+      },
+      "rank_U35": 6,
+      "rank_U84": 7,
+      "rank_std": 13,
+      "representative": "Par_12348",
+      "row_size_or_order": 1920
+    }
+  },
+  "pass": true,
+  "scope": "compact public certificate for E8 standard simple-parabolic fusion",
+  "sha256": "471e061b1f1f5ecdd8ddaf4421d0ffd195786452aa2504a55249601e5e2f0553",
+  "statement": "Every same-type/same-order multi-placement standard simple-parabolic row group in the E8 simple-parabolic atlas is G_proj-conjugate.",
+  "status": "PASS",
+  "summary": {
+    "all_multi_group_orbits_complete": true,
+    "all_multi_group_placements_conjugate": true,
+    "multi_placement_groups": 27,
+    "s9_rows": 255,
+    "type_order_groups": 40
+  }
+}

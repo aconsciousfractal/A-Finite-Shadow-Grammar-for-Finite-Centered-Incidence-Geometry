@@ -1,0 +1,40 @@
+\section{A Projective \texorpdfstring{\(H_4\)}{H4} Source-Channel Exhibit}
+\label{sec:h4-source-channel}
+
+The projective \(H_3\) row shows that a source channel can separate finite rows even when the ordinary standard block is blind.  The final reflection-shadow exhibit uses the 60 antipodal pairs in the \(H_4\) root system, viewed as a projective 600-cell root shadow.  Its role is narrower than a theorem about \(H_4\): it compares two source channels on the same carrier of 60 projective points.
+
+Let \(E_{60}\) denote those 60 antipodal pairs.  The source package uses the rank-two flat-size channel of the root-system matroid and the squared-Gram channel coming from the geometric realization.  The background fact that \(M(H_4)\) has a matroid automorphism group of order \(14400\), half geometric and half non-geometric, is classical in this source context; see Bao--Friedman-Gerlicz--Gordon--McGrath--Vega\cite{BaoFreidmanGerliczGordonMcGrathVega2010H4Matroid} and the general root-system matroid background of \cite{DutourSikiricFeliksonTumarkin2008RootMatroids}.  The statement below is only a finite replay of the two colored channels inside the present FCIG grammar.  The source-context names \(G_{\mathrm{geo}}\) and \(G_{\mathrm{mat}}\) come from this source package and the cited matroid literature; the public replay itself certifies the two color-channel automorphism orders and the displayed witness.
+
+\begin{proposition}[source channels in the projective \(H_4\) shadow]
+\label{prop:h4-source-channel}
+For the source-locked projective \(H_4\) shadow \(E_{60}\), the bundled H4 replay certifies the following bounded facts.
+\begin{enumerate}[label=\textup{(\alph*)},leftmargin=*]
+  \item The full automorphism group of the unordered-pair channel colored by rank-two flat size has order \(14400\).
+  \item The full automorphism group of the unordered-pair channel colored by squared Gram value has order \(7200\).
+  \item The two channels give different orbit readings on unordered pairs.  The flat-size channel has an automorphism carrying \((\texttt{E60\_00},\texttt{E60\_21})\) to \((\texttt{E60\_00},\texttt{E60\_33})\), while the Gram-square channel has no color-preserving automorphism carrying one pair to the other.
+  \item The recorded Gram colors of these two pairs are \(1/2|-1/4t\) and \(1/4|1/4t\), respectively.  In the source-context reading, this is the finite witness behind the distinction between the matroid/flat-size row and the geometric/Gram row.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}[Source-locked proof sketch]
+The bundled H4 source-channel replay stores the exact finite payload for the two complete colored graphs on the \(\binom{60}{2}=1770\) unordered pairs.  It recomputes the full Gram-square color automorphism group and obtains \(7200\), recomputes the full flat-size color automorphism group by a resolving-base enumeration and obtains \(14400\), and checks the pair-orbit witness stated above.  The replay does not ask the reader to trust an unbundled generator list: it certifies the two colored-channel groups directly from the finite payload.  The names \(G_{\mathrm{geo}}\) and \(G_{\mathrm{mat}}\) are source-context labels supplied by the cited H4 matroid literature and the source package.  These are finite channel computations, not new source theorems about \(H_4\).
+\end{proof}
+
+\begin{table}[!htbp]
+\centering
+\caption{Evidence carried by the projective \(H_4\) source-channel exhibit.}
+\label{tab:h4-source-channel}
+\begin{tabular}{@{}L{0.24\textwidth}L{0.26\textwidth}L{0.38\textwidth}@{}}
+\toprule
+channel & certified finite fact & grammar reading \\
+\midrule
+carrier & \(60\) antipodal pairs, \(1770\) unordered pairs & projective 600-cell root shadow, not the full 120-root set \\
+flat-size channel & full color automorphism group \(14400\) & matroid/source-incidence symmetry \\
+Gram-square channel & full color automorphism group \(7200\) & geometric metric symmetry \\
+pair witness & same flat-size orbit, distinct Gram-square orbits & same carrier, different source channel \\
+pair-orbit counts & \(4\) Gram-square channel orbits versus \(3\) flat-size channel orbits & source-aware grammar sees the channel split \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Thus the \(H_4\) row contributes one compact lesson: a projective root shadow on 60 antipodal root pairs can carry two natural source channels with different full color automorphism groups and different pair-orbit readings.  It is not a standalone \(H_4\) paper, not a 600-cell classification, not a Weyl/Coxeter theorem, and not a \(\PhiFCIG\) classifier.

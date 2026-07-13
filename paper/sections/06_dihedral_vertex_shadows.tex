@@ -1,0 +1,81 @@
+\section{Dihedral Vertex-Shadow Source Rows}
+
+The third worked finite-shadow family is the vertex action of the dihedral group
+\[
+  W_m=I_2(m)=\langle r,s\mid r^m=s^2=1,\ srs=r^{-1}\rangle \leq S_m,
+\]
+where the vertices are indexed by \(\mathbb Z/m\mathbb Z\), \(r(i)=i+1\), and \(s_a(i)=a-i\).  This is standard dihedral/Coxeter material\cite{BjornerBrenti2005}.  The FCIG role is narrower: the row tests the same centered standard channel and the same lattice-qualified fingerprint discipline on a rank-two reflection shadow.
+
+The source-locked rows are
+\[
+  C_m=\{r^a:a\in\mathbb Z/m\mathbb Z\},\qquad
+  F_m=\{s_a:a\in\mathbb Z/m\mathbb Z\},\qquad
+  X_{m,a}=\{s_0,s_a\}.
+\]
+For even \(m\), the half-reflection rows \(F_m^0\) and \(F_m^1\) consist of the reflections with even and odd parameters.
+
+\begin{proposition}[dihedral standard-block rows]\label{prop:dihedral-standard-rows}
+Over characteristic zero, the centered standard ranks of the dihedral vertex-shadow rows satisfy the following.
+\begin{enumerate}[label=\textup{(\alph*)},leftmargin=*]
+  \item \(C_m\) and \(F_m\) are position-value balanced, so their centered standard rank is \(0\).
+  \item If \(m\) is even, \(F_m^0\) and \(F_m^1\) have centered standard rank \(1\).
+  \item For \(1\leq a<m\), put \(d=\gcd(a,m)\) and \(L=m/d\).  Then
+  \[
+    \rank_{\mathrm{std}}(X_{m,a})=(m-1)-d\,\mathbf 1[L\text{ is even}].
+  \]
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}[Source-locked proof sketch]
+The rotation row and the all-reflection row are sharply transitive on vertices, so their position-value matrices are \(J_m\).  For a half-reflection row, the parity vector \(((-1)^i)_i\) gives the only centered defect, hence rank \(1\).  Finally, after multiplying by the invertible reflection \(s_0\), the two-mirror standard operator is equivalent to \(I+r^a\) on \(\Vstd\).  The rotation \(r^a\) has \(d\) cycles of length \(L=m/d\), and \(I+r^a\) has an alternating kernel exactly on the even cycles.
+\end{proof}
+
+A more uniform way to see \cref{prop:dihedral-standard-rows} is the reflection-mask Fourier description.  For \(A\subseteq\mathbb Z/m\mathbb Z\), define \(R_A=\{r^a:a\in A\}\), \(F_A=\{s_a:a\in A\}\), and \(p_A(t)=\sum_{a\in A}t^a\).  On the centered standard block,
+\[
+  \rank_{\mathrm{std}}(R_A)=\rank_{\mathrm{std}}(F_A)
+  =\#\{1\leq j\leq m-1:p_A(\zeta_m^j)\neq0\}.
+\]
+Since
+\[
+  1+t+\cdots+t^{m-1}=\prod_{\substack{d\mid m\\ d>1}}\Phi_d(t),
+\]
+the rational rank defect is
+\[
+  \sum_{\substack{d\mid m,\ d>1\\ \Phi_d(t)\mid p_A(t)}}\varphi(d),
+\]
+so the finite dihedral rank defects are exactly cyclotomic resonances of the mask polynomial.
+Equivalently, over \(\mathbb Q\), this is \((m-1)-\deg\gcd(p_A(t),1+t+\cdots+t^{m-1})\).  This is classical cyclic Fourier algebra used here as an explanation, not as a new Fourier theorem.
+
+The lattice-qualified two-mirror statement is the most useful dihedral payoff for the grammar.  On the standard lattice \(A_{m-1}\), with \(d=\gcd(a,m)\) and \(L=m/d\),
+\[
+\SNFL_{\mathrm{std}}(X_{m,a})=
+\begin{cases}
+  1^{m-1-d},0^d, & L\text{ even},\\
+  1^{m-d},2^{d-1}, & L\text{ odd}.
+\end{cases}
+\]
+Thus rational rank is only the shadow of a stronger lattice fingerprint.
+
+\begin{table}[!htbp]
+\centering
+\caption{Dihedral vertex-shadow witnesses.}
+\label{tab:dihedral-witnesses}
+\begin{tabular}{@{}L{0.23\textwidth}L{0.34\textwidth}L{0.33\textwidth}@{}}
+\toprule
+witness & coarse data held fixed & fingerprint separation \\
+\midrule
+\(X_{8,2}\) vs. \(X_{8,4}\) & both rows contain two even reflections, hence the same elementwise dihedral reflection-class histogram & centered standard ranks \(5\) and \(3\) \\
+\(X_{9,1}\) vs. \(X_{9,3}\) & both rows have two reflections and full rational standard rank \(8\) & \(\SNFL_{\mathrm{std}}(X_{9,1})=1^8\), while \(\SNFL_{\mathrm{std}}(X_{9,3})=1^6,2^2\) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The common-precedence closure gives a short bridge back to the Type-A chamber language, but it is controlled by a different parent datum.  For a nonempty mask
+\(A=\{a_0,\ldots,a_{k-1}\}\subseteq\mathbb Z/m\mathbb Z\), let
+\(g_1,\ldots,g_k\) be the cyclic gap lengths between consecutive selected cutpoints.  The common-precedence poset of \(R_A\) is the disjoint union of cyclic gap chains of lengths \(g_1,\ldots,g_k\), while \(F_A\) has the same description after label negation.  Hence the closure size is
+\[
+  \frac{m!}{g_1!\cdots g_k!}.
+\]
+This cut/gap channel is not determined by rational rank or \(\SNFL\) alone.  The named rows specialize as follows: \(C_m\) and \(F_m\) have empty common-precedence relation and close to all of \(S_m\); for \(m=2q\), each half-reflection row closes to \(q\) disjoint two-element chains, with \((2q)!/2^q\) linear extensions; and \(X_{m,a}\) closes to the shuffle of two chains of lengths \(a\) and \(m-a\), with \(\binom{m}{a}\) linear extensions.  This is only a closure diagnostic; it is not an exact-poset-cone theorem, not a tiling theorem, and not a classifier.
+
+The boundary is the same as in the source artifact.  This section makes no standalone dihedral paper claim, no new Fourier theory claim, no \(G_2\) claim from the special case \(I_2(6)\), no general Weyl-group theorem, and no rank-implies-tiling statement.

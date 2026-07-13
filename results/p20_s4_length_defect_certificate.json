@@ -1,0 +1,159 @@
+{
+  "J_kills_length_line": true,
+  "boundary": "This proves a length-color obstruction inside the locked G2 12-root shadow. It is not a new general Weyl/Coxeter theorem and does not imply tiling or classification claims.",
+  "current_next_gate_after_s5": "P20-S6 two-mirror root-shadow transfer",
+  "failures": [],
+  "gate": "P20-S4",
+  "historical_next_gate_at_s4_closeout": "P20-S5 orbit-centered balance and base ranks",
+  "labels": [
+    "S0",
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S5",
+    "L0",
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+  ],
+  "length_line_in_global_standard": true,
+  "long_orbit": [
+    "L0",
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+  ],
+  "project": "P20_g2_hexagonal_weyl_shadows",
+  "rows_checked": [
+    {
+      "E_X_u_len_scalar": "12",
+      "J_u_len_zero": true,
+      "N_X_u_len_scalar": "12",
+      "all_elements_length_preserving": true,
+      "global_balance_blocked": true,
+      "row_id": "W",
+      "size": 12,
+      "status": "PASS"
+    },
+    {
+      "E_X_u_len_scalar": "6",
+      "J_u_len_zero": true,
+      "N_X_u_len_scalar": "6",
+      "all_elements_length_preserving": true,
+      "global_balance_blocked": true,
+      "row_id": "C",
+      "size": 6,
+      "status": "PASS"
+    },
+    {
+      "E_X_u_len_scalar": "6",
+      "J_u_len_zero": true,
+      "N_X_u_len_scalar": "6",
+      "all_elements_length_preserving": true,
+      "global_balance_blocked": true,
+      "row_id": "F",
+      "size": 6,
+      "status": "PASS"
+    },
+    {
+      "E_X_u_len_scalar": "3",
+      "J_u_len_zero": true,
+      "N_X_u_len_scalar": "3",
+      "all_elements_length_preserving": true,
+      "global_balance_blocked": true,
+      "row_id": "F_short_axis",
+      "size": 3,
+      "status": "PASS"
+    },
+    {
+      "E_X_u_len_scalar": "3",
+      "J_u_len_zero": true,
+      "N_X_u_len_scalar": "3",
+      "all_elements_length_preserving": true,
+      "global_balance_blocked": true,
+      "row_id": "F_long_axis",
+      "size": 3,
+      "status": "PASS"
+    },
+    {
+      "E_X_u_len_scalar": "2",
+      "J_u_len_zero": true,
+      "N_X_u_len_scalar": "2",
+      "all_elements_length_preserving": true,
+      "global_balance_blocked": true,
+      "row_id": "X_1",
+      "size": 2,
+      "status": "PASS"
+    },
+    {
+      "E_X_u_len_scalar": "2",
+      "J_u_len_zero": true,
+      "N_X_u_len_scalar": "2",
+      "all_elements_length_preserving": true,
+      "global_balance_blocked": true,
+      "row_id": "X_2",
+      "size": 2,
+      "status": "PASS"
+    },
+    {
+      "E_X_u_len_scalar": "2",
+      "J_u_len_zero": true,
+      "N_X_u_len_scalar": "2",
+      "all_elements_length_preserving": true,
+      "global_balance_blocked": true,
+      "row_id": "X_3",
+      "size": 2,
+      "status": "PASS"
+    },
+    {
+      "E_X_u_len_scalar": "2",
+      "J_u_len_zero": true,
+      "N_X_u_len_scalar": "2",
+      "all_elements_length_preserving": true,
+      "global_balance_blocked": true,
+      "row_id": "X_4",
+      "size": 2,
+      "status": "PASS"
+    },
+    {
+      "E_X_u_len_scalar": "2",
+      "J_u_len_zero": true,
+      "N_X_u_len_scalar": "2",
+      "all_elements_length_preserving": true,
+      "global_balance_blocked": true,
+      "row_id": "X_5",
+      "size": 2,
+      "status": "PASS"
+    }
+  ],
+  "short_orbit": [
+    "S0",
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S5"
+  ],
+  "status": "PASS",
+  "theorem_candidate": "For every nonempty admitted length-preserving source row X, the centered operator E_X has u_len as an eigenline with eigenvalue |X|; hence global balance on all 12 roots is impossible.",
+  "u_len": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1
+  ],
+  "u_len_dot_ones": 0
+}

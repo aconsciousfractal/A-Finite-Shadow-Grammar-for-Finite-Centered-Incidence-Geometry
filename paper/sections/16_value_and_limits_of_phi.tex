@@ -1,0 +1,181 @@
+\section{Value and Limits of \texorpdfstring{\(\Phi\)}{Phi}}
+
+The value of \(\PhiFCIG\) is operational.  In the source-locked audits, it records finite structure not visible from coarser summaries alone.  The Type-A, modular centered, signed Type-B/C, dihedral, length-colored \(G_2\), projective \(F_4\), projective \(H_3\), projective \(H_4\), projective \(D_5\), projective \(E_6\), projective \(E_7\), projective \(E_8\), and centered-operator artifacts all provide finite evidence that this channel is useful for comparison.
+
+\begin{table}[!htbp]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{0.86}
+\caption{What the worked witnesses show, I.}
+\label{tab:phi-payoff}
+\begin{tabular}{@{}L{0.24\textwidth}L{0.31\textwidth}L{0.35\textwidth}@{}}
+\toprule
+source & finite observation & allowed conclusion \\
+\midrule
+Type-A Fourier witness & same class histogram; ranks 2 and 1 at \((3,1)\) & \(\Phi\) is not determined by class histograms \\
+modular centered witness & \(I_7(1,1)\), \(p=2\), \(\SNFL=[4,4,8]\), rank \(3\to0\) & rational centered rank does not determine modular rank \\
+signed Type-B/C witness & same signed-cycle histogram; ranks 4 and 2 at \((5,1)\) & the same value test survives in a signed finite shadow \\
+signed mixed layers & \(BI_3(0,1)\) has rank mass 300, below the size-\(B_3\) hash-ordered control 715 & signed incidence rows carry visible finite structure \\
+dihedral \(m=8\) witness & same elementwise dihedral reflection-class histogram & centered standard ranks \(5\) and \(3\) detect relative mirror separation \\
+dihedral \(m=9\) witness & same rational centered standard rank \(8\) & \(\SNFL\) separates \(1^8\) from \(1^6,2^2\) \\
+length-colored \(G_2\) witness & short-axis and long-axis rows are ambient-conjugate after forgetting length & source profiles distinguish fixed short roots from fixed long roots \\
+projective \(F_4\) witness & \(G_{\mathrm{proj}}\) and \(G_{\mathrm{mat}}\) act on the same 24 points but have centered ranks \(1\) and \(0\) & the admitted source layer matters before rank data is interpreted \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[!htbp]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{0.86}
+\caption{What the worked witnesses show, II.}
+\begin{tabular}{@{}L{0.24\textwidth}L{0.31\textwidth}L{0.35\textwidth}@{}}
+\toprule
+source & finite observation & allowed conclusion \\
+\midrule
+projective \(H_3\) witness & flat-size and Gram-angle channels act on the same 15 points with automorphism orders \(120\) and \(60\), while \((14,1)\) has rank \(0\) & the source channel can matter even when the ordinary standard block is blind \\
+projective \(H_4\) witness & flat-size and Gram-square channels act on the same 60 projective root pairs with automorphism orders \(14400\) and \(7200\) & source-channel data can separate matroid/incidence symmetry from geometric Gram symmetry \\
+projective \(D_5\) witness & pair channel has automorphism order \(122880\), while \(A_2\) incidence preservers have order \(1920\) and equal \(W(D_5)_{\mathrm{proj}}\) & source recovery may require triple/flat incidence, not just pair-level data \\
+projective \(E_6\) witness & \(\mathrm{Par}_{012}\) and \(\mathrm{Par}_{0135}\) have size \(24\) and total rank \(8\), but \(U_{20}/U_{15}\) splits \((6,2)\) and \((5,3)\) & source-aware summand data can see parabolic row information hidden by total standard rank \\
+projective \(E_7\) witness & \(\mathrm{Par}_{12345}\) and \(\mathrm{Par}_{12347}\) are both \(A_5\) rows of order \(720\), but have ranks \(5=(3,2)\) and \(6=(3,3)\) on \(U_{27}/U_{35}\) & same abstract parabolic type and order need not determine the embedded finite-shadow fingerprint \\
+projective \(E_8\) witness & \(\mathrm{Par}_{1234567}\) and \(\mathrm{D8}_{1234567}\) are both \(A_7\) rows of order \(40320\), but have orbit profiles \([8,28,28,56]\) and \([1,28,28,28,35]\), with ranks \(3=(1,2)\) and \(4=(1,3)\) on \(U_{35}/U_{84}\) & same abstract subsystem type and order need not determine the source-aware finite-shadow fingerprint \\
+M19/X05 exhibit & blind rank-locus mining repeatedly recovers the same order-72 group \(G_0\) when the full coset occurs & \(\Phi\) can recover a hidden group from centered-operator data \\
+\texttt{lat565} X05 exception & local \(32+8+22\) centered-certificate stratification & \(\Phi\) separates a hidden-coset block from non-coset centered rank-drop certificates \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{A controlled X05 exhibit: M19 and \texttt{lat565}}
+
+The X05 Sudoku/Latin row gives a separate controlled example of the same point.  For an order-nine square \(L\), take \(X=S_9\) acting by symbol relabeling and let
+\[
+  E_{\gamma,L}(i,j)=\gamma(L(i,j))-5
+\]
+be the centered operator, restricted to the standard subspace.  The fingerprint package records the rank-drop locus
+\[
+  \Gamma_{\mathrm{rank}}(L)=\{\gamma\in S_9:\operatorname{rank}E_{\gamma,L}<8\}
+\]
+together with the hidden stabilizer recovered by blind coset mining.  This is the same grammar slot \(\PhiFCIG\), now applied to a centered-operator sibling of the Type-A rows.
+
+The published Sudoku operator paper isolates the original M19 rank-locus phenomenon; see \cite{BabanskyySudokuOperators2026}.  The centered Latin-square paper supplies the sibling determinant/rank-obstruction context for the Latin side of the centered-operator row\cite{BabanskyyLatin2026}.  The FCIG census source then asks whether M19 is isolated.  Its durable, source-locked answer is that the large order-72 hidden coset is not a one-off.  Whenever that full coset occurs in the corrected census, the hidden group is the same fixed subgroup \(G_0\leq S_9\), the affine symmetry group of the natural \(1,\ldots,9\) value grid.  In the corrected 1000+1000 census, this full \(G_0\)-coset appears in both Sudoku and Latin samples.  The visible magic-band refinement is observed only on the Sudoku side.  Complement relabeling is the baseline symmetry of the centered rank-drop condition.
+
+The companion M19 census package now records the exceptional Latin square \texttt{lat565} as a local finite-certificate stratification
+\[
+  \Gamma_{\mathrm{rank}}(\texttt{lat565})=C_{32}\sqcup C_8\sqcup R_{22},\qquad 62=32+8+22.
+\]
+Here \(C_{32}\) is an order-32 paired-row hidden coset outside \(G_0\), \(C_8\) is a signed four-row parallelogram block, and \(R_{22}\) consists of eleven centered nullity-one complement-pair certificates.  Only \(C_{32}\) is group/coset-structured; the latter pieces are local centered certificates, not a second hidden group or a family theorem.
+
+\begin{table}[!htbp]
+\centering
+\caption{M19/X05 census and \texttt{lat565} facts used here.}
+\label{tab:m19-census}
+\begin{tabular}{@{}lL{0.62\textwidth}@{}}
+\toprule
+item & recorded status \\
+\midrule
+full hidden coset & order 72; recurring signal, not a single M19 accident \\
+recovered group & same fixed \(G_0\leq S_9\) whenever the full coset occurs \\
+corrected census & 1000 Sudoku samples and 1000 Latin samples inspected in the source package \\
+magic-band refinement & observed on the Sudoku side only \\
+\texttt{lat565} exception & local \(32+8+22\) stratification; only the 32-point block is a hidden coset; the 8-point and 22-point pieces are centered linear certificates only \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+This exhibit is useful because \(\PhiFCIG\) recovers a recurring finite group from the data without being handed the group in advance, and because \texttt{lat565} shows the same channel separating a hidden-coset block from non-coset centered certificates inside one object.  It is not used here as a theorem pillar.  The frequencies are empirical, the mechanism selecting the arrays is open, and the broader out-of-\(G_0\) population remains outside this paper.
+
+\subsection{Source quotients require coupling data}
+\label{subsec:source-coupling}
+
+The quotient mechanism is classical.  Higman fixes the arbitrary commutative coefficient ring in Section~6 and gives the unnormalised block-row-sum quotient in Section~8, Eq.~(8.1)\cite[\S6, p.~11; \S8, Eq.~(8.1), p.~20]{Higman1970CoherentConfigurations}; Godsil records the equitable-partition identity \(AH=HB\), the invariant cell-constant subspace, and spectral divisibility\cite[\S5.1, Eq.~(5.1.1) and Lem.~5.1.2]{GodsilAssociationSchemes2010}; and Haemers supplies the classical quotient/interlacing context\cite[\S2]{Haemers1995Interlacing}.  P13 uses this mechanism only as an interface guardrail showing which source and coupling data must be retained; it makes no novelty claim for quotient existence, spectral inheritance, or interlacing.
+
+Several rows above compare a row with a quotient row.  A block partition \(\Omega=\bigsqcup_B\Omega_B\) compatible with a centered operator \(N\) (constant block-column sums) induces a quotient operator \(N_\pi\) on the blocks, and, after choosing one base point \(b(B)\in\Omega_B\) per block, the anchored augmentation lattice splits into a kernel lattice and a lifted quotient lattice, over which \(N\) becomes block triangular,
+\[
+  N\;\sim\;\begin{pmatrix} N_K & \beta \\ 0 & N_\pi \end{pmatrix},
+\]
+where \(N_K\) is the restriction to the kernel lattice and \(N_\pi\) here denotes the quotient operator on its own anchored lattice.  The grammar question is when the two endpoint fingerprints determine the total one, and the honest answer is a guardrail: only together with the coupling \(\beta\).
+
+The underlying descent bookkeeping can be stated without normalized averaging.
+Let \(q:\mathbb Z[\Omega]\to\mathbb Z[\pi]\) send every point to its
+block and write \(A_X\) for the augmentation lattice of a finite set \(X\).
+Then
+\[
+  0\longrightarrow K_\pi:=\bigoplus_{B\in\pi}A_{\Omega_B}
+  \longrightarrow A_\Omega\xrightarrow{q}A_\pi\longrightarrow0
+\]
+is split exact after base points are chosen, and an operator descends exactly
+when
+\[
+  qN=N_\pi q
+  \quad\Longleftrightarrow\quad
+  N(\ker q)\subseteq\ker q.
+\]
+These are the classical quotient/equitable conditions in augmentation
+language.  For a section \(s:A_\pi\to A_\Omega\), put
+\[
+  \beta_s=N_As-sN_{\pi A}.
+\]
+If \(s_h=s+i h\), where \(i:K_\pi\hookrightarrow A_\Omega\), direct block
+multiplication gives
+\[
+  \beta_{s_h}=\beta_s+N_Kh-hN_{\pi A}.
+\]
+Consequently, for \(v\in\ker N_{\pi A}\), the connecting class
+\[
+  \delta(v)=[\beta_s(v)]\in\operatorname{coker}N_K
+\]
+is independent of the chosen section.  This class measures one obstruction,
+but it does not classify integral equivariant complements.
+
+The modular-centered row \(I_7(1,1)\) supplies the useful falsifier.  In its
+integral split augmentation basis,
+\[
+  N_K=0_3,
+  \qquad
+  N_A=\begin{pmatrix}0&X\\0&2X\end{pmatrix},
+  \qquad
+  X=\begin{pmatrix}0&-4&-4\\-4&0&-4\\-4&-4&0\end{pmatrix}.
+\]
+Here \(\delta_{\mathbb Z}=0\), but the section equation
+\(\beta_s+N_Kh-hN_{\pi A}=0\) has only \(h=\frac12I_3\) over
+\(\mathbb Q\) and no integral solution.  Thus a zero connecting map does not
+force an integral equivariant complement.  Independently, elementary
+left--right unimodular operations reduce \(N_A\) to \(X\oplus0_3\); the
+determinantal divisors \(4,16,128\) recover the nonzero anchored Smith factors
+\([4,4,8]\) from the \(3\times3\) block, without a full ambient Smith
+reduction.
+
+\begin{proposition}[source-side splitting test]\label{prop:source-coupling}
+For each block \(B\) write
+\[
+  d(B)=N e_{b(B)}-\sum_{B'}(N_\pi)_{B'B}\,e_{b(B')},
+\]
+a vector supported in the kernel lattice and computable from the base-point columns of \(N\) and the quotient matrix alone, with no Smith computation.  If all the \(d(B)\) coincide, then \(\beta=0\) for the base-point section, \(N\) is conjugate over \(\mathbb Z\) to \(N_K\oplus N_\pi\) on the anchored lattice by a unitriangular change of section, and \(\SNFL(N)\) is the Smith form of the direct sum: the multiset of elementary divisors is the union of the endpoint multisets, with the invariant factors re-chained by gcd/lcm.
+\end{proposition}
+
+\begin{proof}
+On the lifted basis vector \(h_C=e_{b(C)}-e_{b(C_0)}\) a direct computation gives \(\beta(h_C)=d(C)-d(C_0)\), so equal defects force \(\beta=0\); the splitting statement is then block-diagonal bookkeeping, and the Smith form of a direct sum is classical.
+\end{proof}
+
+The hypothesis is not removable as a general source-side test, and endpoint data alone never suffices.  The three-point row
+\(N=\begin{psmallmatrix}3&1&0\\-1&1&0\\-2&-2&0\end{psmallmatrix}\)
+with blocks \(\{1,2\}\) and \(\{3\}\) has both anchored endpoint operators equal to \((2)\), yet its anchored total operator is \(\begin{psmallmatrix}2&1\\0&2\end{psmallmatrix}\) with \(\SNFL=[1,4]\): the total cokernel is \(\mathbb Z/4\), while the uncoupled direct sum gives \([2,2]\), that is \(\mathbb Z/2\oplus\mathbb Z/2\).  The missing datum is precisely the extension class of the coupling.
+
+For completeness, the residue description used here has an elementary proof.  After endpoint Smith transforms write the block matrix as
+\[
+  \begin{pmatrix}A&C\\0&B\end{pmatrix},
+  \qquad A=\operatorname{diag}(a_i),\quad B=\operatorname{diag}(b_j).
+\]
+Endpoint-preserving block-unitriangular row and column operations replace \(C\) by \(C+YB+AZ\).  Entrywise, this replaces \(c_{ij}\) by \(c_{ij}+y_{ij}b_j+a_i z_{ij}\), so the invariant is
+\[
+  [c_{ij}]\in \mathbb Z/(a_i,b_j)
+  \;\cong\;
+  \mathbb Z/\gcd(a_i,b_j)\mathbb Z.
+\]
+Conversely, B\'ezout's identity shows entrywise that two couplings with the same residues differ by such a pair \(Y,Z\).  Thus the residue matrix is exactly the coupling class relative to the chosen endpoint Smith bases, not a new structure theorem.
+
+Deciding splitting in general is Sylvester-equation solvability \cite{Roth1952,Gustafson1979}; when the endpoint determinants are coprime the coupling never matters \cite[Thm.~2]{Newman1974}; and the possible middle types at a shared prime form the classical Green--Klein/Littlewood--Richardson set \cite{Klein1968}; see also \cite[Thms.~4.1--4.2]{Schmidmeier2007LR}.  This subsection is therefore an interface guardrail, not a new descent or transfer theory: no shared-prime law and no novelty are claimed.
+
+The same audits also fix the limit.  The fingerprint is not a complete invariant, rational rank is not the whole fingerprint, and rank data is not used as a decision oracle for unrelated structural questions.  This section records the value and the guardrails together.

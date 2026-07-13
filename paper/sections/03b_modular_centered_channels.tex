@@ -1,0 +1,47 @@
+\section{Modular Centered Channels}
+\label{sec:modular-centered-channels}
+
+The grammar also needs a modular row.  Over characteristic zero, a centered constant-line-sum operator is usually read through its rational standard block.  Over a field of characteristic \(p\), that is not enough: the same integral operator can have a different finite-field rank after reduction.  The source-locked modular row promotes the reserved row X16 from a future placeholder to a compact exhibit.
+
+For a carrier of size \(N\) and a field \(K\), let
+\[
+  A_N=\{v\in K^N:\sum_i v_i=0\}.
+\]
+If \(p=\operatorname{char}K\) divides \(N\), then the constant line \(K\mathbf1\) lies inside \(A_N\), so one must also record the reduced quotient \(A_N/K\mathbf1\).  For an integral operator in a fixed anchored augmentation lattice, the Smith data must be lattice-qualified, written \(\SNFL\), before it is compared across characteristics.
+
+\begin{proposition}[lattice-qualified modular rank bridge]\label{prop:modular-snf-bridge}
+Fix an integral matrix \(M\) in a chosen augmentation-lattice basis, and let
+\[
+  \SNFL(M)=(d_1,\ldots,d_r,0,\ldots,0)
+\]
+be its Smith normal form in that fixed lattice.  For every prime \(p\), the rank of the reduced matrix over \(\mathbb F_p\) is the number of nonzero invariant factors not divisible by \(p\):
+\[
+  \rank_{\mathbb F_p}(M)=\#\{i:d_i\neq0\text{ and }p\nmid d_i\}.
+\]
+\end{proposition}
+
+\begin{proof}
+Smith normal form writes \(M\) as \(UDV\) with \(U,V\) unimodular over \(\mathbb Z\).  Reducing modulo \(p\) preserves invertibility of \(U\) and \(V\) over \(\mathbb F_p\).  Hence the finite-field rank is the number of diagonal entries of \(D\) that remain nonzero modulo \(p\).  The conclusion depends on the chosen integral lattice, which is why the invariant is recorded as \(\SNFL\).
+\end{proof}
+
+The point is not the Smith-form fact itself, which is standard.  The point is that the finite-shadow row has to remember which lattice and which characteristic are being used.  The bounded Type-A scout gives a clean witness: the one-incidence layer \(I_7(1,1)\) has rational augmentation rank 3, but over \(\mathbb F_2\) the augmentation rank is 0 even though 2 does not divide 7.  This is integral torsion in the operator, not merely the bad-characteristic nesting \(K\mathbf1\subset A_N\).
+
+\begin{table}[!htbp]
+\centering
+\caption{Modular centered-channel witnesses recorded by the X16 source row.}
+\label{tab:modular-channel-witnesses}
+\scriptsize
+\setlength{\tabcolsep}{2pt}
+\renewcommand{\arraystretch}{0.92}
+\begin{tabular}{@{}L{0.18\textwidth}L{0.14\textwidth}cL{0.16\textwidth}ccL{0.24\textwidth}@{}}
+\toprule
+role & row & \(p\) & \(\SNFL\) & \(\rank_{\mathbb Q}\) & \(\rank_{\mathbb F_p}\) & reading \\
+\midrule
+carrier-coprime torsion collapse (\(2\nmid7\)) & \(I_7(1,1)\) & 2 & \([4,4,8]\) & 3 & 0 & modular rank sees torsion invisible to rational rank \\
+max bounded scout drop & \(I_8(4,1)\) & 3 & \([12^3,72,576^3]\) & 7 & 0 & full augmentation collapse in the bounded replay \\
+quotient drop without augmentation drop & \(I_3(0,1)\) & 3 & \([1,1]\) & 2 & 2 & reduced quotient drops to rank 1 when \(p\) divides \(N\) \\
+augmentation drop; separate quotient & \(I_6(0,4)\) & 2 & \([1,1,8,48,48]\) & 5 & 2 & augmentation torsion does not determine the quotient channel alone \\\bottomrule
+\end{tabular}
+\end{table}
+
+Thus the modular row contributes a different kind of grammar data from the rational rows above.  The row records characteristic, augmentation channel, reduced quotient, and lattice-qualified \(\SNFL\).  It does not claim an all-layer Type-A modular theorem, does not import Latin/Sudoku/M19 mechanisms, and is not a modular Specht or tiling theorem.

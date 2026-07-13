@@ -8,7 +8,6 @@ authors:
     orcid: "https://orcid.org/0009-0001-6176-6208"
 repository-code: "https://github.com/aconsciousfractal/A-Finite-Shadow-Grammar-for-Finite-Centered-Incidence-Geometry"
 license: MIT
-date-released: "2026-07-07"
 preferred-citation:
   type: article
   title: "A Finite-Shadow Grammar for Finite Centered Incidence Geometry"
@@ -24,3 +23,5 @@ keywords:
   - specht-modules
   - centered-operators
   - signed-permutations
+  - source-partitions
+  - root-shadows

@@ -1,0 +1,42 @@
+{
+  "artifact": "f4_source_layer_replay",
+  "boundary": "selected X20 source-layer computations only; no F4, 24-cell, block, flat, classifier, or tiling classification",
+  "checks": {
+    "all_component_pass_flags": true,
+    "flat_counts_72_32_18": true,
+    "flat_status_bounded_pass": true,
+    "gmat_global_rank_0": true,
+    "gmat_order_1152": true,
+    "gproj_global_rank_1": true,
+    "gproj_length_rank_0": true,
+    "gproj_order_576": true,
+    "kernel_status_bounded_pass": true,
+    "kernel_witness_names": true,
+    "kernel_witness_ranks_18": true,
+    "length_split_12_12": true,
+    "projective_points_24": true
+  },
+  "claims": {
+    "flat_counts_by_size": {
+      "2": 72,
+      "3": 32,
+      "4": 18
+    },
+    "gmat_global_centered_rank": 0,
+    "gmat_order": 1152,
+    "gproj_global_centered_rank": 1,
+    "gproj_length_centered_rank": 0,
+    "gproj_order": 576,
+    "kernel_six_block_centered_ranks": {
+      "K_16": 18,
+      "K_24": 18
+    },
+    "length_counts": {
+      "long": 12,
+      "short": 12
+    },
+    "projective_points": 24
+  },
+  "pass": true,
+  "status": "PASS_F4_SOURCE_LAYER"
+}

@@ -1,0 +1,56 @@
+{
+  "artifact": "x05_m19_lat565_evidence_check",
+  "boundary": "audit of frozen empirical evidence; no census regeneration and no mechanism theorem",
+  "checks": {
+    "complement_count_2009": true,
+    "equiv_type_distribution": true,
+    "lat565_group_order_32": true,
+    "lat565_rank_locus_62": true,
+    "lat565_unique": true,
+    "latin_type_distribution": true,
+    "linear_check_status": true,
+    "linear_checks_all": true,
+    "linear_decomposition_32_8_22": true,
+    "pair_checks_all": true,
+    "row_count_2009": true,
+    "rows_are_list": true,
+    "sudoku_type_distribution": true,
+    "summary_equiv_n": true,
+    "summary_latin_n": true,
+    "summary_seed": true,
+    "summary_sudoku_n": true,
+    "tag_counts": true
+  },
+  "counts": {
+    "complement_witnesses": 2009,
+    "lat565_decomposition": {
+      "C32_pair_coset": 32,
+      "C8_second_pair_equality": 8,
+      "R22_sporadic_residual": 22
+    },
+    "rows": 2009,
+    "tags": {
+      "latin": 1000,
+      "m19": 1,
+      "m19_equiv": 8,
+      "sudoku": 1000
+    }
+  },
+  "pair_checks": {
+    "pair_coset_32": true,
+    "pair_coset_exact": true,
+    "pair_group_order_32": true,
+    "pair_left_not_right": true,
+    "pair_rank_locus_62": true,
+    "pair_status_pass": true
+  },
+  "pass": true,
+  "source_sha256": {
+    "census_rows1000_v2.json": "7B516B2516D0B9F11E9209EEC644F98CBFD039A7E7E4842558BA6E6C472149DC",
+    "census_summary1000_v2.json": "15FC8822DB150FD51CB6F99AF8DD3C4FF1FBDF762BC58E596D8072EA1519ED88",
+    "lat565_global_linearization_check.json": "09E62594679D3B9E96633F6A7CB35C42CB97CF036345BB7C728326D3C56497F1",
+    "lat565_global_rankdrop_linearization.json": "D9EAAE65752E0615231559F0A93AF5C0E1814CACC151AE9F72BB254D10B2D86B",
+    "lat565_pair_dependency_verification.json": "7814C7B9A40952675AC28ABDBE0F7DFF6D098C3B351735F3D5DCE8D5A0371C7F"
+  },
+  "status": "PASS_FROZEN_EVIDENCE_AUDIT"
+}

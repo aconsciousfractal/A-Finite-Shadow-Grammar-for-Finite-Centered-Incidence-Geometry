@@ -1,0 +1,89 @@
+{
+  "A_long_count": 12,
+  "B_short_count": 12,
+  "block_counts": {
+    "E": 4,
+    "E0": 4,
+    "F": 4,
+    "F0": 4,
+    "G": 4,
+    "G0": 4
+  },
+  "degree": 24,
+  "expected": {
+    "A_long_count": 12,
+    "B_short_count": 12,
+    "block_counts": {
+      "E": 4,
+      "E0": 4,
+      "F": 4,
+      "F0": 4,
+      "G": 4,
+      "G0": 4
+    },
+    "degree": 24,
+    "flat3_A_count": 16,
+    "flat3_B_count": 16,
+    "flat4_mixed_2_2_count": 18,
+    "g_mat_generated_order": 1152,
+    "g_mat_global_centered_rank": 0,
+    "g_mat_kills_length_line": true,
+    "g_mat_row_sum_constant_48": true,
+    "g_mat_transitive_orbit_sizes": [
+      24
+    ],
+    "g_proj_orbit_sizes": [
+      12,
+      12
+    ],
+    "g_proj_order_source_labels": 576,
+    "g_proj_preserves_A_B": true,
+    "g_swap_cross_centered_rank": 0,
+    "g_swap_reverses_length_line": true,
+    "g_swap_size": 576,
+    "rank2_flat_size_counts": {
+      "2": 72,
+      "3": 32,
+      "4": 18
+    },
+    "sigma_is_in_g_proj": false,
+    "sigma_rank_preserved_subsets_le_4": true,
+    "sigma_rank_subsets_checked": 12951,
+    "sigma_swaps_A_B": true
+  },
+  "flat3_A_count": 16,
+  "flat3_B_count": 16,
+  "flat4_mixed_2_2_count": 18,
+  "g_mat_generated_order": 1152,
+  "g_mat_global_centered_rank": 0,
+  "g_mat_kills_length_line": true,
+  "g_mat_row_sum_constant_48": true,
+  "g_mat_transitive_orbit_sizes": [
+    24
+  ],
+  "g_proj_orbit_sizes": [
+    12,
+    12
+  ],
+  "g_proj_order_source_labels": 576,
+  "g_proj_preserves_A_B": true,
+  "g_swap_cross_centered_rank": 0,
+  "g_swap_reverses_length_line": true,
+  "g_swap_size": 576,
+  "gate": "S5",
+  "generator_rank_route": "projective_reflections_are_linear; sigma_checked_on_all_subsets_size_le_4",
+  "pass": true,
+  "rank2_flat_size_counts": {
+    "2": 72,
+    "3": 32,
+    "4": 18
+  },
+  "route_id": "P21",
+  "sigma_is_in_g_proj": false,
+  "sigma_rank_preserved_subsets_le_4": true,
+  "sigma_rank_subsets_checked": 12951,
+  "sigma_swaps_A_B": true,
+  "source": "Fried-Gerek-Gordon-Perunicic 2007, EJC 14(1), R78",
+  "source_pdf": "sources/fried_gerek_gordon_perunicic_2007_f4_matroid_automorphisms.pdf",
+  "verifier": "p21_s5_matroid_source_generator_lock.py"
+}

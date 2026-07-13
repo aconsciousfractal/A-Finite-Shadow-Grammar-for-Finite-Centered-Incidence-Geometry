@@ -1,0 +1,54 @@
+\section{A Projective \texorpdfstring{\(E_6\)}{E6} Source-Aware Control Exhibit}
+\label{sec:e6-root-shadow-control}
+
+The preceding \(D_5\) row shows that pair-level data can be too coarse even in a simply laced projective root shadow.  The \(E_6\) row is a complementary control.  Here the classical pair, flat, and circuit channels all collapse to the same projective source action, while a source-aware decomposition still detects row information that total standard rank does not.
+
+Let \(\Pi_{36}\) be the 36 antipodal pairs in the \(E_6\) root system.  The source package computes the projective Weyl action, the projective root graph \(\Gamma_{E_6}\) whose edges join projective pairs represented by roots \(\alpha,\beta\) with \(|\langle\alpha,\beta\rangle|=1\), the flat-size pair channel, the rank-two circuit channel, and a compact table of parabolic source rows.  Classical background on finite Coxeter groups and root-system matroids is standard; see \cite{BjornerBrenti2005,DutourSikiricFeliksonTumarkin2008RootMatroids}.  The proposition below is only a bounded source-aware control exhibit for this 36-point shadow.
+
+\begin{proposition}[channel collapse and source-aware split in the projective \(E_6\) shadow]
+\label{prop:e6-root-shadow-control}
+For the source-locked projective \(E_6\) shadow \(\Pi_{36}\), the exact source replay certifies the following bounded facts.
+\begin{enumerate}[label=\textup{(\alph*)},leftmargin=*]
+  \item The carrier has \(72\) roots and \(36\) projective root pairs.  The projective Weyl image has order
+  \[
+    |W(E_6)_{\mathrm{proj}}|=51840.
+  \]
+  \item The projective root graph \(\Gamma_{E_6}\) is strongly regular with parameters
+  \[
+    (36,20,10,12),
+  \]
+  and has full automorphism group of order \(51840\).
+  \item The flat-size pair channel and the rank-two circuit channel do not enlarge this row: the flat-size channel collapses to the same projective graph data, the circuit channel has \(120\) triples, and its full automorphism group also has order \(51840\).
+  \item As a source-aware permutation module, the rational channel is recorded as
+  \[
+    \mathbb Q^{\Pi_{36}}=\mathbb Q\mathbf 1\oplus U_{20}\oplus U_{15}.
+  \]
+  The parabolic rows \(\mathrm{Par}_{012}\) and \(\mathrm{Par}_{0135}\) both have size \(24\) and total centered standard rank \(8\), but their \((U_{20},U_{15})\) splits are respectively \((6,2)\) and \((5,3)\).
+  \item The two displayed rows are not claimed to be same-type or same-orbit indistinguishability witnesses: in the source table they are of types \(A_3\) and \(A_2+A_1+A_1\), and the source replay records no same-type or same-size/same-orbit split witness.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}[Source-locked proof sketch]
+The exact replay constructs the \(E_6\) root system, quotients by antipodal pairs, computes the induced projective Weyl action, and verifies its order.  It then builds the pair graph from the projective root inner-product channel and checks the strongly regular parameters and full automorphism order.  The flat-size channel is compared against the same pair data, and the circuit channel is computed as the family of rank-two dependent triples; its automorphism group has the same order.  Finally, the parabolic row table records total standard rank together with the two nontrivial source summands \(U_{20}\) and \(U_{15}\), producing the displayed \(A_3\) versus \(A_2+A_1+A_1\) witness and the negative same-type/same-orbit counts.
+\end{proof}
+
+\begin{table}[!htbp]
+\centering
+\caption{Evidence carried by the projective \(E_6\) source-aware control exhibit.}
+\label{tab:e6-root-shadow-control}
+\begin{tabular}{@{}L{0.25\textwidth}L{0.31\textwidth}L{0.34\textwidth}@{}}
+\toprule
+channel or witness & certified finite fact & grammar reading \\
+\midrule
+carrier & \(72\) roots, \(36\) projective root pairs & finite simply laced exceptional source shadow \\
+projective source row & \(|W(E_6)_{\mathrm{proj}}|=51840\) & target source action \\
+pair/projective graph & \(\Gamma_{E_6}\) has parameters \((36,20,10,12)\), automorphism order \(51840\) & pair channel already matches the source action \\
+flat-size and circuit channels & flat-size collapses to the graph; \(120\) circuit triples with automorphism order \(51840\) & no extra automorphism enlargement from these channels \\
+source split & \(\mathbb Q^{\Pi_{36}}=\mathbb Q\mathbf1\oplus U_{20}\oplus U_{15}\) & the grammar keeps source summands, not just total rank \\
+parabolic witness & \(\mathrm{Par}_{012}\) and \(\mathrm{Par}_{0135}\): size \(24\), rank \(8\), splits \((6,2)\) and \((5,3)\) & total standard rank is blind to source-aware row information \\
+negative witness boundary & types \(A_3\) and \(A_2+A_1+A_1\); same-type and same-size/same-orbit counts are \(0\) & no stronger indistinguishability claim \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Thus the \(E_6\) row contributes one compact control lesson: even when the pair, flat, and circuit channels all recover the same classical projective source group, the source-aware decomposition can still record information hidden by total standard rank.  It is not a standalone \(E_6\) paper, not a Type-E theorem, not a Schlaefli/double-six/27-line or cubic-surface route, not a root-system matroid novelty claim, not a classifier, and not a tiling result.

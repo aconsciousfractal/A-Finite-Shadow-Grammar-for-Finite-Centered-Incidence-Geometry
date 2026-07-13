@@ -1,0 +1,49 @@
+{
+  "artifact": "signed_type_bc_shadow_replay",
+  "boundary": "six bounded P13 rows; no Type-B/C classification, tiling criterion, or native equivalence",
+  "checks": {
+    "boundary_retained": true,
+    "mirror_checks_pass": true,
+    "six_rows_exact": true,
+    "six_rows_present": true,
+    "source_checks_all": true,
+    "source_status_pass": true
+  },
+  "mode": "frozen_result_audit",
+  "pass": true,
+  "row_checks": {
+    "BI3_0_0": true,
+    "BI3_0_1": true,
+    "BI3_1_0": true,
+    "BI4_0_1": true,
+    "BI4_1_1": true,
+    "S6_deterministic_random_size_B3": true
+  },
+  "status": "PASS_SIGNED_TYPE_BC_SHADOW",
+  "table": {
+    "BI3_0_0": {
+      "rank_mass": 90,
+      "size": 16
+    },
+    "BI3_0_1": {
+      "rank_mass": 300,
+      "size": 12
+    },
+    "BI3_1_0": {
+      "rank_mass": 300,
+      "size": 12
+    },
+    "BI4_0_1": {
+      "rank_mass": 10710,
+      "size": 64
+    },
+    "BI4_1_1": {
+      "rank_mass": 17220,
+      "size": 48
+    },
+    "S6_deterministic_random_size_B3": {
+      "rank_mass": 715,
+      "size": 48
+    }
+  }
+}

@@ -1,0 +1,1202 @@
+{
+    "schema_version":  "h3_projective_source_channel_seed_v1",
+    "source":  "exported finite payload for the public H3 projective source-channel replay",
+    "labels":  [
+                   "A",
+                   "B",
+                   "C",
+                   "D",
+                   "E",
+                   "F",
+                   "G",
+                   "H",
+                   "I",
+                   "J",
+                   "K",
+                   "L",
+                   "M",
+                   "N",
+                   "O"
+               ],
+    "edge_colors":  {
+                        "flat_size":  [
+                                          {
+                                              "color":  "2",
+                                              "edge":  "AB"
+                                          },
+                                          {
+                                              "color":  "2",
+                                              "edge":  "AC"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "AD"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "AE"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "AF"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "AG"
+                                          },
+                                          {
+                                              "color":  "3",
+                                              "edge":  "AH"
+                                          },
+                                          {
+                                              "color":  "3",
+                                              "edge":  "AI"
+                                          },
+                                          {
+                                              "color":  "3",
+                                              "edge":  "AJ"
+                                          },
+                                          {
+                                              "color":  "3",
+                                              "edge":  "AK"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "AL"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "AM"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "AN"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "AO"
+                                          },
+                                          {
+                                              "color":  "2",
+                                              "edge":  "BC"
+                                          },
+                                          {
+                                              "color":  "3",
+                                              "edge":  "BD"
+                                          },
+                                          {
+                                              "color":  "3",
+                                              "edge":  "BE"
+                                          },
+                                          {
+                                              "color":  "3",
+                                              "edge":  "BF"
+                                          },
+                                          {
+                                              "color":  "3",
+                                              "edge":  "BG"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "BH"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "BI"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "BJ"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "BK"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "BL"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "BM"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "BN"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "BO"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "CD"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "CE"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "CF"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "CG"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "CH"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "CI"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "CJ"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "CK"
+                                          },
+                                          {
+                                              "color":  "3",
+                                              "edge":  "CL"
+                                          },
+                                          {
+                                              "color":  "3",
+                                              "edge":  "CM"
+                                          },
+                                          {
+                                              "color":  "3",
+                                              "edge":  "CN"
+                                          },
+                                          {
+                                              "color":  "3",
+                                              "edge":  "CO"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "DE"
+                                          },
+                                          {
+                                              "color":  "3",
+                                              "edge":  "DF"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "DG"
+                                          },
+                                          {
+                                              "color":  "2",
+                                              "edge":  "DH"
+                                          },
+                                          {
+                                              "color":  "3",
+                                              "edge":  "DI"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "DJ"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "DK"
+                                          },
+                                          {
+                                              "color":  "2",
+                                              "edge":  "DL"
+                                          },
+                                          {
+                                              "color":  "3",
+                                              "edge":  "DM"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "DN"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "DO"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "EF"
+                                          },
+                                          {
+                                              "color":  "3",
+                                              "edge":  "EG"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "EH"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "EI"
+                                          },
+                                          {
+                                              "color":  "2",
+                                              "edge":  "EJ"
+                                          },
+                                          {
+                                              "color":  "3",
+                                              "edge":  "EK"
+                                          },
+                                          {
+                                              "color":  "3",
+                                              "edge":  "EL"
+                                          },
+                                          {
+                                              "color":  "2",
+                                              "edge":  "EM"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "EN"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "EO"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "FG"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "FH"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "FI"
+                                          },
+                                          {
+                                              "color":  "3",
+                                              "edge":  "FJ"
+                                          },
+                                          {
+                                              "color":  "2",
+                                              "edge":  "FK"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "FL"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "FM"
+                                          },
+                                          {
+                                              "color":  "2",
+                                              "edge":  "FN"
+                                          },
+                                          {
+                                              "color":  "3",
+                                              "edge":  "FO"
+                                          },
+                                          {
+                                              "color":  "3",
+                                              "edge":  "GH"
+                                          },
+                                          {
+                                              "color":  "2",
+                                              "edge":  "GI"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "GJ"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "GK"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "GL"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "GM"
+                                          },
+                                          {
+                                              "color":  "3",
+                                              "edge":  "GN"
+                                          },
+                                          {
+                                              "color":  "2",
+                                              "edge":  "GO"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "HI"
+                                          },
+                                          {
+                                              "color":  "3",
+                                              "edge":  "HJ"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "HK"
+                                          },
+                                          {
+                                              "color":  "2",
+                                              "edge":  "HL"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "HM"
+                                          },
+                                          {
+                                              "color":  "3",
+                                              "edge":  "HN"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "HO"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "IJ"
+                                          },
+                                          {
+                                              "color":  "3",
+                                              "edge":  "IK"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "IL"
+                                          },
+                                          {
+                                              "color":  "3",
+                                              "edge":  "IM"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "IN"
+                                          },
+                                          {
+                                              "color":  "2",
+                                              "edge":  "IO"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "JK"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "JL"
+                                          },
+                                          {
+                                              "color":  "2",
+                                              "edge":  "JM"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "JN"
+                                          },
+                                          {
+                                              "color":  "3",
+                                              "edge":  "JO"
+                                          },
+                                          {
+                                              "color":  "3",
+                                              "edge":  "KL"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "KM"
+                                          },
+                                          {
+                                              "color":  "2",
+                                              "edge":  "KN"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "KO"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "LM"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "LN"
+                                          },
+                                          {
+                                              "color":  "3",
+                                              "edge":  "LO"
+                                          },
+                                          {
+                                              "color":  "3",
+                                              "edge":  "MN"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "MO"
+                                          },
+                                          {
+                                              "color":  "5",
+                                              "edge":  "NO"
+                                          }
+                                      ],
+                        "gram_squared_inner_product":  [
+                                                           {
+                                                               "color":  "0",
+                                                               "edge":  "AB"
+                                                           },
+                                                           {
+                                                               "color":  "0",
+                                                               "edge":  "AC"
+                                                           },
+                                                           {
+                                                               "color":  "1+1*phi",
+                                                               "edge":  "AD"
+                                                           },
+                                                           {
+                                                               "color":  "1+1*phi",
+                                                               "edge":  "AE"
+                                                           },
+                                                           {
+                                                               "color":  "1+1*phi",
+                                                               "edge":  "AF"
+                                                           },
+                                                           {
+                                                               "color":  "1+1*phi",
+                                                               "edge":  "AG"
+                                                           },
+                                                           {
+                                                               "color":  "1",
+                                                               "edge":  "AH"
+                                                           },
+                                                           {
+                                                               "color":  "1",
+                                                               "edge":  "AI"
+                                                           },
+                                                           {
+                                                               "color":  "1",
+                                                               "edge":  "AJ"
+                                                           },
+                                                           {
+                                                               "color":  "1",
+                                                               "edge":  "AK"
+                                                           },
+                                                           {
+                                                               "color":  "2-1*phi",
+                                                               "edge":  "AL"
+                                                           },
+                                                           {
+                                                               "color":  "2-1*phi",
+                                                               "edge":  "AM"
+                                                           },
+                                                           {
+                                                               "color":  "2-1*phi",
+                                                               "edge":  "AN"
+                                                           },
+                                                           {
+                                                               "color":  "2-1*phi",
+                                                               "edge":  "AO"
+                                                           },
+                                                           {
+                                                               "color":  "0",
+                                                               "edge":  "BC"
+                                                           },
+                                                           {
+                                                               "color":  "1",
+                                                               "edge":  "BD"
+                                                           },
+                                                           {
+                                                               "color":  "1",
+                                                               "edge":  "BE"
+                                                           },
+                                                           {
+                                                               "color":  "1",
+                                                               "edge":  "BF"
+                                                           },
+                                                           {
+                                                               "color":  "1",
+                                                               "edge":  "BG"
+                                                           },
+                                                           {
+                                                               "color":  "2-1*phi",
+                                                               "edge":  "BH"
+                                                           },
+                                                           {
+                                                               "color":  "2-1*phi",
+                                                               "edge":  "BI"
+                                                           },
+                                                           {
+                                                               "color":  "2-1*phi",
+                                                               "edge":  "BJ"
+                                                           },
+                                                           {
+                                                               "color":  "2-1*phi",
+                                                               "edge":  "BK"
+                                                           },
+                                                           {
+                                                               "color":  "1+1*phi",
+                                                               "edge":  "BL"
+                                                           },
+                                                           {
+                                                               "color":  "1+1*phi",
+                                                               "edge":  "BM"
+                                                           },
+                                                           {
+                                                               "color":  "1+1*phi",
+                                                               "edge":  "BN"
+                                                           },
+                                                           {
+                                                               "color":  "1+1*phi",
+                                                               "edge":  "BO"
+                                                           },
+                                                           {
+                                                               "color":  "2-1*phi",
+                                                               "edge":  "CD"
+                                                           },
+                                                           {
+                                                               "color":  "2-1*phi",
+                                                               "edge":  "CE"
+                                                           },
+                                                           {
+                                                               "color":  "2-1*phi",
+                                                               "edge":  "CF"
+                                                           },
+                                                           {
+                                                               "color":  "2-1*phi",
+                                                               "edge":  "CG"
+                                                           },
+                                                           {
+                                                               "color":  "1+1*phi",
+                                                               "edge":  "CH"
+                                                           },
+                                                           {
+                                                               "color":  "1+1*phi",
+                                                               "edge":  "CI"
+                                                           },
+                                                           {
+                                                               "color":  "1+1*phi",
+                                                               "edge":  "CJ"
+                                                           },
+                                                           {
+                                                               "color":  "1+1*phi",
+                                                               "edge":  "CK"
+                                                           },
+                                                           {
+                                                               "color":  "1",
+                                                               "edge":  "CL"
+                                                           },
+                                                           {
+                                                               "color":  "1",
+                                                               "edge":  "CM"
+                                                           },
+                                                           {
+                                                               "color":  "1",
+                                                               "edge":  "CN"
+                                                           },
+                                                           {
+                                                               "color":  "1",
+                                                               "edge":  "CO"
+                                                           },
+                                                           {
+                                                               "color":  "2-1*phi",
+                                                               "edge":  "DE"
+                                                           },
+                                                           {
+                                                               "color":  "1",
+                                                               "edge":  "DF"
+                                                           },
+                                                           {
+                                                               "color":  "1+1*phi",
+                                                               "edge":  "DG"
+                                                           },
+                                                           {
+                                                               "color":  "0",
+                                                               "edge":  "DH"
+                                                           },
+                                                           {
+                                                               "color":  "1",
+                                                               "edge":  "DI"
+                                                           },
+                                                           {
+                                                               "color":  "1+1*phi",
+                                                               "edge":  "DJ"
+                                                           },
+                                                           {
+                                                               "color":  "2-1*phi",
+                                                               "edge":  "DK"
+                                                           },
+                                                           {
+                                                               "color":  "0",
+                                                               "edge":  "DL"
+                                                           },
+                                                           {
+                                                               "color":  "1",
+                                                               "edge":  "DM"
+                                                           },
+                                                           {
+                                                               "color":  "1+1*phi",
+                                                               "edge":  "DN"
+                                                           },
+                                                           {
+                                                               "color":  "2-1*phi",
+                                                               "edge":  "DO"
+                                                           },
+                                                           {
+                                                               "color":  "1+1*phi",
+                                                               "edge":  "EF"
+                                                           },
+                                                           {
+                                                               "color":  "1",
+                                                               "edge":  "EG"
+                                                           },
+                                                           {
+                                                               "color":  "1+1*phi",
+                                                               "edge":  "EH"
+                                                           },
+                                                           {
+                                                               "color":  "2-1*phi",
+                                                               "edge":  "EI"
+                                                           },
+                                                           {
+                                                               "color":  "0",
+                                                               "edge":  "EJ"
+                                                           },
+                                                           {
+                                                               "color":  "1",
+                                                               "edge":  "EK"
+                                                           },
+                                                           {
+                                                               "color":  "1",
+                                                               "edge":  "EL"
+                                                           },
+                                                           {
+                                                               "color":  "0",
+                                                               "edge":  "EM"
+                                                           },
+                                                           {
+                                                               "color":  "2-1*phi",
+                                                               "edge":  "EN"
+                                                           },
+                                                           {
+                                                               "color":  "1+1*phi",
+                                                               "edge":  "EO"
+                                                           },
+                                                           {
+                                                               "color":  "2-1*phi",
+                                                               "edge":  "FG"
+                                                           },
+                                                           {
+                                                               "color":  "2-1*phi",
+                                                               "edge":  "FH"
+                                                           },
+                                                           {
+                                                               "color":  "1+1*phi",
+                                                               "edge":  "FI"
+                                                           },
+                                                           {
+                                                               "color":  "1",
+                                                               "edge":  "FJ"
+                                                           },
+                                                           {
+                                                               "color":  "0",
+                                                               "edge":  "FK"
+                                                           },
+                                                           {
+                                                               "color":  "1+1*phi",
+                                                               "edge":  "FL"
+                                                           },
+                                                           {
+                                                               "color":  "2-1*phi",
+                                                               "edge":  "FM"
+                                                           },
+                                                           {
+                                                               "color":  "0",
+                                                               "edge":  "FN"
+                                                           },
+                                                           {
+                                                               "color":  "1",
+                                                               "edge":  "FO"
+                                                           },
+                                                           {
+                                                               "color":  "1",
+                                                               "edge":  "GH"
+                                                           },
+                                                           {
+                                                               "color":  "0",
+                                                               "edge":  "GI"
+                                                           },
+                                                           {
+                                                               "color":  "2-1*phi",
+                                                               "edge":  "GJ"
+                                                           },
+                                                           {
+                                                               "color":  "1+1*phi",
+                                                               "edge":  "GK"
+                                                           },
+                                                           {
+                                                               "color":  "2-1*phi",
+                                                               "edge":  "GL"
+                                                           },
+                                                           {
+                                                               "color":  "1+1*phi",
+                                                               "edge":  "GM"
+                                                           },
+                                                           {
+                                                               "color":  "1",
+                                                               "edge":  "GN"
+                                                           },
+                                                           {
+                                                               "color":  "0",
+                                                               "edge":  "GO"
+                                                           },
+                                                           {
+                                                               "color":  "2-1*phi",
+                                                               "edge":  "HI"
+                                                           },
+                                                           {
+                                                               "color":  "1",
+                                                               "edge":  "HJ"
+                                                           },
+                                                           {
+                                                               "color":  "1+1*phi",
+                                                               "edge":  "HK"
+                                                           },
+                                                           {
+                                                               "color":  "0",
+                                                               "edge":  "HL"
+                                                           },
+                                                           {
+                                                               "color":  "2-1*phi",
+                                                               "edge":  "HM"
+                                                           },
+                                                           {
+                                                               "color":  "1",
+                                                               "edge":  "HN"
+                                                           },
+                                                           {
+                                                               "color":  "1+1*phi",
+                                                               "edge":  "HO"
+                                                           },
+                                                           {
+                                                               "color":  "1+1*phi",
+                                                               "edge":  "IJ"
+                                                           },
+                                                           {
+                                                               "color":  "1",
+                                                               "edge":  "IK"
+                                                           },
+                                                           {
+                                                               "color":  "1+1*phi",
+                                                               "edge":  "IL"
+                                                           },
+                                                           {
+                                                               "color":  "1",
+                                                               "edge":  "IM"
+                                                           },
+                                                           {
+                                                               "color":  "2-1*phi",
+                                                               "edge":  "IN"
+                                                           },
+                                                           {
+                                                               "color":  "0",
+                                                               "edge":  "IO"
+                                                           },
+                                                           {
+                                                               "color":  "2-1*phi",
+                                                               "edge":  "JK"
+                                                           },
+                                                           {
+                                                               "color":  "2-1*phi",
+                                                               "edge":  "JL"
+                                                           },
+                                                           {
+                                                               "color":  "0",
+                                                               "edge":  "JM"
+                                                           },
+                                                           {
+                                                               "color":  "1+1*phi",
+                                                               "edge":  "JN"
+                                                           },
+                                                           {
+                                                               "color":  "1",
+                                                               "edge":  "JO"
+                                                           },
+                                                           {
+                                                               "color":  "1",
+                                                               "edge":  "KL"
+                                                           },
+                                                           {
+                                                               "color":  "1+1*phi",
+                                                               "edge":  "KM"
+                                                           },
+                                                           {
+                                                               "color":  "0",
+                                                               "edge":  "KN"
+                                                           },
+                                                           {
+                                                               "color":  "2-1*phi",
+                                                               "edge":  "KO"
+                                                           },
+                                                           {
+                                                               "color":  "1+1*phi",
+                                                               "edge":  "LM"
+                                                           },
+                                                           {
+                                                               "color":  "2-1*phi",
+                                                               "edge":  "LN"
+                                                           },
+                                                           {
+                                                               "color":  "1",
+                                                               "edge":  "LO"
+                                                           },
+                                                           {
+                                                               "color":  "1",
+                                                               "edge":  "MN"
+                                                           },
+                                                           {
+                                                               "color":  "2-1*phi",
+                                                               "edge":  "MO"
+                                                           },
+                                                           {
+                                                               "color":  "1+1*phi",
+                                                               "edge":  "NO"
+                                                           }
+                                                       ]
+                    },
+    "groups":  {
+                   "G_mat_flat_auts":  [
+                                           "ABCDEFGHIJKLMNO",
+                                           "ABCEDGFJKHIMLON",
+                                           "ABCFGDEKJIHNOLM",
+                                           "ABCGFEDIHKJONML",
+                                           "ACBLMONHKJIDEGF",
+                                           "ACBMLNOJIHKEDFG",
+                                           "ACBNOMLKHIJFGED",
+                                           "ACBONLMIJKHGFDE",
+                                           "BACHKJIDGFELNMO",
+                                           "BACIJKHGDEFOMNL",
+                                           "BACJIHKEFGDMOLN",
+                                           "BACKHIJFEDGNLOM",
+                                           "BCALNOMDEFGHKIJ",
+                                           "BCAMONLEDGFJIKH",
+                                           "BCANLMOFGDEKHJI",
+                                           "BCAOMLNGFEDIJHK",
+                                           "CABHIJKLNOMDGEF",
+                                           "CABIHKJOMLNGDFE",
+                                           "CABJKHIMONLEFDG",
+                                           "CABKJIHNLMOFEGD",
+                                           "CBADGFELMONHIKJ",
+                                           "CBAEFGDMLNOJKIH",
+                                           "CBAFEDGNOMLKJHI",
+                                           "CBAGDEFONLMIHJK",
+                                           "DHLANJGBIFMCKEO",
+                                           "DHLGJNAIBMFOEKC",
+                                           "DHLJGANMFIBEOCK",
+                                           "DHLNAGJFMBIKCOE",
+                                           "DLHCKOEBMFIANGJ",
+                                           "DLHEOKCMBIFJGNA",
+                                           "DLHKCEOFIBMNAJG",
+                                           "DLHOECKIFMBGJAN",
+                                           "EJMAOHFBKGLCIDN",
+                                           "EJMFHOAKBLGNDIC",
+                                           "EJMHFAOLGKBDNCI",
+                                           "EJMOAFHGLBKICND",
+                                           "EMJCINDBLGKAOFH",
+                                           "EMJDNICLBKGHFOA",
+                                           "EMJICDNGKBLOAHF",
+                                           "EMJNDCIKGLBFHAO",
+                                           "FKNALIEBJDOCHGM",
+                                           "FKNEILAJBODMGHC",
+                                           "FKNIEALODJBGMCH",
+                                           "FKNLAEIDOBJHCMG",
+                                           "FNKCHMGBODJALEI",
+                                           "FNKGMHCOBJDIELA",
+                                           "FNKHCGMDJBOLAIE",
+                                           "FNKMGCHJDOBEIAL",
+                                           "GIOAMKDBHENCJFL",
+                                           "GIODKMAHBNELFJC",
+                                           "GIOKDAMNEHBFLCJ",
+                                           "GIOMADKENBHJCLF",
+                                           "GOICJLFBNEHAMDK",
+                                           "GOIFLJCNBHEKDMA",
+                                           "GOIJCFLEHBNMAKD",
+                                           "GOILFCJHENBDKAM",
+                                           "HDLBMFIAGJNCEKO",
+                                           "HDLFIBMNJGAKOCE",
+                                           "HDLIFMBGANJOKEC",
+                                           "HDLMBIFJNAGECOK",
+                                           "HLDCEOKANJGBMIF",
+                                           "HLDECKOJGANMBFI",
+                                           "HLDKOECNAGJFIMB",
+                                           "HLDOKCEGJNAIFBM",
+                                           "IGOBNEHADKMCFJL",
+                                           "IGOEHBNMKDAJLCF",
+                                           "IGOHENBDAMKLJFC",
+                                           "IGONBHEKMADFCLJ",
+                                           "IOGCFLJAMKDBNHE",
+                                           "IOGFCJLKDAMNBEH",
+                                           "IOGJLFCMADKEHNB",
+                                           "IOGLJCFDKMAHEBN",
+                                           "JEMBLGKAFHOCDIN",
+                                           "JEMGKBLOHFAINCD",
+                                           "JEMKGLBFAOHNIDC",
+                                           "JEMLBKGHOAFDCNI",
+                                           "JMECDNIAOHFBLKG",
+                                           "JMEDCINHFAOLBGK",
+                                           "JMEINDCOAFHGKLB",
+                                           "JMENICDFHOAKGBL",
+                                           "KFNBODJAEILCGHM",
+                                           "KFNDJBOLIEAHMCG",
+                                           "KFNJDOBEALIMHGC",
+                                           "KFNOBJDILAEGCMH",
+                                           "KNFCGMHALIEBOJD",
+                                           "KNFGCHMIEALOBDJ",
+                                           "KNFHMGCLAEIDJOB",
+                                           "KNFMHCGEILAJDBO",
+                                           "LDHBIFMCEOKAGNJ",
+                                           "LDHFMBIKOECNJAG",
+                                           "LDHIBMFOKCEGAJN",
+                                           "LDHMFIBECKOJNGA",
+                                           "LHDAGJNCKOEBIMF",
+                                           "LHDGANJOECKIBFM",
+                                           "LHDJNAGEOKCMFBI",
+                                           "LHDNJGAKCEOFMIB",
+                                           "MEJBKGLCDNIAFOH",
+                                           "MEJGLBKINDCOHAF",
+                                           "MEJKBLGNICDFAHO",
+                                           "MEJLGKBDCINHOFA",
+                                           "MJEAFHOCINDBKLG",
+                                           "MJEFAOHNDCIKBGL",
+                                           "MJEHOAFDNICLGBK",
+                                           "MJEOHFAICDNGLKB",
+                                           "NFKBJDOCGMHAELI",
+                                           "NFKDOBJHMGCLIAE",
+                                           "NFKJBODMHCGEAIL",
+                                           "NFKODJBGCHMILEA",
+                                           "NKFAEILCHMGBJOD",
+                                           "NKFEALIMGCHJBDO",
+                                           "NKFILAEGMHCODBJ",
+                                           "NKFLIEAHCGMDOJB",
+                                           "OGIBHENCFLJADMK",
+                                           "OGIENBHJLFCMKAD",
+                                           "OGIHBNELJCFDAKM",
+                                           "OGINEHBFCJLKMDA",
+                                           "OIGADKMCJLFBHNE",
+                                           "OIGDAMKLFCJHBEN",
+                                           "OIGKMADFLJCNEBH",
+                                           "OIGMKDAJCFLENHB"
+                                       ],
+                   "G_geo_projective":  [
+                                            "ABCDEFGHIJKLMNO",
+                                            "ABCEDGFJKHIMLON",
+                                            "ABCFGDEKJIHNOLM",
+                                            "ABCGFEDIHKJONML",
+                                            "BCALNOMDEFGHKIJ",
+                                            "BCAMONLEDGFJIKH",
+                                            "BCANLMOFGDEKHJI",
+                                            "BCAOMLNGFEDIJHK",
+                                            "CABHIJKLNOMDGEF",
+                                            "CABIHKJOMLNGDFE",
+                                            "CABJKHIMONLEFDG",
+                                            "CABKJIHNLMOFEGD",
+                                            "DHLANJGBIFMCKEO",
+                                            "DHLGJNAIBMFOEKC",
+                                            "DHLJGANMFIBEOCK",
+                                            "DHLNAGJFMBIKCOE",
+                                            "EJMAOHFBKGLCIDN",
+                                            "EJMFHOAKBLGNDIC",
+                                            "EJMHFAOLGKBDNCI",
+                                            "EJMOAFHGLBKICND",
+                                            "FKNALIEBJDOCHGM",
+                                            "FKNEILAJBODMGHC",
+                                            "FKNIEALODJBGMCH",
+                                            "FKNLAEIDOBJHCMG",
+                                            "GIOAMKDBHENCJFL",
+                                            "GIODKMAHBNELFJC",
+                                            "GIOKDAMNEHBFLCJ",
+                                            "GIOMADKENBHJCLF",
+                                            "HLDCEOKANJGBMIF",
+                                            "HLDECKOJGANMBFI",
+                                            "HLDKOECNAGJFIMB",
+                                            "HLDOKCEGJNAIFBM",
+                                            "IOGCFLJAMKDBNHE",
+                                            "IOGFCJLKDAMNBEH",
+                                            "IOGJLFCMADKEHNB",
+                                            "IOGLJCFDKMAHEBN",
+                                            "JMECDNIAOHFBLKG",
+                                            "JMEDCINHFAOLBGK",
+                                            "JMEINDCOAFHGKLB",
+                                            "JMENICDFHOAKGBL",
+                                            "KNFCGMHALIEBOJD",
+                                            "KNFGCHMIEALOBDJ",
+                                            "KNFHMGCLAEIDJOB",
+                                            "KNFMHCGEILAJDBO",
+                                            "LDHBIFMCEOKAGNJ",
+                                            "LDHFMBIKOECNJAG",
+                                            "LDHIBMFOKCEGAJN",
+                                            "LDHMFIBECKOJNGA",
+                                            "MEJBKGLCDNIAFOH",
+                                            "MEJGLBKINDCOHAF",
+                                            "MEJKBLGNICDFAHO",
+                                            "MEJLGKBDCINHOFA",
+                                            "NFKBJDOCGMHAELI",
+                                            "NFKDOBJHMGCLIAE",
+                                            "NFKJBODMHCGEAIL",
+                                            "NFKODJBGCHMILEA",
+                                            "OGIBHENCFLJADMK",
+                                            "OGIENBHJLFCMKAD",
+                                            "OGIHBNELJCFDAKM",
+                                            "OGINEHBFCJLKMDA"
+                                        ],
+                   "G_ng_odd_coset":  [
+                                          "ACBLMONHKJIDEGF",
+                                          "ACBMLNOJIHKEDFG",
+                                          "ACBNOMLKHIJFGED",
+                                          "ACBONLMIJKHGFDE",
+                                          "BACHKJIDGFELNMO",
+                                          "BACIJKHGDEFOMNL",
+                                          "BACJIHKEFGDMOLN",
+                                          "BACKHIJFEDGNLOM",
+                                          "CBADGFELMONHIKJ",
+                                          "CBAEFGDMLNOJKIH",
+                                          "CBAFEDGNOMLKJHI",
+                                          "CBAGDEFONLMIHJK",
+                                          "DLHCKOEBMFIANGJ",
+                                          "DLHEOKCMBIFJGNA",
+                                          "DLHKCEOFIBMNAJG",
+                                          "DLHOECKIFMBGJAN",
+                                          "EMJCINDBLGKAOFH",
+                                          "EMJDNICLBKGHFOA",
+                                          "EMJICDNGKBLOAHF",
+                                          "EMJNDCIKGLBFHAO",
+                                          "FNKCHMGBODJALEI",
+                                          "FNKGMHCOBJDIELA",
+                                          "FNKHCGMDJBOLAIE",
+                                          "FNKMGCHJDOBEIAL",
+                                          "GOICJLFBNEHAMDK",
+                                          "GOIFLJCNBHEKDMA",
+                                          "GOIJCFLEHBNMAKD",
+                                          "GOILFCJHENBDKAM",
+                                          "HDLBMFIAGJNCEKO",
+                                          "HDLFIBMNJGAKOCE",
+                                          "HDLIFMBGANJOKEC",
+                                          "HDLMBIFJNAGECOK",
+                                          "IGOBNEHADKMCFJL",
+                                          "IGOEHBNMKDAJLCF",
+                                          "IGOHENBDAMKLJFC",
+                                          "IGONBHEKMADFCLJ",
+                                          "JEMBLGKAFHOCDIN",
+                                          "JEMGKBLOHFAINCD",
+                                          "JEMKGLBFAOHNIDC",
+                                          "JEMLBKGHOAFDCNI",
+                                          "KFNBODJAEILCGHM",
+                                          "KFNDJBOLIEAHMCG",
+                                          "KFNJDOBEALIMHGC",
+                                          "KFNOBJDILAEGCMH",
+                                          "LHDAGJNCKOEBIMF",
+                                          "LHDGANJOECKIBFM",
+                                          "LHDJNAGEOKCMFBI",
+                                          "LHDNJGAKCEOFMIB",
+                                          "MJEAFHOCINDBKLG",
+                                          "MJEFAOHNDCIKBGL",
+                                          "MJEHOAFDNICLGBK",
+                                          "MJEOHFAICDNGLKB",
+                                          "NKFAEILCHMGBJOD",
+                                          "NKFEALIMGCHJBDO",
+                                          "NKFILAEGMHCODBJ",
+                                          "NKFLIEAHCGMDOJB",
+                                          "OIGADKMCJLFBHNE",
+                                          "OIGDAMKLFCJHBEN",
+                                          "OIGKMADFLJCNEBH",
+                                          "OIGMKDAJCFLENHB"
+                                      ],
+                   "G_gram_color":  [
+                                        "ABCDEFGHIJKLMNO",
+                                        "ABCEDGFJKHIMLON",
+                                        "ABCFGDEKJIHNOLM",
+                                        "ABCGFEDIHKJONML",
+                                        "BCALNOMDEFGHKIJ",
+                                        "BCAMONLEDGFJIKH",
+                                        "BCANLMOFGDEKHJI",
+                                        "BCAOMLNGFEDIJHK",
+                                        "CABHIJKLNOMDGEF",
+                                        "CABIHKJOMLNGDFE",
+                                        "CABJKHIMONLEFDG",
+                                        "CABKJIHNLMOFEGD",
+                                        "DHLANJGBIFMCKEO",
+                                        "DHLGJNAIBMFOEKC",
+                                        "DHLJGANMFIBEOCK",
+                                        "DHLNAGJFMBIKCOE",
+                                        "EJMAOHFBKGLCIDN",
+                                        "EJMFHOAKBLGNDIC",
+                                        "EJMHFAOLGKBDNCI",
+                                        "EJMOAFHGLBKICND",
+                                        "FKNALIEBJDOCHGM",
+                                        "FKNEILAJBODMGHC",
+                                        "FKNIEALODJBGMCH",
+                                        "FKNLAEIDOBJHCMG",
+                                        "GIOAMKDBHENCJFL",
+                                        "GIODKMAHBNELFJC",
+                                        "GIOKDAMNEHBFLCJ",
+                                        "GIOMADKENBHJCLF",
+                                        "HLDCEOKANJGBMIF",
+                                        "HLDECKOJGANMBFI",
+                                        "HLDKOECNAGJFIMB",
+                                        "HLDOKCEGJNAIFBM",
+                                        "IOGCFLJAMKDBNHE",
+                                        "IOGFCJLKDAMNBEH",
+                                        "IOGJLFCMADKEHNB",
+                                        "IOGLJCFDKMAHEBN",
+                                        "JMECDNIAOHFBLKG",
+                                        "JMEDCINHFAOLBGK",
+                                        "JMEINDCOAFHGKLB",
+                                        "JMENICDFHOAKGBL",
+                                        "KNFCGMHALIEBOJD",
+                                        "KNFGCHMIEALOBDJ",
+                                        "KNFHMGCLAEIDJOB",
+                                        "KNFMHCGEILAJDBO",
+                                        "LDHBIFMCEOKAGNJ",
+                                        "LDHFMBIKOECNJAG",
+                                        "LDHIBMFOKCEGAJN",
+                                        "LDHMFIBECKOJNGA",
+                                        "MEJBKGLCDNIAFOH",
+                                        "MEJGLBKINDCOHAF",
+                                        "MEJKBLGNICDFAHO",
+                                        "MEJLGKBDCINHOFA",
+                                        "NFKBJDOCGMHAELI",
+                                        "NFKDOBJHMGCLIAE",
+                                        "NFKJBODMHCGEAIL",
+                                        "NFKODJBGCHMILEA",
+                                        "OGIBHENCFLJADMK",
+                                        "OGIENBHJLFCMKAD",
+                                        "OGIHBNELJCFDAKM",
+                                        "OGINEHBFCJLKMDA"
+                                    ]
+               },
+    "expected":  {
+                     "flat_aut_order":  120,
+                     "gram_aut_order":  60,
+                     "selected_witness":  "ACBLMONHKJIDEGF",
+                     "selected_witness_first_defect":  {
+                                                           "edge":  "AD",
+                                                           "edge_color":  "1+1*phi",
+                                                           "image_edge":  "AL",
+                                                           "image_color":  "2-1*phi"
+                                                       },
+                     "standard_partition":  "(14,1)",
+                     "standard_ranks":  {
+                                            "G_mat_flat_auts":  0,
+                                            "G_geo_projective":  0,
+                                            "G_ng_odd_coset":  0,
+                                            "G_gram_color":  0
+                                        },
+                     "first_separator_partition":  "(13,2)",
+                     "first_separator_ranks":  {
+                                                   "G_mat_flat_auts":  2,
+                                                   "G_geo_projective":  3,
+                                                   "G_ng_odd_coset":  3,
+                                                   "G_gram_color":  3
+                                               }
+                 }
+}

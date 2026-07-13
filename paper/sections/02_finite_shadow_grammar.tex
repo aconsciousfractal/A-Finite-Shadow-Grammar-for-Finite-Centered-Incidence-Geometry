@@ -1,21 +1,55 @@
 \section{The Finite-Shadow Grammar}
 
-\begin{definition}[finite-shadow grammar row]
-A finite-shadow grammar row is a tuple
+\begin{definition}[finite-shadow grammar instance]
+A finite-shadow grammar instance is a tuple
 \[
-  S=(n,X,I,\rho,\PhiFCIG).
+  \mathcal S=(N,X,I,\rho,\PhiFCIG).
 \]
-Here \(n\) records the ambient symmetric degree, \(X\subseteq S_n\) is the finite row under study, \(I\) is the incidence or selection rule, \(\rho\) is the representation or centered-operator channel, and \(\PhiFCIG\) is the recorded fingerprint package.
+Here \(N\) records the ambient symmetric degree, \(X\subseteq S_N\) is the finite row under study, \(I\) is the incidence or selection rule, \(\rho\) is the representation or centered-operator channel, and \(\PhiFCIG\) is the recorded fingerprint package.
 \end{definition}
 
-For signed rows the ambient object may be a source-locked finite shadow \(H\leq S_N\), with \(X\subseteq H\).  The signed Type-B/C row used later has this form with \(B_n\leq S_{2n}\), following the signed-shadow conventions used in the companion Type-B/C artifact.
+The labels X01--X26 name source families, not the subset \(X\) of a single
+instance.  If \(\alpha\) is such a family label, we write
+\[
+  \mathfrak F_\alpha
+  =\{\mathcal S_{\alpha,t}:t\in T_\alpha\},
+  \qquad
+  \mathcal S_{\alpha,t}
+  =(N_{\alpha,t},X_{\alpha,t},I_{\alpha,t},
+    \rho_{\alpha,t},\Phi_{\alpha,t}).
+\]
+A family may have its own rank parameter \(n\); this is distinct from the
+ambient permutation degree \(N\).  Thus a signed rank-\(n\) family may act
+through \(S_{2n}\) without identifying its rank with the ambient degree.
 
+The five slots remain the mathematical core.  Every admitted instance also
+carries a typed \emph{source lock}: a provenance and interpretation record
+fixing the carrier, ambient action and action side, source version, admission,
+claim owner, verification route, and import/nonimport boundary.  Source
+partition or layer, coefficient ring, lattice basis, characteristic,
+quotient/coupling data, placement, and a decision certificate are mandatory
+fields when they occur, and are recorded as not applicable with a reason
+otherwise.  This record prevents the same five formal slots from conflating
+different source rows; it is not a sixth mathematical slot and does not assert
+a category of FCIG objects.
+
+For signed rows the ambient object may be a source-locked finite shadow \(H\leq S_N\), with \(X\subseteq H\).  The signed Type-B/C row used later has this form with \(B_n\leq S_{2n}\), following the signed-shadow conventions used in the companion Type-B/C artifact.  The dihedral row uses the vertex action \(I_2(m)\leq S_m\).  It is admitted only as a bounded rank-two reflection-shadow exhibit, not as a general Weyl-group row.
+
+Some rows also carry a finite source partition \(\Omega=\bigsqcup_i\Omega_i\).  This is still a finite-shadow row, but the channel is source-aware: centering may be global on \(\Omega\), orbit-centered on the blocks \(\Omega_i\), or both, according to the source lock.  The length-colored \(G_2\) root-shadow row uses \(\Omega=\Omega_{\mathrm{short}}\sqcup\Omega_{\mathrm{long}}\).  Forgetting this partition turns the row into an uncolored permutation problem and erases the distinction that the grammar is meant to retain.
+A source lock can also specify which symmetry layer is admitted on the same finite set.  The projective \(F_4\) root-shadow row in \cref{sec:f4-source-layer} is used only in this sense: the geometric projective Weyl layer and the source matroid automorphism layer act on the same 24 points, but they give different centered-rank readings because one preserves the length blocks and the other includes a length-swap coset.  This is a local source-layer lesson, not a general Weyl theorem.
+
+The projective \(H_3\) row in \cref{sec:h3-source-channel} is another same-carrier test, but the active split is not long/short length.  The 15 projective root pairs carry a flat-size source channel and a Gram-angle source channel.  Their automorphism rows have orders \(120\) and \(60\), respectively, while the ordinary standard block is blind.  Thus the grammar records not only the finite carrier but also the source channel through which the carrier is read.
+
+
+The projective \(E_6\) row in \cref{sec:e6-root-shadow-control} is a simply laced source-aware control.  Unlike the \(D_5\) row, its pair, flat-size, and circuit channels all recover the same projective source action.  Its grammar contribution is instead the decomposition of \(\mathbb Q^{\Pi_{36}}\) into the constant line and two nontrivial source summands \(U_{20}\) and \(U_{15}\), which can separate rows with the same total standard rank.
+The projective \(E_7\) row in \cref{sec:e7-root-shadow-control} is a source-exact control with an embedded-parabolic separator.  Its Gram-square and rank-two flat-size pair channels already recover the projective source action on \(\Pi_{63}\), but two embedded \(A_5\) parabolic rows of the same abstract type and order have different \((U_{27},U_{35})\) centered rank splits.
+The projective \(E_8\) row in \cref{sec:e8-root-shadow-subsystem-separator} is a source-exact control with a different separator shape.  Standard simple-parabolic placements of the same abstract type fuse under the projective Weyl action, but an \(A_7\) parabolic row and an \(A_7\) row inside a coordinate \(D_8\) subsystem have different orbit profiles and \((U_{35},U_{84})\) rank splits.
 \begin{definition}[admission levels]
 The admission levels are governance labels, not new mathematical structures.  The active labels are: \emph{core}, \emph{core artifact}, \emph{core exhibit}, \emph{prose}, \emph{pointer only}, \emph{parked}, \emph{future}, and \emph{rejected}.  Their role is to prevent an unfinished or overbroad object from entering the manuscript as if it were a closed theorem source.
 \end{definition}
 
-The full instance matrix is recorded in \cref{app:source-manifest}.  The table is part of the grammar: it says not only what enters, but also what remains outside.  This is why continuous contact sketches, raw motion rows, the parked exceptional \(S_6\) benchmark, and the separate signed-reversal route are not silently absorbed into the present paper.
+The full instance matrix is recorded in \cref{app:source-manifest}.  The table is part of the grammar: it says not only what enters, but also what remains outside.  This is why the future P18 and P17 companion pointers, the companion-owned exceptional \(S_6\) certificate routes, and the separate public signed-reversal theorem route are not silently absorbed into the present paper.
 
 \begin{remark}[the teeth test]
-A proposed FCIG row fails the teeth test if it lacks any of the five slots.  A geometric picture without a finite \(S_n\) shadow, a finite set without an incidence rule, or a representation calculation without a source-locked finite object can still be useful research material, but it is not a core row of this paper.
+A proposed FCIG row fails the teeth test if it lacks any of the five slots.  A geometric picture without a finite \(S_N\) shadow, a finite set without an incidence rule, or a representation calculation without a source-locked finite object can still be useful research material, but it is not a core row of this paper.
 \end{remark}

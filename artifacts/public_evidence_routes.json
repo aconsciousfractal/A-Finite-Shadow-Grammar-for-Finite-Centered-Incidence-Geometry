@@ -1,0 +1,168 @@
+{
+  "schema_version": 3,
+  "paper": "A Finite-Shadow Grammar for Finite Centered Incidence Geometry",
+  "installation_name": "artifacts/public_evidence_routes.json",
+  "policy": {
+    "all_quantitative_routes_required": true,
+    "full_x05_census_is_optional": true,
+    "manifest_checked_before_execution": true,
+    "release_checksum_checked_before_execution": true,
+    "semantic_artifact_check_required": true,
+    "distributed_artifacts_immutable": true
+  },
+  "routes": [
+    {
+      "id": "X05",
+      "status": "active",
+      "kind": "frozen_evidence_audit",
+      "script": "scripts/x05_m19_lat565_evidence_check.py",
+      "required_files": [
+        "artifacts/x05/census_rows1000_v2.json",
+        "artifacts/x05/census_summary1000_v2.json",
+        "artifacts/x05/lat565_pair_dependency_verification.json",
+        "artifacts/x05/lat565_global_rankdrop_linearization.json",
+        "artifacts/x05/lat565_global_linearization_check.json",
+        "scripts/x05_m19_census_full_regeneration.py"
+      ],
+      "artifacts": ["artifacts/x05_m19_lat565_evidence_check.json"],
+      "optional_script": "scripts/x05_m19_census_full_regeneration.py",
+      "boundary": "default verifier audits the frozen 1000+1000 dataset and lat565 witness; full census regeneration is optional"
+    },
+    {
+      "id": "X15",
+      "status": "active",
+      "kind": "bounded_replay",
+      "script": "scripts/signed_type_bc_shadow_replay.py",
+      "args": ["--recompute"],
+      "replay_artifact": "artifacts/.verify/signed_type_bc_shadow_recompute.json",
+      "required_files": [
+        "scripts/p14_s7_independent_recompute.py",
+        "results/p14_s4_first_atlas.json",
+        "results/p14_s6_5_rank_mass_formula_scout.json",
+        "results/p14_s7_independent_recompute.json",
+        "results/p14_s7_independent_recompute_summary.json",
+        "artifacts/x15/P14_S7_INDEPENDENT_RECOMPUTE_CERTIFICATE.json"
+      ],
+      "artifacts": ["artifacts/signed_type_bc_shadow_replay.json"],
+      "boundary": "six finite manuscript rows only"
+    },
+    {
+      "id": "X16",
+      "status": "active",
+      "kind": "bounded_replay",
+      "script": "scripts/modular_centered_channel_replay.py",
+      "artifacts": ["artifacts/modular_centered_channel_replay.json"]
+    },
+    {
+      "id": "X18",
+      "status": "active",
+      "kind": "bounded_replay",
+      "script": "scripts/dihedral_vertex_shadow_replay.py",
+      "artifacts": ["artifacts/dihedral_vertex_shadow_replay.json"]
+    },
+    {
+      "id": "X19",
+      "status": "active",
+      "kind": "bounded_replay",
+      "script": "scripts/g2_source_channel_replay.py",
+      "required_files": [
+        "scripts/p20_s3_channel_engine.py",
+        "scripts/p20_s4_length_defect_certificate.py",
+        "scripts/p20_s5_orbit_centered_balance.py",
+        "scripts/p20_s6_two_mirror_transfer.py",
+        "scripts/p20_s10d_source_profile_witness.py"
+      ],
+      "artifacts": ["artifacts/g2_source_channel_replay.json"],
+      "boundary": "selected length/source checks only"
+    },
+    {
+      "id": "X20",
+      "status": "active",
+      "kind": "bounded_replay",
+      "script": "scripts/f4_source_layer_replay.py",
+      "required_files": [
+        "scripts/p21_f4_projective_root_engine.py",
+        "scripts/p21_s4_length_line_theorem.py",
+        "scripts/p21_s5_matroid_source_generator_lock.py",
+        "scripts/p21_s6_block_triality_channel_scout.py",
+        "scripts/p21_s7_flat_incidence_profile_scout.py",
+        "scripts/p21_s14_block_triality_true_witness_hunt.py",
+        "scripts/p21_s15_flat_invariant_beyond_length.py"
+      ],
+      "artifacts": ["artifacts/f4_source_layer_replay.json"],
+      "boundary": "selected length, block-kernel, and flat-incidence checks only"
+    },
+    {
+      "id": "X21",
+      "status": "active",
+      "kind": "bounded_replay",
+      "script": "scripts/h3_projective_source_channel_replay.py",
+      "required_files": ["artifacts/h3_projective_source_channel_replay_seed.json"],
+      "artifacts": ["artifacts/h3_projective_source_channel_replay.json"]
+    },
+    {
+      "id": "X22",
+      "status": "active",
+      "kind": "bounded_replay",
+      "script": "scripts/h4_projective_source_channel_replay.py",
+      "required_files": ["artifacts/h4_projective_source_channel_replay_seed.json"],
+      "artifacts": ["artifacts/h4_projective_source_channel_replay.json"]
+    },
+    {
+      "id": "X23",
+      "status": "active",
+      "kind": "bounded_replay",
+      "script": "scripts/d5_projective_source_channel_replay.py",
+      "artifacts": ["artifacts/d5_projective_source_channel_replay.json"]
+    },
+    {
+      "id": "X24",
+      "status": "active",
+      "kind": "bounded_replay",
+      "script": "scripts/e6_projective_source_channel_replay.py",
+      "required_files": [
+        "scripts/e6_projective_root_engine.py",
+        "scripts/e6_projective_source_rows.py"
+      ],
+      "artifacts": ["artifacts/e6_projective_source_channel_replay.json"]
+    },
+    {
+      "id": "X25",
+      "status": "active",
+      "kind": "bounded_replay",
+      "script": "scripts/e7_projective_source_channel_replay.py",
+      "required_files": [
+        "scripts/e7_projective_root_engine.py",
+        "scripts/e7_projective_flat_channel.py",
+        "scripts/e7_projective_weyl_action.py",
+        "scripts/e7_projective_source_rows.py"
+      ],
+      "artifacts": ["artifacts/e7_projective_source_channel_replay.json"]
+    },
+    {
+      "id": "X26",
+      "status": "active",
+      "kind": "bounded_replay",
+      "script": "scripts/e8_projective_source_channel_replay.py",
+      "required_files": [
+        "artifacts/e8_projective_automorphism_transcript.txt",
+        "artifacts/e8_standard_parabolic_fusion_certificate.json",
+        "artifacts/e8_subsystem_separator_witnesses.json"
+      ],
+      "artifacts": ["artifacts/e8_projective_source_channel_replay.json"]
+    }
+  ],
+  "noncomputational_rows": [
+    {
+      "id": "X13",
+      "route": "human_proof_and_classical_source_lock",
+      "boundary": "no standalone numerical replay required"
+    },
+    {
+      "id": "G-004",
+      "record_id": "CPL-001",
+      "route": "human_proof_and_classical_source_lock",
+      "boundary": "classical source-coupling/descent guardrail; no numerical replay, no novelty, no new X-ID, and no imported descent or transfer theorem"
+    }
+  ]
+}

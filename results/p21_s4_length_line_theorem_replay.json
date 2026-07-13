@@ -1,0 +1,68 @@
+{
+  "E_global_distinct_values_by_block": {
+    "long_long": [
+      "24"
+    ],
+    "long_short": [
+      "-24"
+    ],
+    "short_long": [
+      "-24"
+    ],
+    "short_short": [
+      "24"
+    ]
+  },
+  "E_global_kills_ones": true,
+  "E_global_rank": 1,
+  "E_global_u_len_equals_group_order_u_len": true,
+  "E_length_centered_rank": 0,
+  "E_length_centered_zero_matrix": true,
+  "J_u_len_equals_zero": true,
+  "N_distinct_values_by_block": {
+    "long_long": [
+      "48"
+    ],
+    "long_short": [
+      "0"
+    ],
+    "short_long": [
+      "0"
+    ],
+    "short_short": [
+      "48"
+    ]
+  },
+  "N_matches_two_orbit_projection": true,
+  "N_u_len_equals_group_order_u_len": true,
+  "degree": 24,
+  "expected": {
+    "E_global_kills_ones": true,
+    "E_global_rank": 1,
+    "E_global_u_len_equals_group_order_u_len": true,
+    "E_length_centered_rank": 0,
+    "E_length_centered_zero_matrix": true,
+    "J_u_len_equals_zero": true,
+    "N_matches_two_orbit_projection": true,
+    "N_u_len_equals_group_order_u_len": true,
+    "degree": 24,
+    "group_order": 576,
+    "length_counts": {
+      "long": 12,
+      "short": 12
+    }
+  },
+  "gate": "S4",
+  "global_center_entry": "24",
+  "group_order": 576,
+  "length_counts": {
+    "long": 12,
+    "short": 12
+  },
+  "matroid_layer_status": "LOCKED_IN_S5_SEPARATE_GATE",
+  "pass": true,
+  "route_id": "P21",
+  "scope": "full_projective_weyl_row_G_proj_only",
+  "two_orbit_matrix_entry": "48",
+  "verifier": "p21_s4_length_line_theorem.py"
+}

@@ -1,0 +1,49 @@
+{
+  "artifact": "g2_source_channel_replay",
+  "boundary": "selected X19 source-channel computations only; no general G2, Weyl, classifier, or tiling theorem",
+  "checks": {
+    "base_rows_orbit_ranks": true,
+    "carrier_dimension_12": true,
+    "component_exits_zero": true,
+    "component_statuses_pass": true,
+    "length_line_dimension_1": true,
+    "length_obstruction_has_no_failures": true,
+    "orbit_centered_dimension_10": true,
+    "orbit_repair_has_no_failures": true,
+    "source_profile_checks_all": true,
+    "two_mirror_checks_all": true,
+    "two_mirror_five_rows": true
+  },
+  "claims": {
+    "base_orbit_centered_ranks": {
+      "C": 0,
+      "F": 0,
+      "F_long_axis": 2,
+      "F_short_axis": 2,
+      "W": 0
+    },
+    "carrier": "Omega_short disjoint union Omega_long, each of size 6",
+    "global_decomposition_dimensions": [
+      1,
+      1,
+      5,
+      5
+    ],
+    "two_mirror_orbit_ranks": {
+      "X_1": 8,
+      "X_2": 10,
+      "X_3": 4,
+      "X_4": 10,
+      "X_5": 8
+    }
+  },
+  "component_exit": {
+    "p20_s10d_source_profile_witness": 0,
+    "p20_s3_channel_engine": 0,
+    "p20_s4_length_defect_certificate": 0,
+    "p20_s5_orbit_centered_balance": 0,
+    "p20_s6_two_mirror_transfer": 0
+  },
+  "pass": true,
+  "status": "PASS_G2_SOURCE_CHANNEL"
+}

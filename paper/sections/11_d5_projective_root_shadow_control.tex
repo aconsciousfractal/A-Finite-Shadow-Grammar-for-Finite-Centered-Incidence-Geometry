@@ -1,0 +1,50 @@
+\section{A Projective \texorpdfstring{\(D_5\)}{D5} Root-Shadow Control Exhibit}
+\label{sec:d5-root-shadow-control}
+
+The projective \(H_4\) row shows that two pair-color channels on the same carrier may have different automorphism groups.  The \(D_5\) control below has a different role.  It is crystallographic and simply laced, so there is no short/long length split.  The useful boundary is instead between pair-level data and rank-two triple incidence: the pair channel is too coarse, while the \(A_2\) 3-flat incidence recovers the source projective Weyl action exactly.
+
+Let \(\Pi_{20}\) be the 20 antipodal pairs in the \(D_5\) root system, represented by the projective signed coordinate-edge roots \(\{L_{ij}^{+},L_{ij}^{-}:1\leq i<j\leq5\}\).  The source package computes the projective Weyl row \(W(D_5)_{\mathrm{proj}}\), the pair-level Gram/flat-size channel on \(\binom{20}{2}\) unordered pairs, and the family of projective \(A_2\) rank-two flats.  Classical background on finite Coxeter and root systems is standard; see \cite{BjornerBrenti2005}.  The proposition below is only a finite source-channel control exhibit for this 20-point shadow.
+
+\begin{proposition}[source recovery from \(A_2\) incidence in the projective \(D_5\) shadow]
+\label{prop:d5-root-shadow-control}
+For the source-locked projective \(D_5\) shadow \(\Pi_{20}\), the exact source replay certifies the following bounded facts.
+\begin{enumerate}[label=\textup{(\alph*)},leftmargin=*]
+  \item The pair-level Gram/flat-size channel has full automorphism group
+  \[
+    \operatorname{Aut}(\mathrm{pair})\cong C_2^{10}:S_5,
+    \qquad |\operatorname{Aut}(\mathrm{pair})|=122880.
+  \]
+  \item The source projective Weyl action has order
+  \[
+    |W(D_5)_{\mathrm{proj}}|=1920.
+  \]
+  Thus the pair channel has \(64\) times too many automorphisms.
+  \item The 40 projective \(A_2\) 3-flat incidences have preservers exactly equal to \(W(D_5)_{\mathrm{proj}}\) inside the pair-channel automorphism group.
+  \item The five coordinate \(D_4\) size-12 flats are a negative control: their preservers inside the pair channel still have order \(122880\), so this localization is sign-blind by itself.
+  \item The fake flip \(L_{12}^{+}\leftrightarrow L_{12}^{-}\) preserves the pair channel and the coordinate \(D_4\) family, is not in \(W(D_5)_{\mathrm{proj}}\), and breaks the \(A_2\) flat \(\{L_{12}^{+},L_{13}^{+},L_{23}^{-}\}\).
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}[Source-locked proof sketch]
+The exact replay builds the 20 projective signed-edge labels, computes the projective \(W(D_5)\) action, and recomputes the full color-preserving automorphism group of the pair-level channel.  The ten twin classes \(\{L_{ij}^{+},L_{ij}^{-}\}\) give an independent \(C_2^{10}\) flip kernel, while the quotient is the line graph \(L(K_5)\) and has automorphism group \(S_5\).  This gives \(C_2^{10}:S_5\) and order \(122880\).  The same replay enumerates the 40 projective \(A_2\) 3-flats and checks that their preservers inside the pair-channel group have order \(1920\) and equal the computed projective Weyl row.  The displayed fake flip is then checked directly against pair data, the \(D_4\) family, the \(A_2\) family, and membership in \(W(D_5)_{\mathrm{proj}}\).
+\end{proof}
+
+\begin{table}[!htbp]
+\centering
+\caption{Evidence carried by the projective \(D_5\) source-control exhibit.}
+\label{tab:d5-root-shadow-control}
+\begin{tabular}{@{}L{0.23\textwidth}L{0.31\textwidth}L{0.34\textwidth}@{}}
+\toprule
+channel or witness & certified finite fact & grammar reading \\
+\midrule
+carrier & \(20\) projective signed-edge root pairs & finite \(D_5\) root shadow, not a Type-E theorem \\
+pair-level channel & \(|\operatorname{Aut}(\mathrm{pair})|=122880=C_2^{10}:S_5\) & pair data over-automorphizes the source by factor \(64\) \\
+source row & \(|W(D_5)_{\mathrm{proj}}|=1920\) & target source action \\
+\(A_2\) 3-flat incidence & \(40\) flats; preservers exactly \(W(D_5)_{\mathrm{proj}}\) & rank-two triple incidence restores the source \\
+coordinate \(D_4\) flats & \(5\) flats; preservers still order \(122880\) & negative control: localization alone is sign-blind \\
+fake flip & \(L_{12}^{+}\leftrightarrow L_{12}^{-}\) preserves pair/D4, breaks \(A_2\) & explicit boundary witness \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Thus the \(D_5\) row contributes one compact control lesson: in a simply laced projective root shadow, pair-level Gram/flat-size data can still be too coarse, and a higher incidence channel may be required to recover the source action.  It is not a standalone \(D_5\) paper, not a general Type-E theorem, not an \(E_6/E_7/E_8\) transfer, not a matroid classification, not a tiling result, and not a \(\PhiFCIG\) classifier.

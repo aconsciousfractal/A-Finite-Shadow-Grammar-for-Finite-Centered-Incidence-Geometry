@@ -1,0 +1,175 @@
+{
+  "checks": {
+    "C32_count_ok": true,
+    "C32_left_coset_wording_ok": true,
+    "C8_count_ok": true,
+    "R22_count_ok": true,
+    "all_checks_pass": true,
+    "all_examples_unique_ok": true,
+    "decomposition_sum_ok": true,
+    "grid_id_ok": true,
+    "json_parse": true,
+    "rank_locus_size_ok": true,
+    "template_checks_ok": true
+  },
+  "date": "2026-07-07",
+  "inputs": {
+    "census_rows1000_v2_json": "experiments\\m19_hidden_coset_census\\census_rows1000 v2.json",
+    "lat565_global_rankdrop_linearization_json": "experiments\\m19_hidden_coset_census\\lat565_global_rankdrop_linearization.json",
+    "lat565_pair_dependency_verification_json": "experiments\\m19_hidden_coset_census\\lat565_pair_dependency_verification.json"
+  },
+  "purpose": "deterministic validation of the lat565 32+8+22 source-lock certificate",
+  "sha256": {
+    "census_rows1000_v2_json": "7b516b2516d0b9f11e9209eec644f98cbfd039a7e7e4842558ba6e6c472149dc",
+    "checker_script": "63b6b2c79089c71c232d91c9e4e423336c3bfb15ecc44e632239b05dca94f761",
+    "lat565_global_rankdrop_linearization_json": "d9eaae65752e0615231559f0a93af5c0e1814cacc151ae9f72bb254d10b2d86b",
+    "lat565_pair_dependency_verification_json": "7814c7b9a40952675ac28abdbe0f7dff6d098c3b351735f3d5dce8d5a0371c7f"
+  },
+  "status": "PASS",
+  "template_checks": [
+    {
+      "example_solutions_ok": true,
+      "name": "C32 slope lambda=-2",
+      "nullity_ok": true,
+      "rank_W_ok": true,
+      "rank_with_sum_zero_row_ok": true,
+      "solution_count_field_ok": true
+    },
+    {
+      "example_solutions_ok": true,
+      "name": "C32 slope lambda=-1",
+      "nullity_ok": true,
+      "rank_W_ok": true,
+      "rank_with_sum_zero_row_ok": true,
+      "solution_count_field_ok": true
+    },
+    {
+      "example_solutions_ok": true,
+      "name": "C32 slope lambda=-1/2",
+      "nullity_ok": true,
+      "rank_W_ok": true,
+      "rank_with_sum_zero_row_ok": true,
+      "solution_count_field_ok": true
+    },
+    {
+      "example_solutions_ok": true,
+      "name": "C32 slope lambda=1/2",
+      "nullity_ok": true,
+      "rank_W_ok": true,
+      "rank_with_sum_zero_row_ok": true,
+      "solution_count_field_ok": true
+    },
+    {
+      "example_solutions_ok": true,
+      "name": "C32 slope lambda=1",
+      "nullity_ok": true,
+      "rank_W_ok": true,
+      "rank_with_sum_zero_row_ok": true,
+      "solution_count_field_ok": true
+    },
+    {
+      "example_solutions_ok": true,
+      "name": "C32 slope lambda=2",
+      "nullity_ok": true,
+      "rank_W_ok": true,
+      "rank_with_sum_zero_row_ok": true,
+      "solution_count_field_ok": true
+    },
+    {
+      "example_solutions_ok": true,
+      "name": "C8 row parallelogram R1-R3-R4+R7",
+      "nullity_ok": true,
+      "rank_W_ok": true,
+      "rank_with_sum_zero_row_ok": true,
+      "solution_count_field_ok": true
+    },
+    {
+      "example_solutions_ok": true,
+      "name": "R22 isolated complement pair 0",
+      "nullity_ok": true,
+      "rank_W_ok": true,
+      "rank_with_sum_zero_row_ok": true,
+      "solution_count_field_ok": true
+    },
+    {
+      "example_solutions_ok": true,
+      "name": "R22 isolated complement pair 1",
+      "nullity_ok": true,
+      "rank_W_ok": true,
+      "rank_with_sum_zero_row_ok": true,
+      "solution_count_field_ok": true
+    },
+    {
+      "example_solutions_ok": true,
+      "name": "R22 isolated complement pair 2",
+      "nullity_ok": true,
+      "rank_W_ok": true,
+      "rank_with_sum_zero_row_ok": true,
+      "solution_count_field_ok": true
+    },
+    {
+      "example_solutions_ok": true,
+      "name": "R22 isolated complement pair 3",
+      "nullity_ok": true,
+      "rank_W_ok": true,
+      "rank_with_sum_zero_row_ok": true,
+      "solution_count_field_ok": true
+    },
+    {
+      "example_solutions_ok": true,
+      "name": "R22 isolated complement pair 4",
+      "nullity_ok": true,
+      "rank_W_ok": true,
+      "rank_with_sum_zero_row_ok": true,
+      "solution_count_field_ok": true
+    },
+    {
+      "example_solutions_ok": true,
+      "name": "R22 isolated complement pair 5",
+      "nullity_ok": true,
+      "rank_W_ok": true,
+      "rank_with_sum_zero_row_ok": true,
+      "solution_count_field_ok": true
+    },
+    {
+      "example_solutions_ok": true,
+      "name": "R22 isolated complement pair 6",
+      "nullity_ok": true,
+      "rank_W_ok": true,
+      "rank_with_sum_zero_row_ok": true,
+      "solution_count_field_ok": true
+    },
+    {
+      "example_solutions_ok": true,
+      "name": "R22 isolated complement pair 7",
+      "nullity_ok": true,
+      "rank_W_ok": true,
+      "rank_with_sum_zero_row_ok": true,
+      "solution_count_field_ok": true
+    },
+    {
+      "example_solutions_ok": true,
+      "name": "R22 isolated complement pair 8",
+      "nullity_ok": true,
+      "rank_W_ok": true,
+      "rank_with_sum_zero_row_ok": true,
+      "solution_count_field_ok": true
+    },
+    {
+      "example_solutions_ok": true,
+      "name": "R22 isolated complement pair 9",
+      "nullity_ok": true,
+      "rank_W_ok": true,
+      "rank_with_sum_zero_row_ok": true,
+      "solution_count_field_ok": true
+    },
+    {
+      "example_solutions_ok": true,
+      "name": "R22 isolated complement pair 10",
+      "nullity_ok": true,
+      "rank_W_ok": true,
+      "rank_with_sum_zero_row_ok": true,
+      "solution_count_field_ok": true
+    }
+  ]
+}

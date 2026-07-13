@@ -1,0 +1,66 @@
+{
+  "boundary": "Finite source-profile lemma only; no classifier, tiling, or general Weyl claim.",
+  "checks": {
+    "aggregate_source_profiles_differ": true,
+    "all_reflections_conjugated_to_reflections": true,
+    "h_F_short_h_inverse_equals_F_long": true,
+    "h_is_not_source_preserving": true,
+    "h_swaps_source_blocks": true,
+    "ordinary_cycle_histograms_equal": true,
+    "source_profiles_differ": true
+  },
+  "conjugacy_table": {
+    "tau_0": "tau_1",
+    "tau_1": "tau_2",
+    "tau_2": "tau_3",
+    "tau_3": "tau_4",
+    "tau_4": "tau_5",
+    "tau_5": "tau_0"
+  },
+  "conjugator": {
+    "definition": "h(S_i)=L_i, h(L_i)=S_{i+1}",
+    "is_source_preserving": false,
+    "label_map": {
+      "L0": "S1",
+      "L1": "S2",
+      "L2": "S3",
+      "L3": "S4",
+      "L4": "S5",
+      "L5": "S0",
+      "S0": "L0",
+      "S1": "L1",
+      "S2": "L2",
+      "S3": "L3",
+      "S4": "L4",
+      "S5": "L5"
+    },
+    "swaps_source_blocks": true
+  },
+  "gate": "P20-S10D",
+  "lemma_message": "Ambient conjugacy can preserve ordinary uncolored invariants while source-aware profiles distinguish rows.",
+  "next_gate": "P20-S10E projective quotient value test",
+  "project": "P20_g2_hexagonal_weyl_shadows",
+  "rows": {
+    "F_long_axis": {
+      "aggregate_fixed_long": 6,
+      "aggregate_fixed_short": 0,
+      "cycle_type_histogram": {
+        "(2, 2, 2, 2, 2, 1, 1)": 3
+      },
+      "source_fixed_profile_histogram": {
+        "(0, 2)": 3
+      }
+    },
+    "F_short_axis": {
+      "aggregate_fixed_long": 0,
+      "aggregate_fixed_short": 6,
+      "cycle_type_histogram": {
+        "(2, 2, 2, 2, 2, 1, 1)": 3
+      },
+      "source_fixed_profile_histogram": {
+        "(2, 0)": 3
+      }
+    }
+  },
+  "status": "PASS"
+}

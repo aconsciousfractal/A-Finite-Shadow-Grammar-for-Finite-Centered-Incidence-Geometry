@@ -1,0 +1,70 @@
+\section{A Projective \texorpdfstring{\(E_7\)}{E7} Source-Exact Control and Embedded-Parabolic Separator}
+\label{sec:e7-root-shadow-control}
+
+The preceding \(E_6\) row shows that source-aware summands can matter even after the low-level channels collapse to the classical source action.  The \(E_7\) row is a sharper control.  On the 63 projective root pairs, the pair-level channels already recover the projective source action exactly, but embedded parabolic rows can still separate source placement.
+
+Let \(\Pi_{63}\) be the 63 antipodal pairs in the \(E_7\) root system.  The source package constructs the projective Weyl action, the projective root graph \(\Gamma_{E_7}\) from the squared Gram channel, the rank-two flat-size pair channel, the source decomposition of \(\mathbb Q^{\Pi_{63}}\), and selected simple-parabolic rows.  Classical root-system and Coxeter background is standard; see \cite{BjornerBrenti2005}.  Reflection-subgroup classification and root-system matroid automorphism theory are prior-art contexts, not claims of this exhibit; see \cite{DyerLehrer2010ReflectionSubgroups,DutourSikiricFeliksonTumarkin2008RootMatroids}.
+
+\begin{proposition}[source-exact pair channels and embedded parabolic separation in the projective \(E_7\) shadow]
+\label{prop:e7-root-shadow-control}
+For the source-locked projective \(E_7\) shadow \(\Pi_{63}\), the exact source replay certifies the following bounded facts.
+\begin{enumerate}[label=\textup{(\alph*)},leftmargin=*]
+  \item The carrier has \(126\) roots and \(63\) projective root pairs.  The projective Weyl image has order
+  \[
+    |W(E_7)_{\mathrm{proj}}|=1451520.
+  \]
+  \item The projective root graph \(\Gamma_{E_7}\) has strongly regular parameters
+  \[
+    (63,32,16,16),
+  \]
+  and its full automorphism group has order \(1451520\).  The rank-two flat-size pair channel has the same full automorphism group, so the pair/flat level is already source-exact.
+  \item As a source-aware permutation module,
+  \[
+    \mathbb Q^{\Pi_{63}}=\mathbb Q\mathbf 1\oplus U_{27}\oplus U_{35}.
+  \]
+  The reflection row satisfies
+  \[
+    N_{\mathrm{Ref}}=31I+A,
+  \]
+  where \(A\) is the adjacency matrix of \(\Gamma_{E_7}\); on the centered part this gives rank \(62=27+35\), with scalar readings \(35\) and \(27\) on the two nontrivial summands.
+  \item The parabolic rows \(\mathrm{Par}_{12345}\) and \(\mathrm{Par}_{12347}\) have the same abstract type \(A_5\) and the same order \(720\), but different embedded source fingerprints:
+  \[
+    \mathrm{rank}_{\mathrm{std}}(\mathrm{Par}_{12345})=5=(3,2),\qquad
+    \mathrm{rank}_{\mathrm{std}}(\mathrm{Par}_{12347})=6=(3,3),
+  \]
+  where the ordered pairs record the \((U_{27},U_{35})\) ranks.  Their orbit profiles on \(\Pi_{63}\) are respectively
+  \[
+    [1,6,6,15,15,20]
+    \quad\text{and}\quad
+    [1,1,1,15,15,15,15].
+  \]
+  \item The replay also records smaller support witnesses of the same embedded-placement type, for instance \(A_1+A_1+A_1\) rows \(\mathrm{Par}_{135}\) and \(\mathrm{Par}_{137}\), and \(A_3+A_1\) rows \(\mathrm{Par}_{1235}\) and \(\mathrm{Par}_{1237}\).  These support the bounded reading only; they are not promoted to a parabolic classification.
+  \item The raw subsystem-reflection rows for the named examples do not provide the separator: they have full centered rank \(62=27+35\).  Thus the finite witness is the embedded parabolic subgroup row, not merely the set of reflections in the embedded subsystem.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}[Source-locked proof sketch]
+The exact replay constructs the \(E_7\) roots, quotients by antipodal pairs, computes the induced projective source action, and verifies its order.  It then constructs \(\Gamma_{E_7}\) from the squared Gram channel, checks the strongly regular parameters, and computes that both the graph channel and the rank-two flat-size pair channel have full automorphism group of order \(1451520\).  The same source package decomposes \(\mathbb Q^{\Pi_{63}}\) into \(\mathbb Q\mathbf1\oplus U_{27}\oplus U_{35}\), computes the reflection-row identity \(N_{\mathrm{Ref}}=31I+A\), and evaluates the selected simple-parabolic row matrices on the two source summands.  The displayed \(A_5\) pair has the same abstract type and order, but different rank and orbit-profile data on the same carrier.  The reflection-set negative controls are recomputed separately and have full centered rank.
+\end{proof}
+
+\begin{table}[!htbp]
+\centering
+\caption{Evidence carried by the projective \(E_7\) source-exact control and embedded-parabolic separator.}
+\label{tab:e7-root-shadow-control}
+\begin{tabular}{@{}L{0.25\textwidth}L{0.31\textwidth}L{0.34\textwidth}@{}}
+\toprule
+channel or witness & certified finite fact & grammar reading \\
+\midrule
+carrier & \(126\) roots, \(63\) projective root pairs & simply laced exceptional projective source shadow \\
+projective source row & \(|W(E_7)_{\mathrm{proj}}|=1451520\) & target source action \\
+pair/flat channels & \(\Gamma_{E_7}\) has parameters \((63,32,16,16)\); Gram-square and rank-two flat-size pair channels both have automorphism order \(1451520\) & pair-level data is already source-exact \\
+source split & \(\mathbb Q^{\Pi_{63}}=\mathbb Q\mathbf1\oplus U_{27}\oplus U_{35}\) & row data is read source-summand-wise \\
+reflection row & \(N_{\mathrm{Ref}}=31I+A\), rank \(62=27+35\) & source-exact carrier still has meaningful row identities \\
+main parabolic witness & \(\mathrm{Par}_{12345}\) and \(\mathrm{Par}_{12347}\): both \(A_5\), both order \(720\), ranks \(5=(3,2)\) and \(6=(3,3)\) & same abstract parabolic type/order does not determine embedded FCIG fingerprint \\
+support witnesses & \(A_1^3\): ranks \(25=(12,13)\), \(26=(12,14)\); \(A_3+A_1\): ranks \(13=(7,6)\), \(14=(7,7)\) & audit support, not a classification theorem \\
+negative control & named subsystem-reflection rows have full centered rank \(62=27+35\) & separator belongs to the parabolic subgroup row, not just the reflection set \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Thus the \(E_7\) row contributes one compact control-plus-separator lesson: source-exact pair channels do not make embedded row placement redundant.  The row is not a standalone \(E_7\) theorem, not a theorem about \(\operatorname{Sp}_6(2)\), not a reflection-subgroup classification, not a root-system matroid novelty claim, not an \(E_8\) or Type-E family theorem, not a 56-weight/Gosset/minuscule route, not a classifier, and not a tiling result.

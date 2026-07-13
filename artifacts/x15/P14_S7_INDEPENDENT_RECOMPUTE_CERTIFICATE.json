@@ -1,0 +1,33 @@
+{
+  "artifact_paths": [
+    "results/p14_s7_independent_recompute.json",
+    "results/p14_s7_independent_recompute_summary.json",
+    "results/p14_s7_independent_recompute.md",
+    "tables/P14_S7_S4_RECOMPUTE_TABLE.md",
+    "tables/P14_S7_B4_RECOMPUTE_TABLE.md",
+    "docs/P14_S7_INDEPENDENT_RECOMPUTE_2026_07_06.md"
+  ],
+  "certificate": "P14-S7 independent recompute / red-team",
+  "checks": {
+    "b4_rank_mass_checks_pass": true,
+    "b4_row_count_matches": true,
+    "b4_size_checks_pass": true,
+    "b4_zero_zero_second_prime_pass": true,
+    "mirror_checks_pass": true,
+    "no_b4_atlas_promoted": true,
+    "no_native_b_equivalence_promoted": true,
+    "no_theorem_promoted": true,
+    "s1_5_standard_rank_pair_matches_expected": true,
+    "s4_object_count_matches": true,
+    "s4_rank_mass_left_ideal_checks_pass": true,
+    "s4_signed_histogram_checks_pass": true,
+    "s4_size_checks_pass": true,
+    "stale_s6_5_next_absent": true,
+    "zero_zero_candidate_matches_n_2_3_4": true
+  },
+  "date_utc": "2026-07-06",
+  "decision": "GO_TO_S7_5_NATIVE_BRANCHING_SCOUT_AND_PRIOR_ART_GATE",
+  "next_task": "P14-S7.5 native branching comparison scout and prior-art gate.",
+  "status": "PASS",
+  "post_s7b_interpretation": "S7B passed after this recompute: BI_n(0,0) is read as sign-subgroup index/background; mixed layers are the bounded non-index signal."
+}

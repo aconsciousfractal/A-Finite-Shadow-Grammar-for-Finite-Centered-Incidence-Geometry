@@ -1,0 +1,637 @@
+{
+  "boundary": "S3 fixes engine/channel conventions only; channel ranks are smoke checks for later gates, not theorem promotion.",
+  "channel_decomposition": "Q^Omega = Q*1 + Q*u_len + V_short^0 + V_long^0; global_standard = Q*u_len + orbit_centered",
+  "channel_dimensions": {
+    "ambient": 12,
+    "global_standard": 11,
+    "length_line": 1,
+    "long_standard": 5,
+    "orbit_centered": 10,
+    "short_standard": 5,
+    "trivial_line": 1
+  },
+  "composition_convention": "compose(p,q)=p_after_q; permutation matrix has P[p[i]][i]=1",
+  "failures": [],
+  "gate": "P20-S3",
+  "labels": [
+    "S0",
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S5",
+    "L0",
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+  ],
+  "length_orbits": {
+    "long": [
+      "L0",
+      "L1",
+      "L2",
+      "L3",
+      "L4",
+      "L5"
+    ],
+    "short": [
+      "S0",
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5"
+    ]
+  },
+  "historical_next_gate_at_s3_closeout": "P20-S4 length-defect theorem candidate", "current_next_gate_after_s4": "P20-S5 orbit-centered balance and base ranks",
+  "project": "P20_g2_hexagonal_weyl_shadows",
+  "rows": [
+    {
+      "channel_matrix_signatures": {
+        "global_standard": {
+          "cols": 11,
+          "rank_Q": 1,
+          "rows": 11
+        },
+        "long_standard": {
+          "cols": 5,
+          "rank_Q": 0,
+          "rows": 5
+        },
+        "orbit_centered": {
+          "cols": 10,
+          "rank_Q": 0,
+          "rows": 10
+        },
+        "short_standard": {
+          "cols": 5,
+          "rank_Q": 0,
+          "rows": 5
+        }
+      },
+      "channel_smoke_ranks": {
+        "global_standard_rank_Q": 1,
+        "length_line_rank_Q": 1,
+        "long_standard_rank_Q": 0,
+        "orbit_centered_rank_Q": 0,
+        "short_standard_rank_Q": 0
+      },
+      "checks": {
+        "all_elements_length_preserving": true,
+        "col_sums_equal_size": true,
+        "global_dim_decomposes": true,
+        "length_line_eigen_scalar_equals_size": true,
+        "row_sums_equal_size": true
+      },
+      "length_line_scalar": 12,
+      "length_profile": {
+        "fixed_long_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          2,
+          2,
+          6
+        ],
+        "fixed_short_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          2,
+          2,
+          6
+        ]
+      },
+      "long_uniform_multiplicity": 2,
+      "row_id": "W",
+      "short_uniform_multiplicity": 2,
+      "size": 12
+    },
+    {
+      "channel_matrix_signatures": {
+        "global_standard": {
+          "cols": 11,
+          "rank_Q": 1,
+          "rows": 11
+        },
+        "long_standard": {
+          "cols": 5,
+          "rank_Q": 0,
+          "rows": 5
+        },
+        "orbit_centered": {
+          "cols": 10,
+          "rank_Q": 0,
+          "rows": 10
+        },
+        "short_standard": {
+          "cols": 5,
+          "rank_Q": 0,
+          "rows": 5
+        }
+      },
+      "channel_smoke_ranks": {
+        "global_standard_rank_Q": 1,
+        "length_line_rank_Q": 1,
+        "long_standard_rank_Q": 0,
+        "orbit_centered_rank_Q": 0,
+        "short_standard_rank_Q": 0
+      },
+      "checks": {
+        "all_elements_length_preserving": true,
+        "col_sums_equal_size": true,
+        "global_dim_decomposes": true,
+        "length_line_eigen_scalar_equals_size": true,
+        "row_sums_equal_size": true
+      },
+      "length_line_scalar": 6,
+      "length_profile": {
+        "fixed_long_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          6
+        ],
+        "fixed_short_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          6
+        ]
+      },
+      "long_uniform_multiplicity": 1,
+      "row_id": "C",
+      "short_uniform_multiplicity": 1,
+      "size": 6
+    },
+    {
+      "channel_matrix_signatures": {
+        "global_standard": {
+          "cols": 11,
+          "rank_Q": 1,
+          "rows": 11
+        },
+        "long_standard": {
+          "cols": 5,
+          "rank_Q": 0,
+          "rows": 5
+        },
+        "orbit_centered": {
+          "cols": 10,
+          "rank_Q": 0,
+          "rows": 10
+        },
+        "short_standard": {
+          "cols": 5,
+          "rank_Q": 0,
+          "rows": 5
+        }
+      },
+      "channel_smoke_ranks": {
+        "global_standard_rank_Q": 1,
+        "length_line_rank_Q": 1,
+        "long_standard_rank_Q": 0,
+        "orbit_centered_rank_Q": 0,
+        "short_standard_rank_Q": 0
+      },
+      "checks": {
+        "all_elements_length_preserving": true,
+        "col_sums_equal_size": true,
+        "global_dim_decomposes": true,
+        "length_line_eigen_scalar_equals_size": true,
+        "row_sums_equal_size": true
+      },
+      "length_line_scalar": 6,
+      "length_profile": {
+        "fixed_long_counts": [
+          0,
+          0,
+          0,
+          2,
+          2,
+          2
+        ],
+        "fixed_short_counts": [
+          0,
+          0,
+          0,
+          2,
+          2,
+          2
+        ]
+      },
+      "long_uniform_multiplicity": 1,
+      "row_id": "F",
+      "short_uniform_multiplicity": 1,
+      "size": 6
+    },
+    {
+      "channel_matrix_signatures": {
+        "global_standard": {
+          "cols": 11,
+          "rank_Q": 3,
+          "rows": 11
+        },
+        "long_standard": {
+          "cols": 5,
+          "rank_Q": 1,
+          "rows": 5
+        },
+        "orbit_centered": {
+          "cols": 10,
+          "rank_Q": 2,
+          "rows": 10
+        },
+        "short_standard": {
+          "cols": 5,
+          "rank_Q": 1,
+          "rows": 5
+        }
+      },
+      "channel_smoke_ranks": {
+        "global_standard_rank_Q": 3,
+        "length_line_rank_Q": 1,
+        "long_standard_rank_Q": 1,
+        "orbit_centered_rank_Q": 2,
+        "short_standard_rank_Q": 1
+      },
+      "checks": {
+        "all_elements_length_preserving": true,
+        "col_sums_equal_size": true,
+        "global_dim_decomposes": true,
+        "length_line_eigen_scalar_equals_size": true,
+        "row_sums_equal_size": true
+      },
+      "length_line_scalar": 3,
+      "length_profile": {
+        "fixed_long_counts": [
+          0,
+          0,
+          0
+        ],
+        "fixed_short_counts": [
+          2,
+          2,
+          2
+        ]
+      },
+      "long_uniform_multiplicity": null,
+      "row_id": "F_short_axis",
+      "short_uniform_multiplicity": null,
+      "size": 3
+    },
+    {
+      "channel_matrix_signatures": {
+        "global_standard": {
+          "cols": 11,
+          "rank_Q": 3,
+          "rows": 11
+        },
+        "long_standard": {
+          "cols": 5,
+          "rank_Q": 1,
+          "rows": 5
+        },
+        "orbit_centered": {
+          "cols": 10,
+          "rank_Q": 2,
+          "rows": 10
+        },
+        "short_standard": {
+          "cols": 5,
+          "rank_Q": 1,
+          "rows": 5
+        }
+      },
+      "channel_smoke_ranks": {
+        "global_standard_rank_Q": 3,
+        "length_line_rank_Q": 1,
+        "long_standard_rank_Q": 1,
+        "orbit_centered_rank_Q": 2,
+        "short_standard_rank_Q": 1
+      },
+      "checks": {
+        "all_elements_length_preserving": true,
+        "col_sums_equal_size": true,
+        "global_dim_decomposes": true,
+        "length_line_eigen_scalar_equals_size": true,
+        "row_sums_equal_size": true
+      },
+      "length_line_scalar": 3,
+      "length_profile": {
+        "fixed_long_counts": [
+          2,
+          2,
+          2
+        ],
+        "fixed_short_counts": [
+          0,
+          0,
+          0
+        ]
+      },
+      "long_uniform_multiplicity": null,
+      "row_id": "F_long_axis",
+      "short_uniform_multiplicity": null,
+      "size": 3
+    },
+    {
+      "channel_matrix_signatures": {
+        "global_standard": {
+          "cols": 11,
+          "rank_Q": 9,
+          "rows": 11
+        },
+        "long_standard": {
+          "cols": 5,
+          "rank_Q": 4,
+          "rows": 5
+        },
+        "orbit_centered": {
+          "cols": 10,
+          "rank_Q": 8,
+          "rows": 10
+        },
+        "short_standard": {
+          "cols": 5,
+          "rank_Q": 4,
+          "rows": 5
+        }
+      },
+      "channel_smoke_ranks": {
+        "global_standard_rank_Q": 9,
+        "length_line_rank_Q": 1,
+        "long_standard_rank_Q": 4,
+        "orbit_centered_rank_Q": 8,
+        "short_standard_rank_Q": 4
+      },
+      "checks": {
+        "all_elements_length_preserving": true,
+        "col_sums_equal_size": true,
+        "global_dim_decomposes": true,
+        "length_line_eigen_scalar_equals_size": true,
+        "row_sums_equal_size": true
+      },
+      "length_line_scalar": 2,
+      "length_profile": {
+        "fixed_long_counts": [
+          0,
+          2
+        ],
+        "fixed_short_counts": [
+          0,
+          2
+        ]
+      },
+      "long_uniform_multiplicity": null,
+      "row_id": "X_1",
+      "short_uniform_multiplicity": null,
+      "size": 2
+    },
+    {
+      "channel_matrix_signatures": {
+        "global_standard": {
+          "cols": 11,
+          "rank_Q": 11,
+          "rows": 11
+        },
+        "long_standard": {
+          "cols": 5,
+          "rank_Q": 5,
+          "rows": 5
+        },
+        "orbit_centered": {
+          "cols": 10,
+          "rank_Q": 10,
+          "rows": 10
+        },
+        "short_standard": {
+          "cols": 5,
+          "rank_Q": 5,
+          "rows": 5
+        }
+      },
+      "channel_smoke_ranks": {
+        "global_standard_rank_Q": 11,
+        "length_line_rank_Q": 1,
+        "long_standard_rank_Q": 5,
+        "orbit_centered_rank_Q": 10,
+        "short_standard_rank_Q": 5
+      },
+      "checks": {
+        "all_elements_length_preserving": true,
+        "col_sums_equal_size": true,
+        "global_dim_decomposes": true,
+        "length_line_eigen_scalar_equals_size": true,
+        "row_sums_equal_size": true
+      },
+      "length_line_scalar": 2,
+      "length_profile": {
+        "fixed_long_counts": [
+          0,
+          0
+        ],
+        "fixed_short_counts": [
+          2,
+          2
+        ]
+      },
+      "long_uniform_multiplicity": null,
+      "row_id": "X_2",
+      "short_uniform_multiplicity": null,
+      "size": 2
+    },
+    {
+      "channel_matrix_signatures": {
+        "global_standard": {
+          "cols": 11,
+          "rank_Q": 5,
+          "rows": 11
+        },
+        "long_standard": {
+          "cols": 5,
+          "rank_Q": 2,
+          "rows": 5
+        },
+        "orbit_centered": {
+          "cols": 10,
+          "rank_Q": 4,
+          "rows": 10
+        },
+        "short_standard": {
+          "cols": 5,
+          "rank_Q": 2,
+          "rows": 5
+        }
+      },
+      "channel_smoke_ranks": {
+        "global_standard_rank_Q": 5,
+        "length_line_rank_Q": 1,
+        "long_standard_rank_Q": 2,
+        "orbit_centered_rank_Q": 4,
+        "short_standard_rank_Q": 2
+      },
+      "checks": {
+        "all_elements_length_preserving": true,
+        "col_sums_equal_size": true,
+        "global_dim_decomposes": true,
+        "length_line_eigen_scalar_equals_size": true,
+        "row_sums_equal_size": true
+      },
+      "length_line_scalar": 2,
+      "length_profile": {
+        "fixed_long_counts": [
+          0,
+          2
+        ],
+        "fixed_short_counts": [
+          0,
+          2
+        ]
+      },
+      "long_uniform_multiplicity": null,
+      "row_id": "X_3",
+      "short_uniform_multiplicity": null,
+      "size": 2
+    },
+    {
+      "channel_matrix_signatures": {
+        "global_standard": {
+          "cols": 11,
+          "rank_Q": 11,
+          "rows": 11
+        },
+        "long_standard": {
+          "cols": 5,
+          "rank_Q": 5,
+          "rows": 5
+        },
+        "orbit_centered": {
+          "cols": 10,
+          "rank_Q": 10,
+          "rows": 10
+        },
+        "short_standard": {
+          "cols": 5,
+          "rank_Q": 5,
+          "rows": 5
+        }
+      },
+      "channel_smoke_ranks": {
+        "global_standard_rank_Q": 11,
+        "length_line_rank_Q": 1,
+        "long_standard_rank_Q": 5,
+        "orbit_centered_rank_Q": 10,
+        "short_standard_rank_Q": 5
+      },
+      "checks": {
+        "all_elements_length_preserving": true,
+        "col_sums_equal_size": true,
+        "global_dim_decomposes": true,
+        "length_line_eigen_scalar_equals_size": true,
+        "row_sums_equal_size": true
+      },
+      "length_line_scalar": 2,
+      "length_profile": {
+        "fixed_long_counts": [
+          0,
+          0
+        ],
+        "fixed_short_counts": [
+          2,
+          2
+        ]
+      },
+      "long_uniform_multiplicity": null,
+      "row_id": "X_4",
+      "short_uniform_multiplicity": null,
+      "size": 2
+    },
+    {
+      "channel_matrix_signatures": {
+        "global_standard": {
+          "cols": 11,
+          "rank_Q": 9,
+          "rows": 11
+        },
+        "long_standard": {
+          "cols": 5,
+          "rank_Q": 4,
+          "rows": 5
+        },
+        "orbit_centered": {
+          "cols": 10,
+          "rank_Q": 8,
+          "rows": 10
+        },
+        "short_standard": {
+          "cols": 5,
+          "rank_Q": 4,
+          "rows": 5
+        }
+      },
+      "channel_smoke_ranks": {
+        "global_standard_rank_Q": 9,
+        "length_line_rank_Q": 1,
+        "long_standard_rank_Q": 4,
+        "orbit_centered_rank_Q": 8,
+        "short_standard_rank_Q": 4
+      },
+      "checks": {
+        "all_elements_length_preserving": true,
+        "col_sums_equal_size": true,
+        "global_dim_decomposes": true,
+        "length_line_eigen_scalar_equals_size": true,
+        "row_sums_equal_size": true
+      },
+      "length_line_scalar": 2,
+      "length_profile": {
+        "fixed_long_counts": [
+          0,
+          2
+        ],
+        "fixed_short_counts": [
+          0,
+          2
+        ]
+      },
+      "long_uniform_multiplicity": null,
+      "row_id": "X_5",
+      "short_uniform_multiplicity": null,
+      "size": 2
+    }
+  ],
+  "status": "PASS",
+  "u_len": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1
+  ]
+}

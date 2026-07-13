@@ -1,0 +1,280 @@
+{
+  "boundary": "S15 promotes the flat closure-size relation as a finite incidence invariant, not a new full row classification and not an extra P13 insertion by itself. S16 has closed the local application decision; any P13 use still requires the later P13-side integration/order gate.",
+  "checks": {
+    "G_proj_G_swap_length_neutral_profiles_equal": true,
+    "K24_K16_same_flat_size_profiles": true,
+    "block_kernel_flat_residual_interaction_zero": true,
+    "closure_relation_not_length_derived": true,
+    "closure_relation_not_six_block_derived": true,
+    "flat_counts_match": true,
+    "size2_mask_not_length_or_block_derived": true,
+    "size3_mask_is_six_block_derived_but_not_length_derived": true,
+    "size4_mask_not_length_or_block_derived": true
+  },
+  "date": "2026-07-08",
+  "flat_relation_invariant": {
+    "block_pair_signature_counts": {
+      "2:8,4:8": 18,
+      "3:16": 12,
+      "4:12": 6
+    },
+    "closure_value_matrix_profiles": {
+      "length_offdiag_centered_rank": 22,
+      "six_block_offdiag_centered_rank": 18,
+      "triality_offdiag_centered_rank": 21
+    },
+    "flat_counts_by_size": {
+      "2": 72,
+      "3": 32,
+      "4": 18
+    },
+    "mask_profiles": {
+      "2": {
+        "length_offdiag_centered_rank": 18,
+        "raw_rank": 20,
+        "six_block_offdiag_centered_rank": 18,
+        "triality_offdiag_centered_rank": 21
+      },
+      "3": {
+        "length_offdiag_centered_rank": 22,
+        "raw_rank": 6,
+        "six_block_offdiag_centered_rank": 0,
+        "triality_offdiag_centered_rank": 3
+      },
+      "4": {
+        "length_offdiag_centered_rank": 22,
+        "raw_rank": 24,
+        "six_block_offdiag_centered_rank": 18,
+        "triality_offdiag_centered_rank": 21
+      }
+    },
+    "not_length_derived_witness": "A->A and B->B pairs split between closure sizes 3 and 4; A->B and B->A pairs split between closure sizes 2 and 4.",
+    "not_six_block_derived_witness": "The size-2 and size-4 masks have six-block-offdiagonal-centered rank 18; only the size-3 mask is six-block-derived.",
+    "ordered_pair_closure_counts_by_length": {
+      "A_long|A_long|3": 96,
+      "A_long|A_long|4": 36,
+      "A_long|B_short|2": 72,
+      "A_long|B_short|4": 72,
+      "B_short|A_long|2": 72,
+      "B_short|A_long|4": 72,
+      "B_short|B_short|3": 96,
+      "B_short|B_short|4": 36
+    },
+    "row_closure_patterns_by_length": {
+      "A_long|((2, 6), (3, 8), (4, 9))": 12,
+      "B_short|((2, 6), (3, 8), (4, 9))": 12
+    }
+  },
+  "gate": "S15",
+  "interpretation": "The rank-2 flat closure-size relation is not reducible to the long/short length partition. It also has a size-2/size-4 component not reducible to the six-block quotient. However, after length-neutral row normalization, it does not supply an additional canonical row witness: G_proj/G_swap become equal in the length-neutral flat profiles, and K_24/K_16 have identical flat-size profiles. The S14 block-kernel witness is orthogonal to the block-centered flat residual channel.",
+  "next_gate": "P13-side integration/order gate with P20/P21 coordination",
+  "pass": true,
+  "route_id": "P21",
+  "row_channel_tests": {
+    "block_centered_row_times_block_centered_flat_mask_ranks": {
+      "G_proj": {
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "G_swap": {
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "K_16": {
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "K_24": {
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "K_all": {
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "K_id": {
+        "2": 0,
+        "3": 0,
+        "4": 0
+      }
+    },
+    "comparisons": {
+      "G_proj_G_swap_length_neutral_flat_profiles_equal": true,
+      "G_proj_G_swap_raw_flat_profiles_differ": true,
+      "G_proj_G_swap_same_coarse_stack": true,
+      "K24_K16_same_coarse_stack": true,
+      "K24_K16_same_flat_size_profiles": true,
+      "block_kernel_flat_residual_interaction_zero": true
+    },
+    "profiles": {
+      "G_mat": {
+        "coarse_rank_stack": {
+          "global": 0,
+          "length": 0,
+          "six_block": 0
+        },
+        "flat_global_centered_hadamard_ranks": {
+          "2": 0,
+          "3": 0,
+          "4": 0
+        },
+        "flat_raw_ranks": {
+          "2": 20,
+          "3": 6,
+          "4": 24
+        },
+        "flat_support_centered_ranks": {
+          "2": 0,
+          "3": 0,
+          "4": 0
+        },
+        "row_size": 1152
+      },
+      "G_proj": {
+        "coarse_rank_stack": {
+          "global": 1,
+          "length": 0,
+          "six_block": 0
+        },
+        "flat_global_centered_hadamard_ranks": {
+          "2": 20,
+          "3": 6,
+          "4": 24
+        },
+        "flat_raw_ranks": {
+          "2": 0,
+          "3": 6,
+          "4": 24
+        },
+        "flat_support_centered_ranks": {
+          "2": 0,
+          "3": 0,
+          "4": 14
+        },
+        "row_size": 576
+      },
+      "G_swap": {
+        "coarse_rank_stack": {
+          "global": 1,
+          "length": 0,
+          "six_block": 0
+        },
+        "flat_global_centered_hadamard_ranks": {
+          "2": 20,
+          "3": 6,
+          "4": 24
+        },
+        "flat_raw_ranks": {
+          "2": 20,
+          "3": 0,
+          "4": 20
+        },
+        "flat_support_centered_ranks": {
+          "2": 0,
+          "3": 0,
+          "4": 14
+        },
+        "row_size": 576
+      },
+      "K_16": {
+        "coarse_rank_stack": {
+          "global": 23,
+          "length": 22,
+          "six_block": 18
+        },
+        "flat_global_centered_hadamard_ranks": {
+          "2": 20,
+          "3": 6,
+          "4": 24
+        },
+        "flat_raw_ranks": {
+          "2": 0,
+          "3": 0,
+          "4": 24
+        },
+        "flat_support_centered_ranks": {
+          "2": 0,
+          "3": 0,
+          "4": 14
+        },
+        "row_size": 9
+      },
+      "K_24": {
+        "coarse_rank_stack": {
+          "global": 23,
+          "length": 22,
+          "six_block": 18
+        },
+        "flat_global_centered_hadamard_ranks": {
+          "2": 20,
+          "3": 6,
+          "4": 24
+        },
+        "flat_raw_ranks": {
+          "2": 0,
+          "3": 0,
+          "4": 24
+        },
+        "flat_support_centered_ranks": {
+          "2": 0,
+          "3": 0,
+          "4": 14
+        },
+        "row_size": 6
+      },
+      "K_all": {
+        "coarse_rank_stack": {
+          "global": 5,
+          "length": 4,
+          "six_block": 0
+        },
+        "flat_global_centered_hadamard_ranks": {
+          "2": 20,
+          "3": 6,
+          "4": 24
+        },
+        "flat_raw_ranks": {
+          "2": 0,
+          "3": 0,
+          "4": 24
+        },
+        "flat_support_centered_ranks": {
+          "2": 0,
+          "3": 0,
+          "4": 14
+        },
+        "row_size": 16
+      },
+      "K_id": {
+        "coarse_rank_stack": {
+          "global": 23,
+          "length": 22,
+          "six_block": 18
+        },
+        "flat_global_centered_hadamard_ranks": {
+          "2": 20,
+          "3": 6,
+          "4": 24
+        },
+        "flat_raw_ranks": {
+          "2": 0,
+          "3": 0,
+          "4": 0
+        },
+        "flat_support_centered_ranks": {
+          "2": 0,
+          "3": 0,
+          "4": 0
+        },
+        "row_size": 1
+      }
+    }
+  },
+  "status": "PASS_FLAT_RELATION_INVARIANT_NO_EXTRA_ROW_PROMOTION",
+  "verifier": "p21_s15_flat_invariant_beyond_length.py"
+}

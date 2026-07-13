@@ -1,0 +1,121 @@
+{
+  "all_pass": true,
+  "artifact": "modular_centered_channel_replay",
+  "cases": [
+    {
+      "checks": {
+        "quotient_rank_mod_p": true,
+        "rank_mod_p": true,
+        "rank_q": true,
+        "size": true,
+        "snf_lattice": true,
+        "snf_predicts_rank_mod_p": true
+      },
+      "k": 1,
+      "l": 1,
+      "label": "I_7(1,1)",
+      "layer_size": 656,
+      "n": 7,
+      "p": 2,
+      "pass": true,
+      "rank_mod_p_augmentation": 0,
+      "rank_mod_p_predicted_from_snf": 0,
+      "rank_mod_p_reduced_quotient": null,
+      "rank_q_augmentation": 3,
+      "role": "good_characteristic_torsion_collapse",
+      "snf_lattice": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "checks": {
+        "quotient_rank_mod_p": true,
+        "rank_mod_p": true,
+        "rank_q": true,
+        "size": true,
+        "snf_lattice": true,
+        "snf_predicts_rank_mod_p": true
+      },
+      "k": 4,
+      "l": 1,
+      "label": "I_8(4,1)",
+      "layer_size": 192,
+      "n": 8,
+      "p": 3,
+      "pass": true,
+      "rank_mod_p_augmentation": 0,
+      "rank_mod_p_predicted_from_snf": 0,
+      "rank_mod_p_reduced_quotient": null,
+      "rank_q_augmentation": 7,
+      "role": "max_bounded_scout_drop",
+      "snf_lattice": [
+        12,
+        12,
+        12,
+        72,
+        576,
+        576,
+        576
+      ]
+    },
+    {
+      "checks": {
+        "quotient_rank_mod_p": true,
+        "rank_mod_p": true,
+        "rank_q": true,
+        "size": true,
+        "snf_lattice": true,
+        "snf_predicts_rank_mod_p": true
+      },
+      "k": 0,
+      "l": 1,
+      "label": "I_3(0,1)",
+      "layer_size": 2,
+      "n": 3,
+      "p": 3,
+      "pass": true,
+      "rank_mod_p_augmentation": 2,
+      "rank_mod_p_predicted_from_snf": 2,
+      "rank_mod_p_reduced_quotient": 1,
+      "rank_q_augmentation": 2,
+      "role": "quotient_drop_without_augmentation_drop",
+      "snf_lattice": [
+        1,
+        1
+      ]
+    },
+    {
+      "checks": {
+        "quotient_rank_mod_p": true,
+        "rank_mod_p": true,
+        "rank_q": true,
+        "size": true,
+        "snf_lattice": true,
+        "snf_predicts_rank_mod_p": true
+      },
+      "k": 0,
+      "l": 4,
+      "label": "I_6(0,4)",
+      "layer_size": 12,
+      "n": 6,
+      "p": 2,
+      "pass": true,
+      "rank_mod_p_augmentation": 2,
+      "rank_mod_p_predicted_from_snf": 2,
+      "rank_mod_p_reduced_quotient": 2,
+      "rank_q_augmentation": 5,
+      "role": "augmentation_drop_separate_quotient",
+      "snf_lattice": [
+        1,
+        1,
+        8,
+        48,
+        48
+      ]
+    }
+  ],
+  "description": "Bounded replay for the modular centered-channel exhibit: characteristic, augmentation channel, reduced quotient, and lattice-qualified SNF data.",
+  "row_id": "X16"
+}

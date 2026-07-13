@@ -1,0 +1,74 @@
+{
+  "all_pass": true,
+  "boundary": "This replay is not a general H3, Coxeter, matroid, classifier, or tiling theorem.",
+  "checks": {
+    "G_geo_equals_G_gram": true,
+    "G_ng_has_no_gram_preservers": true,
+    "G_ng_is_geo_coset": true,
+    "flat_aut_equals_G_mat": true,
+    "flat_aut_order_120": true,
+    "flat_color_payload_has_105_edges": true,
+    "gram_aut_equals_G_geo": true,
+    "gram_aut_equals_G_gram": true,
+    "gram_aut_order_60": true,
+    "gram_color_payload_has_105_edges": true,
+    "group_rows_are_groups_where_claimed": true,
+    "group_rows_have_expected_sizes": true,
+    "labels_15": true,
+    "nongeometric_row_is_not_group": true,
+    "separator_13_2_ranks_locked": true,
+    "standard_block_blind": true,
+    "witness_changes_60_edges": true,
+    "witness_changes_gram": true,
+    "witness_first_defect_locked": true,
+    "witness_in_matroid_not_geometric": true,
+    "witness_preserves_flat_size": true
+  },
+  "orders": {
+    "Aut_Gram": 60,
+    "Aut_flat_size": 120,
+    "G_geo_projective": 60,
+    "G_mat_flat_auts": 120,
+    "G_ng_odd_coset": 60
+  },
+  "ordinary_specht_ranks": {
+    "separator_(13,2)": {
+      "G_geo_projective": 3,
+      "G_gram_color": 3,
+      "G_mat_flat_auts": 2,
+      "G_ng_odd_coset": 3
+    },
+    "standard_(14,1)": {
+      "G_geo_projective": 0,
+      "G_gram_color": 0,
+      "G_mat_flat_auts": 0,
+      "G_ng_odd_coset": 0
+    }
+  },
+  "scope": "bounded public replay for the projective H3 source-channel exhibit",
+  "script": "scripts/h3_projective_source_channel_replay.py",
+  "search_stats": {
+    "flat_size": {
+      "dead_ends": 0,
+      "leaves": 120,
+      "max_depth": 15,
+      "nodes": 1516
+    },
+    "gram": {
+      "dead_ends": 15,
+      "leaves": 60,
+      "max_depth": 15,
+      "nodes": 781
+    }
+  },
+  "witness": {
+    "changed_gram_edges": 60,
+    "first_gram_defect": {
+      "edge": "AD",
+      "edge_color": "1+1*phi",
+      "image_color": "2-1*phi",
+      "image_edge": "AL"
+    },
+    "word": "ACBLMONHKJIDEGF"
+  }
+}

@@ -1,0 +1,269 @@
+{
+  "block_order": [
+    "E0",
+    "F0",
+    "G0",
+    "E",
+    "F",
+    "G"
+  ],
+  "boundary": "This is a finite P21 kernel-conjugacy witness, not a classification of all block/triality rows and not a P13 insertion by itself. S15/S16 have closed downstream orientation; any P13 use still requires the later P13-side integration/order gate.",
+  "checks": {
+    "G_mat_order_1152": true,
+    "G_proj_order_576": true,
+    "G_swap_order_576": true,
+    "all_fibers_block_uniform": true,
+    "all_fibers_six_block_centered_rank_zero": true,
+    "fiber_sizes_all_16": true,
+    "kernel_conjugacy_orbit_sizes_1_6_9": true,
+    "kernel_order_16": true,
+    "kernel_subgroup_count_67": true,
+    "nonidentity_kernel_classes_have_six_rank_18": true,
+    "positive_kernel_conjugacy_witness_exists": true,
+    "quotient_coset_total_1934": true,
+    "quotient_order_72": true,
+    "quotient_subgroup_count_112": true
+  },
+  "date": "2026-07-08",
+  "degree": 24,
+  "gate": "S14",
+  "interpretation": "The six-block quotient itself gives no residual witness: complete quotient fibers and all quotient-defined unions collapse after six-block centering. The genuine block/triality payoff is internal to the block-action kernel: its two nonidentity G_mat-conjugacy classes K_24 and K_16 are canonical finite rows with six-block-centered rank 18.",
+  "kernel_internal_channel": {
+    "conjugacy_orbits": [
+      {
+        "block_quotient_global_centered_rank": 5,
+        "block_quotient_rank": 6,
+        "contains_identity": true,
+        "fixed_block_pattern_counts": {
+          "E0|F0|G0|E|F|G": 1
+        },
+        "interpretation": "identity class",
+        "name": "K_id",
+        "ranks": {
+          "global_centered_rank": 23,
+          "length_centered_rank": 22,
+          "six_block_centered_rank": 18,
+          "triality_centered_rank": 21
+        },
+        "six_block_centered_diagonal_value_sets": {
+          "E": [
+            "-1/4",
+            "3/4"
+          ],
+          "E0": [
+            "-1/4",
+            "3/4"
+          ],
+          "F": [
+            "-1/4",
+            "3/4"
+          ],
+          "F0": [
+            "-1/4",
+            "3/4"
+          ],
+          "G": [
+            "-1/4",
+            "3/4"
+          ],
+          "G0": [
+            "-1/4",
+            "3/4"
+          ]
+        },
+        "size": 1,
+        "total_moved_point_counts": {
+          "0": 1
+        }
+      },
+      {
+        "block_quotient_global_centered_rank": 5,
+        "block_quotient_rank": 6,
+        "contains_identity": false,
+        "fixed_block_pattern_counts": {
+          "none": 6
+        },
+        "interpretation": "nonidentity kernel class acting fixed-point-free on all six 4-point blocks",
+        "name": "K_24",
+        "ranks": {
+          "global_centered_rank": 23,
+          "length_centered_rank": 22,
+          "six_block_centered_rank": 18,
+          "triality_centered_rank": 21
+        },
+        "six_block_centered_diagonal_value_sets": {
+          "E": [
+            "-3/2",
+            "1/2"
+          ],
+          "E0": [
+            "-3/2",
+            "1/2"
+          ],
+          "F": [
+            "-3/2",
+            "1/2"
+          ],
+          "F0": [
+            "-3/2",
+            "1/2"
+          ],
+          "G": [
+            "-3/2",
+            "1/2"
+          ],
+          "G0": [
+            "-3/2",
+            "1/2"
+          ]
+        },
+        "size": 6,
+        "total_moved_point_counts": {
+          "24": 6
+        }
+      },
+      {
+        "block_quotient_global_centered_rank": 5,
+        "block_quotient_rank": 6,
+        "contains_identity": false,
+        "fixed_block_pattern_counts": {
+          "E0|E": 1,
+          "E0|F": 1,
+          "E0|G": 1,
+          "F0|E": 1,
+          "F0|F": 1,
+          "F0|G": 1,
+          "G0|E": 1,
+          "G0|F": 1,
+          "G0|G": 1
+        },
+        "interpretation": "nonidentity kernel class fixing exactly one long block and one short block pointwise",
+        "name": "K_16",
+        "ranks": {
+          "global_centered_rank": 23,
+          "length_centered_rank": 22,
+          "six_block_centered_rank": 18,
+          "triality_centered_rank": 21
+        },
+        "six_block_centered_diagonal_value_sets": {
+          "E": [
+            "-1/4",
+            "3/4"
+          ],
+          "E0": [
+            "-1/4",
+            "3/4"
+          ],
+          "F": [
+            "-1/4",
+            "3/4"
+          ],
+          "F0": [
+            "-1/4",
+            "3/4"
+          ],
+          "G": [
+            "-1/4",
+            "3/4"
+          ],
+          "G0": [
+            "-1/4",
+            "3/4"
+          ]
+        },
+        "size": 9,
+        "total_moved_point_counts": {
+          "16": 9
+        }
+      }
+    ],
+    "kernel_subgroup_census": {
+      "kernel_order": 16,
+      "kernel_subgroup_count": 67,
+      "kernel_subgroup_order_counts": {
+        "1": 1,
+        "16": 1,
+        "2": 15,
+        "4": 35,
+        "8": 15
+      },
+      "rank_profile_counts": {
+        "order=1,global=23,length=22,six=18": 1,
+        "order=16,global=5,length=4,six=0": 1,
+        "order=2,global=11,length=10,six=6": 6,
+        "order=2,global=15,length=14,six=10": 9,
+        "order=4,global=11,length=10,six=6": 6,
+        "order=4,global=5,length=4,six=0": 2,
+        "order=4,global=7,length=6,six=2": 9,
+        "order=4,global=9,length=8,six=4": 18,
+        "order=8,global=5,length=4,six=0": 6,
+        "order=8,global=7,length=6,six=2": 9
+      }
+    },
+    "positive_witness_names": [
+      "K_24",
+      "K_16"
+    ]
+  },
+  "next_gate": "P13-side integration/order gate with P20/P21 coordination",
+  "pass": true,
+  "route_id": "P21",
+  "row_orders": {
+    "G_mat": 1152,
+    "G_proj": 576,
+    "G_swap": 576
+  },
+  "six_block_quotient": {
+    "consequence": "Every row that is a union of complete six-block-action fibers is block-constant on every source/destination block pair, hence has six-block-centered rank 0.",
+    "fiber_size_set": [
+      16
+    ],
+    "fiber_uniformity": {
+      "active_block_value_sets": {
+        "('4',)": 432
+      },
+      "all_fibers_block_uniform": true,
+      "bad_active_count": 0,
+      "bad_inactive_count": 0,
+      "fiber_six_block_centered_rank_counts": {
+        "0": 72
+      }
+    },
+    "kernel_size": 16,
+    "order": 72,
+    "quotient_subgroup_census": {
+      "enumeration_iterations": 4,
+      "quotient_coset_counts_by_subgroup_order": {
+        "1": 72,
+        "12": 72,
+        "18": 20,
+        "2": 756,
+        "3": 96,
+        "36": 6,
+        "4": 486,
+        "6": 336,
+        "72": 1,
+        "8": 81,
+        "9": 8
+      },
+      "quotient_coset_total": 1934,
+      "quotient_order": 72,
+      "subgroup_count": 112,
+      "subgroup_order_counts": {
+        "1": 1,
+        "12": 12,
+        "18": 5,
+        "2": 21,
+        "3": 4,
+        "36": 3,
+        "4": 27,
+        "6": 28,
+        "72": 1,
+        "8": 9,
+        "9": 1
+      }
+    }
+  },
+  "status": "PASS_POSITIVE_KERNEL_CONJUGACY_WITNESS_AND_QUOTIENT_COLLAPSE",
+  "verifier": "p21_s14_block_triality_true_witness_hunt.py"
+}

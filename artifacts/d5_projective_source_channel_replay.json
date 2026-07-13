@@ -1,0 +1,116 @@
+{
+  "artifact": "d5_projective_source_channel_replay",
+  "checks": {
+    "a2_flat_count_is_40": true,
+    "a2_preserver_order_is_1920": true,
+    "a2_preservers_equal_source_group": true,
+    "d4_coordinate_flat_count_is_5": true,
+    "d4_flat_size_is_12": true,
+    "d4_preserver_order_is_122880": true,
+    "d4_preservers_equal_pair_channel": true,
+    "fake_flip_breaks_a2_family": true,
+    "fake_flip_is_pair_channel_not_source": true,
+    "fake_flip_preserves_d4_family": true,
+    "pair_channel_supergroup_order_is_122880": true,
+    "pair_channel_to_source_ratio_is_64": true,
+    "projective_point_count_is_20": true,
+    "source_projective_weyl_order_is_1920": true
+  },
+  "counts": {
+    "a2_flat_count": 40,
+    "a2_preserver_order_inside_pair_channel": 1920,
+    "d4_coordinate_flat_count": 5,
+    "d4_preserver_order_inside_pair_channel": 122880,
+    "pair_channel_order": 122880,
+    "pair_channel_to_source_ratio": 64,
+    "projective_points": 20,
+    "source_projective_weyl_order": 1920
+  },
+  "fake_flip_boundary": {
+    "breaks_a2_family": true,
+    "broken_a2_flat": {
+      "image": [
+        "L12-",
+        "L13+",
+        "L23-"
+      ],
+      "source": [
+        "L12+",
+        "L13+",
+        "L23-"
+      ]
+    },
+    "flip": "L12+ <-> L12-",
+    "in_pair_channel_supergroup": true,
+    "in_projective_weyl_group": false,
+    "preserves_d4_family": true
+  },
+  "model": {
+    "carrier": "20 projective D5 root lines Lij+/Lij-",
+    "pair_channel_supergroup": "C2^10:S5, independent sign flips on coordinate-pair twins plus S5 on coordinates",
+    "source_group": "projective W(D5), realized by signed coordinate permutations"
+  },
+  "negative_control": {
+    "d4_preserver_payload_sha256": "0f2155e38e7304f549acf4fc058c0fa933ce0f8d73f5b0cffe121680e0d0b69f",
+    "d4_preservers_equal_pair_channel": true,
+    "pair_channel_payload_sha256": "0f2155e38e7304f549acf4fc058c0fa933ce0f8d73f5b0cffe121680e0d0b69f"
+  },
+  "nonclaims": [
+    "not a D5 classification",
+    "not a general Type-E theorem",
+    "not a tiling criterion",
+    "not a fingerprint classifier"
+  ],
+  "paper": "A Finite-Shadow Grammar for Finite Centered Incidence Geometry",
+  "pass": true,
+  "payload_sha256_without_this_field": "62b919aba0706b423608a48f651e9d7fc768335dadc44d281d2d004cc1f44e4f",
+  "samples": {
+    "a2_flat_first_5": [
+      [
+        "L12+",
+        "L13+",
+        "L23-"
+      ],
+      [
+        "L12+",
+        "L13-",
+        "L23+"
+      ],
+      [
+        "L12+",
+        "L14+",
+        "L24-"
+      ],
+      [
+        "L12+",
+        "L14-",
+        "L24+"
+      ],
+      [
+        "L12+",
+        "L15+",
+        "L25-"
+      ]
+    ],
+    "d4_flat_first": [
+      "L12+",
+      "L12-",
+      "L13+",
+      "L13-",
+      "L14+",
+      "L14-",
+      "L23+",
+      "L23-",
+      "L24+",
+      "L24-",
+      "L34+",
+      "L34-"
+    ]
+  },
+  "source_recovery": {
+    "a2_preserver_payload_sha256": "e2be55f1c40193e0659ec7ca5f4ebfecb7f0393e17094439cc916d61650407fe",
+    "a2_preservers_equal_projective_weyl_group": true,
+    "source_group_payload_sha256": "e2be55f1c40193e0659ec7ca5f4ebfecb7f0393e17094439cc916d61650407fe"
+  },
+  "status": "PASS"
+}

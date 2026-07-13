@@ -1,0 +1,52 @@
+\section{A Source-Aware Projective \texorpdfstring{\(F_4\)}{F4} Root Shadow}
+\label{sec:f4-source-layer}
+
+The length-colored \(G_2\) row shows that source partitions can be active channels.  The projective \(F_4\) row records a slightly different source-aware phenomenon: on the same finite set, changing the admitted source layer changes the centered-rank reading.
+
+Let \(\Pi_{24}\) be the 24 antipodal pairs of \(F_4\) roots, split into long and short projective roots
+\[
+  \Pi_{24}=L\sqcup S,\qquad |L|=|S|=12,
+\]
+and put \(u_{\mathrm{len}}=\mathbf 1_L-\mathbf 1_S\).  The projective image \(G_{\mathrm{proj}}\) of \(W(F_4)\) has order \(576\) and preserves the two length blocks.  The source matroid layer is the automorphism group of the 24-point \(F_4\) root-pair matroid studied by Fried--Gerek--Gordon--Perunicic\cite{FriedGerekGordonPerunicic2007F4Matroid}.  In the source-locked notation used here it is
+\[
+  G_{\mathrm{mat}}=\langle G_{\mathrm{proj}},\sigma\rangle,
+  \qquad |G_{\mathrm{mat}}|=1152,
+\]
+where \(\sigma\) is a non-geometric matroid automorphism that swaps the two length blocks.  The automorphism order is used here as a source fact and is also verified in the companion source package from the rank-two flat hypergraph of the represented 24-point matroid; this paper does not claim to discover the \(F_4\) matroid automorphism group.
+
+\begin{proposition}[source-layer ranks in the projective \(F_4\) shadow]
+\label{prop:f4-source-layer}
+For the source-locked projective \(F_4\) root shadow above, the following bounded statements hold.
+\begin{enumerate}[label=\textup{(\alph*)},leftmargin=*]
+  \item The geometric row \(G_{\mathrm{proj}}\) has global centered rank \(1\).  More precisely, if \(N_X=\sum_{g\in X}P_g\) and \(E_X=N_X-(|X|/24)J\), then
+  \[
+    E_{G_{\mathrm{proj}}}=24\,u_{\mathrm{len}}u_{\mathrm{len}}^{\mathsf T}.
+  \]
+  After centering separately on \(L\) and \(S\), this residual is zero.
+  \item The matroid source row \(G_{\mathrm{mat}}\) is globally balanced on the same 24 points: \(E_{G_{\mathrm{mat}}}=0\).  Equivalently, the length-swap coset cancels the long-minus-short residual.
+  \item The six-block source quotient gives no independent quotient residual after six-block centering.  The two nonidentity block-kernel conjugacy rows \(K_{24}\) and \(K_{16}\) are finite supporting witnesses, each with six-block-centered rank \(18\).  The subscripts record moved-point support sizes, not row cardinalities; the certified rows have \(6\) and \(9\) elements, respectively.
+  \item The rank-two flat closure-size relation is not determined by the long/short partition; its closure-value matrix has length-centered residual rank \(22\) and six-block residual rank \(18\).  This is recorded as an incidence invariant of the source, not as an additional row classifier.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}[Source-locked proof sketch]
+The first two assertions are the two-block centering calculation.  A group acting transitively on each of two equal blocks and preserving the blocks has orbit sum \((|G_{\mathrm{proj}}|/12)(J_L+J_S)=48(J_L+J_S)\); subtracting the global center \(24J\) gives \(24u_{\mathrm{len}}u_{\mathrm{len}}^{\mathsf T}\).  Adding the source length-swap coset gives \(48J\), which is exactly the global center for the row of size \(1152\).  The matroid-layer statement is source-locked by \cite{FriedGerekGordonPerunicic2007F4Matroid} and replayed by reconstructing the automorphism group from the rank-two flat hypergraph.  The block-kernel and flat-incidence statements are finite replay certificates for this 24-point source; they are included only with the boundaries stated in (c) and (d).
+\end{proof}
+
+\begin{table}[!htbp]
+\centering
+\caption{Evidence carried by the projective \(F_4\) source-layer exhibit.}
+\label{tab:f4-source-layer}
+\begin{tabular}{@{}L{0.20\textwidth}L{0.23\textwidth}L{0.25\textwidth}L{0.24\textwidth}@{}}
+\toprule
+layer & row or relation & certified finite fact & grammar reading \\
+\midrule
+geometric row & \(G_{\mathrm{proj}}\) & global rank \(1\); length-centered rank \(0\) & one long/short residual line \\
+matroid row & \(G_{\mathrm{mat}}\) & global rank \(0\) & source length-swap cancellation \\
+block kernel & \(K_{24},K_{16}\) & six-block-centered rank \(18\) & finite kernel-conjugacy witness only \\
+flat relation & rank-two closure size & length residual rank \(22\) & incidence invariant; no extra row witness \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Thus the exhibit-scoped lesson is narrow but useful: for this 24-point source, the finite set alone is not the row.  This exhibit shows that, for this source, the source partition and the admitted source layer must be recorded before centered-rank data is interpreted.  Nothing here is promoted to a full \(F_4\), 24-cell, block/triality, flat-row, Weyl-group, classifier, or tiling theorem.

@@ -1,0 +1,167 @@
+{
+  "boundary": "S6 transfers the P19 two-mirror arithmetic to the locked G2 short/long root-shadow blocks only. It is not a new G2/Weyl theorem, classifier, or tiling claim.",
+  "current_next_gate_after_s7b": "P20-S8 optional controls or skip/defer decision",
+  "failures": [],
+  "gate": "P20-S6",
+  "historical_next_gate_at_s6_closeout": "P20-S7 length-aware fingerprint witness",
+  "project": "P20_g2_hexagonal_weyl_shadows",
+  "records": [
+    {
+      "a": 1,
+      "checks": {
+        "global_rank_adds_length_line": true,
+        "long_block_is_P19_shifted_pair": true,
+        "long_rank_matches_vertex_formula": true,
+        "orbit_rank_is_twice_vertex_rank": true,
+        "short_block_is_P19_s0_sa": true,
+        "short_rank_matches_vertex_formula": true
+      },
+      "gcd_a_6": 1,
+      "global_standard_rank_Q": 9,
+      "long_block_parameters": [
+        -1,
+        0
+      ],
+      "long_rank_Q": 4,
+      "orbit_centered_rank_Q": 8,
+      "p19_vertex_rank_formula": 4,
+      "predicted_global_standard_rank": 9,
+      "predicted_orbit_centered_rank": 8,
+      "quotient_6_over_gcd": 6,
+      "quotient_even": true,
+      "row_id": "X_1",
+      "short_block_parameters": [
+        0,
+        1
+      ],
+      "short_rank_Q": 4,
+      "status": "PASS"
+    },
+    {
+      "a": 2,
+      "checks": {
+        "global_rank_adds_length_line": true,
+        "long_block_is_P19_shifted_pair": true,
+        "long_rank_matches_vertex_formula": true,
+        "orbit_rank_is_twice_vertex_rank": true,
+        "short_block_is_P19_s0_sa": true,
+        "short_rank_matches_vertex_formula": true
+      },
+      "gcd_a_6": 2,
+      "global_standard_rank_Q": 11,
+      "long_block_parameters": [
+        -1,
+        1
+      ],
+      "long_rank_Q": 5,
+      "orbit_centered_rank_Q": 10,
+      "p19_vertex_rank_formula": 5,
+      "predicted_global_standard_rank": 11,
+      "predicted_orbit_centered_rank": 10,
+      "quotient_6_over_gcd": 3,
+      "quotient_even": false,
+      "row_id": "X_2",
+      "short_block_parameters": [
+        0,
+        2
+      ],
+      "short_rank_Q": 5,
+      "status": "PASS"
+    },
+    {
+      "a": 3,
+      "checks": {
+        "global_rank_adds_length_line": true,
+        "long_block_is_P19_shifted_pair": true,
+        "long_rank_matches_vertex_formula": true,
+        "orbit_rank_is_twice_vertex_rank": true,
+        "short_block_is_P19_s0_sa": true,
+        "short_rank_matches_vertex_formula": true
+      },
+      "gcd_a_6": 3,
+      "global_standard_rank_Q": 5,
+      "long_block_parameters": [
+        -1,
+        2
+      ],
+      "long_rank_Q": 2,
+      "orbit_centered_rank_Q": 4,
+      "p19_vertex_rank_formula": 2,
+      "predicted_global_standard_rank": 5,
+      "predicted_orbit_centered_rank": 4,
+      "quotient_6_over_gcd": 2,
+      "quotient_even": true,
+      "row_id": "X_3",
+      "short_block_parameters": [
+        0,
+        3
+      ],
+      "short_rank_Q": 2,
+      "status": "PASS"
+    },
+    {
+      "a": 4,
+      "checks": {
+        "global_rank_adds_length_line": true,
+        "long_block_is_P19_shifted_pair": true,
+        "long_rank_matches_vertex_formula": true,
+        "orbit_rank_is_twice_vertex_rank": true,
+        "short_block_is_P19_s0_sa": true,
+        "short_rank_matches_vertex_formula": true
+      },
+      "gcd_a_6": 2,
+      "global_standard_rank_Q": 11,
+      "long_block_parameters": [
+        -1,
+        3
+      ],
+      "long_rank_Q": 5,
+      "orbit_centered_rank_Q": 10,
+      "p19_vertex_rank_formula": 5,
+      "predicted_global_standard_rank": 11,
+      "predicted_orbit_centered_rank": 10,
+      "quotient_6_over_gcd": 3,
+      "quotient_even": false,
+      "row_id": "X_4",
+      "short_block_parameters": [
+        0,
+        4
+      ],
+      "short_rank_Q": 5,
+      "status": "PASS"
+    },
+    {
+      "a": 5,
+      "checks": {
+        "global_rank_adds_length_line": true,
+        "long_block_is_P19_shifted_pair": true,
+        "long_rank_matches_vertex_formula": true,
+        "orbit_rank_is_twice_vertex_rank": true,
+        "short_block_is_P19_s0_sa": true,
+        "short_rank_matches_vertex_formula": true
+      },
+      "gcd_a_6": 1,
+      "global_standard_rank_Q": 9,
+      "long_block_parameters": [
+        -1,
+        4
+      ],
+      "long_rank_Q": 4,
+      "orbit_centered_rank_Q": 8,
+      "p19_vertex_rank_formula": 4,
+      "predicted_global_standard_rank": 9,
+      "predicted_orbit_centered_rank": 8,
+      "quotient_6_over_gcd": 6,
+      "quotient_even": true,
+      "row_id": "X_5",
+      "short_block_parameters": [
+        0,
+        5
+      ],
+      "short_rank_Q": 4,
+      "status": "PASS"
+    }
+  ],
+  "statement": "For X_a={tau_0,tau_a}, the short and long blocks are shifted P19 two-mirror rows with the same difference a; rank_orbit=2*r_vertex(a) and rank_global=1+2*r_vertex(a).",
+  "status": "PASS"
+}
