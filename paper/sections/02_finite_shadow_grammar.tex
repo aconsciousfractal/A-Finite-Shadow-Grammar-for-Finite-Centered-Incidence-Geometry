@@ -22,16 +22,19 @@ A family may have its own rank parameter \(n\); this is distinct from the
 ambient permutation degree \(N\).  Thus a signed rank-\(n\) family may act
 through \(S_{2n}\) without identifying its rank with the ambient degree.
 
-The five slots remain the mathematical core.  Every admitted instance also
-carries a typed \emph{source lock}: a provenance and interpretation record
-fixing the carrier, ambient action and action side, source version, admission,
-claim owner, verification route, and import/nonimport boundary.  Source
-partition or layer, coefficient ring, lattice basis, characteristic,
-quotient/coupling data, placement, and a decision certificate are mandatory
-fields when they occur, and are recorded as not applicable with a reason
-otherwise.  This record prevents the same five formal slots from conflating
-different source rows; it is not a sixth mathematical slot and does not assert
-a category of FCIG objects.
+The five slots remain the mathematical core.  Every admitted concrete instance
+is governed by the typed \emph{source-lock schema} published with this paper:
+a provenance and interpretation record fixing the carrier, ambient action and
+action side, source version, admission, claim owner, verification route, and
+import/nonimport boundary.  Its values are distributed across the canonical
+registry, the relevant manuscript row, and its cited source or manifest-pinned
+artifact, as routed by the public crosswalk; they need not be duplicated in one
+consolidated object.  Source partition or layer, coefficient ring, lattice
+basis, characteristic, quotient/coupling data, placement, and a decision
+certificate are required exactly when their schema trigger is active.  This
+record prevents the same five formal slots from conflating different source
+rows; it is not a sixth mathematical slot and does not assert a category of
+FCIG objects.
 
 For signed rows the ambient object may be a source-locked finite shadow \(H\leq S_N\), with \(X\subseteq H\).  The signed Type-B/C row used later has this form with \(B_n\leq S_{2n}\), following the signed-shadow conventions used in the companion Type-B/C artifact.  The dihedral row uses the vertex action \(I_2(m)\leq S_m\).  It is admitted only as a bounded rank-two reflection-shadow exhibit, not as a general Weyl-group row.
 
@@ -44,8 +47,15 @@ The projective \(H_3\) row in \cref{sec:h3-source-channel} is another same-carri
 The projective \(E_6\) row in \cref{sec:e6-root-shadow-control} is a simply laced source-aware control.  Unlike the \(D_5\) row, its pair, flat-size, and circuit channels all recover the same projective source action.  Its grammar contribution is instead the decomposition of \(\mathbb Q^{\Pi_{36}}\) into the constant line and two nontrivial source summands \(U_{20}\) and \(U_{15}\), which can separate rows with the same total standard rank.
 The projective \(E_7\) row in \cref{sec:e7-root-shadow-control} is a source-exact control with an embedded-parabolic separator.  Its Gram-square and rank-two flat-size pair channels already recover the projective source action on \(\Pi_{63}\), but two embedded \(A_5\) parabolic rows of the same abstract type and order have different \((U_{27},U_{35})\) centered rank splits.
 The projective \(E_8\) row in \cref{sec:e8-root-shadow-subsystem-separator} is a source-exact control with a different separator shape.  Standard simple-parabolic placements of the same abstract type fuse under the projective Weyl action, but an \(A_7\) parabolic row and an \(A_7\) row inside a coordinate \(D_8\) subsystem have different orbit profiles and \((U_{35},U_{84})\) rank splits.
-\begin{definition}[admission levels]
-The admission levels are governance labels, not new mathematical structures.  The active labels are: \emph{core}, \emph{core artifact}, \emph{core exhibit}, \emph{prose}, \emph{pointer only}, \emph{parked}, \emph{future}, and \emph{rejected}.  Their role is to prevent an unfinished or overbroad object from entering the manuscript as if it were a closed theorem source.
+\begin{definition}[admission, pointer status, and descriptive role]
+Canonical admission is the two-valued field \emph{admitted} or
+\emph{not admitted}.  Independently, pointer status is \emph{not applicable},
+\emph{future}, or \emph{public companion}.  Terms such as \emph{core},
+\emph{core artifact}, \emph{core exhibit}, \emph{prose}, \emph{meta}, and
+\emph{companion pointer} are descriptive registry roles, not admission types
+or new mathematical structures.  The separation prevents an unfinished or
+companion-owned object from entering the manuscript as if it were an admitted
+theorem source.
 \end{definition}
 
 The full instance matrix is recorded in \cref{app:source-manifest}.  The table is part of the grammar: it says not only what enters, but also what remains outside.  This is why the future P18 and P17 companion pointers, the companion-owned exceptional \(S_6\) certificate routes, and the separate public signed-reversal theorem route are not silently absorbed into the present paper.

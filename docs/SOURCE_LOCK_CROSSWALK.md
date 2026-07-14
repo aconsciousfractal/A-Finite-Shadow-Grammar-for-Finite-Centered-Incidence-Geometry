@@ -1,13 +1,14 @@
 # Normative Source-Lock Crosswalk
 
-This crosswalk implements the bounded public interpretation of the typed
-source-lock schema.  Admitted concrete rows are **governed by** the schema; the
-package does not claim that one standalone, consolidated `L(S)` object has
-already been published for every row.
+This crosswalk routes the fields of the normative public schema in
+`docs/SOURCE_LOCK_SCHEMA.md`.  Admitted concrete rows are **governed by** that
+schema; the package does not claim that one standalone, consolidated `L(S)`
+object has already been published for every row.
 
-It is a schema-to-surface routing crosswalk.  It identifies the public evidence
-surface for each field and family, but it does not claim a field-level anchor or
-complete consolidated value record for every concrete instance.
+It identifies the authoritative public evidence surface for each field and
+family.  Triggered conditional fields must be explicit at the routed locus;
+untriggered fields follow the schema's `NA(reason=not_triggered)` rule without
+requiring a duplicated consolidated record.
 
 The single canonical post-S44 admission registry is
 `artifacts/source_instance_manifest.json` (`registry_rows`).  Its `admission` field
@@ -19,8 +20,10 @@ is typed independently from `pointer_status`:
   merely because it has an X-ID.
 
 The registry content at `a3cfafe` is part of the S44H-R author-replayed
-baseline.  The later reviewer-preparation commit updates only its package-state
-metadata; independent replay of that exact later commit remains pending.
+baseline.  Commit `16be346502e754bd6282adb5216599bed26ab8d6` passed the
+independent S46 replay.  S46H changes only the bounded source/governance and
+paper surfaces declared in its allowlist; the existing quantitative route
+surface remains byte-identical.
 
 ## Required-field crosswalk
 
@@ -38,10 +41,12 @@ metadata; independent replay of that exact later commit remains pending.
 | `channel_rho` | `paper/sections/03_fingerprint_channel.tex`, `paper/sections/03b_modular_centered_channels.tex`, and the relevant row section | Includes domain/codomain or centered operator. |
 | `fingerprint_Phi` | The channel sections, relevant row section, and replay artifact where quantitative | Includes basis/lattice qualification when used. |
 | `source_locator` | `paper/refs.bib`, the registry `verification` field, and `artifacts/public_evidence_routes.json` | Primary citation or exact bundled path. |
-| `source_version` | Registry `verification`, bibliographic locator, Git source pin where cited, and the package checksum layer | S44H-R author replay binds commit `a3cfafe` and tree `9acf53f8`; the later reviewer-preparation commit has its own checksum layer and remains the S46 independent-review target. |
+| `source_version` | Registry `verification`, bibliographic locator, Git source pin where cited, and the package checksum layer | S44H-R binds `a3cfafe`; independent S46 binds `16be346`; S46H files are pinned by the regenerated package manifest. |
 | `admission` | Registry `admission` | Typed only as `admitted` or `not_admitted`. |
+| `pointer_status` | Registry `pointer_status` | Typed independently as `not_applicable`, `future`, or `public_companion`. |
+| `descriptive_role` | Registry `role` and Appendix A | Routing label only; not an admission value. |
 | `claim_owner` | Registry `owner` | P13 or the named companion owner. |
-| `verification_route` | Registry `verification` plus `artifacts/public_evidence_routes.json` for the twelve quantitative routes | X13 and G-004/CPL-001 use human proof and classical sources, not numerical replay. |
+| `verification_route` | Registry `verification` plus `artifacts/public_evidence_routes.json` for the twelve quantitative routes | X13 uses a static certificate/checker, X15-002 a self-contained proof, and G-004/CPL-001 human proof/classical sources; none is a thirteenth route. |
 | `import_boundary` | Registry `boundary`, relevant paper row, and `docs/CLAIM_BOUNDARY.md` | States the bounded material actually used by P13. |
 | `nonimport_boundary` | Registry `boundary`, relevant paper row, and `docs/CLAIM_BOUNDARY.md` | Blocks theorem ownership transfer, classification, tiling, and family-wide inference. |
 
@@ -57,7 +62,7 @@ metadata; independent replay of that exact later commit remains pending.
 | `centering_or_quotient` | X05/X16 and G-004/CPL-001 in the relevant paper section and source artifact/proof. |
 | `coupling_class` | G-004/CPL-001 in `paper/sections/16_value_and_limits_of_phi.tex`; no new X-ID or numerical route is created. |
 | `placement_embedding` | Rows whose result depends on ambient placement, especially the bounded E7/E8 controls, in their row sections and artifacts. |
-| `decision_certificate` | Companion certificate pointers such as X10/P33; kept separate from descriptive `Phi`. |
+| `decision_certificate` | `NA(reason=not_triggered)` for the nonimporting X10/P33 pointer. This field is triggered only if P13 imports a classification, tiling, non-tiling, or other decision claim. |
 
 ## Family-to-locus crosswalk
 
@@ -68,16 +73,16 @@ metadata; independent replay of that exact later commit remains pending.
 | X03 | admitted | not_applicable | section 04; Appendix A | bounded public dependency artifacts |
 | X04 | admitted | not_applicable | section 04; Appendix A | pinned P03 witness source |
 | X05 | admitted | not_applicable | section 04; Appendix A | X05 route and `artifacts/x05/` |
-| X06 | admitted | not_applicable | section 04 and cited Latin companion context | pinned companion source |
+| X06 | admitted | not_applicable | section 04 and cited Latin companion context | companion commit `8984359d0f7fd66e4eaa7864a557d6b907e9f9ec` |
 | X07 | not_admitted | future | `paper/sections/17_boundaries_and_future_routes.tex` | no current P13 replay |
 | X08 | admitted | not_applicable | section 04; Appendix A | pinned P11/P12 sources |
 | X09 | admitted | not_applicable | section 04 provenance/contrast prose | P01/P03 provenance |
-| X10 | not_admitted | public_companion | section 04 and section 17 pointer prose | P07/P33 companion certificates; no theorem transfer |
+| X10 | not_admitted | public_companion | section 04 and section 17 pointer prose | bounded P07/P33 context only; neither theorem nor proof imported; no all-`n` claim |
 | X11 | not_admitted | future | section 17 future pointer | version-neutral P18 pointer; no release pin required while nonimporting |
 | X12 | not_admitted | future | section 17 future pointer | P17 context only; no admitted row or theorem import |
-| X13 | admitted | not_applicable | sections 02, 03, and 16; Appendix A | public manuscript proof and classical source lock |
+| X13 | admitted | not_applicable | sections 02, 03, 04, and 16; Appendix A | public proof, classical lock, and `artifacts/x13_type_a_lattice_rank_mass_certificate.json` plus read-only checker |
 | X14 | admitted | not_applicable | grammar/contrast/limits prose | definitions and governance; meta row, not a concrete instance |
-| X15 | admitted | not_applicable | `paper/sections/05_signed_type_bc_source_rows.tex`; Appendix A | public X15 bounded replay; P15 theorem excluded |
+| X15 | admitted | not_applicable | `paper/sections/05_signed_type_bc_source_rows.tex`; Appendix A | X15-001 six-row replay plus X15-002 self-contained proof; P15 theorem/proof excluded |
 | X16 | admitted | not_applicable | modular channel section; Appendix A | public X16 replay |
 | X17 | not_admitted | public_companion | contrast and future-route pointer prose | public P15 companion; no proof import |
 | X18 | admitted | not_applicable | `paper/sections/06_dihedral_vertex_shadows.tex`; Appendix A | public X18 replay |

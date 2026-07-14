@@ -3,14 +3,14 @@
   "paper": "A Finite-Shadow Grammar for Finite Centered Incidence Geometry",
   "version_date": "2026-07-14",
   "package_status": {
-    "current_gate": "S46_INDEPENDENT_EXTERNAL_RED_TEAM",
+    "current_gate": "S47_PUBLIC_REVIEW_CANDIDATE",
     "publication_authorized": false,
-    "publication_scope": "public_untagged_external_review_candidate_only",
+    "publication_scope": "public_untagged_post_review_candidate_only",
     "public_origin": "available_on_origin_master",
     "review_candidate_authorized": true,
-    "fresh_copy_replay": "pass_S44HR_author_replay_commit_a3cfafe",
-    "red_team": "independent_external_pending",
-    "post_fix_verification": "pass_S44HR_on_a3cfafe",
+    "fresh_copy_replay": "pass_S46_independent_replay_commit_16be346",
+    "red_team": "pass_math_and_replay_five_bounded_fixes_assigned_S46H",
+    "post_fix_verification": "pass_S46H_short_gates_quantitative_surface_unchanged",
     "owner_publication": "no_tag_release_doi_arxiv_without_new_gate"
   },
   "grammar": {
@@ -18,18 +18,25 @@
     "concrete_instance": "S=(N,X,I,rho,Phi), with X a finite subset of S_N",
     "id_semantics": "X01-X26 identify source/family slots, not individual finite subsets",
     "ambient_degree_rule": "each concrete instance fixes ambient N; a family parameter such as n is distinct",
-    "source_lock_rule": "admitted concrete rows are governed by the normative typed schema; the package does not claim one consolidated L(S) object per row",
+    "source_lock_rule": "docs/SOURCE_LOCK_SCHEMA.md is normative; routed public surfaces collectively supply triggered fields; no consolidated L(S) object per row is claimed",
     "source_lock_is_sixth_slot": false,
     "universal_fcig_category_claimed": false
   },
   "canonical_registry": {
-    "status": "CANONICAL_S44HR_PUBLIC_REVIEW_REGISTRY",
+    "status": "CANONICAL_S46H_POST_REVIEW_REGISTRY",
     "authority": "artifacts/source_instance_manifest.json#/registry_rows",
     "s44h_verified": true,
     "admission_values": ["admitted", "not_admitted"],
     "pointer_status_values": ["not_applicable", "future", "public_companion"],
     "typing_rule": "admission and pointer_status are independent; pointer rows do not receive filled concrete five-slot records",
     "supersedes_for_public_governance": "the stale S39 registry snapshot"
+  },
+  "source_lock_schema": {
+    "path": "docs/SOURCE_LOCK_SCHEMA.md",
+    "version": 3,
+    "status": "normative",
+    "profile": "bounded_distributed_record",
+    "consolidated_record_per_row_claimed": false
   },
   "source_lock_crosswalk": {
     "path": "docs/SOURCE_LOCK_CROSSWALK.md",
@@ -94,7 +101,7 @@
       "admission": "admitted",
       "role": "prose",
       "pointer_status": "not_applicable",
-      "verification": "pinned companion source",
+      "verification": "public companion commit 8984359d0f7fd66e4eaa7864a557d6b907e9f9ec",
       "boundary": "related centered-operator framework only"
     },
     {
@@ -135,7 +142,7 @@
       "role": "companion_pointer",
       "pointer_status": "public_companion",
       "verification": "P07 v1.0.0; P33 v1.0.0",
-      "boundary": "fixed P038 and finite 57=19+38 results remain companion-owned; no all-n theorem import"
+      "boundary": "bounded P07/P33 results cited as context; neither theorem nor proof imported; no all-n tiling claim"
     },
     {
       "id": "X11",
@@ -164,8 +171,8 @@
       "admission": "admitted",
       "role": "core_artifact",
       "pointer_status": "not_applicable",
-      "verification": "public manuscript proof and classical source lock",
-      "boundary": "descriptive Phi, SNF^L, ranks, and rank mass; no standalone numerical replay"
+      "verification": "public proof, classical source lock, and artifacts/x13_type_a_lattice_rank_mass_certificate.json plus read-only checker",
+      "boundary": "descriptive Phi, lattice-qualified SNF^L, ranks, and rank mass; public proof, classical source lock, static certificate, and read-only checker; no thirteenth quantitative route"
     },
     {
       "id": "X14",
@@ -180,12 +187,12 @@
     {
       "id": "X15",
       "family": "signed Type-B/C finite shadows B_n <= S_2n",
-      "owner": "P14",
+      "owner": "P14 (X15-001 finite rows); P13 (X15-002 proof)",
       "admission": "admitted",
       "role": "core_artifact",
       "pointer_status": "not_applicable",
-      "verification": "artifacts/public_evidence_routes.json#X15 public bounded replay",
-      "boundary": "six finite source rows only; no Type-B/C classification and no P15 theorem import"
+      "verification": "X15-001: artifacts/public_evidence_routes.json#X15; X15-002: self-contained manuscript proof",
+      "boundary": "six finite replay rows plus the all-n mirror-union human proof; no Type-B/C classification and no P15 theorem/proof import"
     },
     {
       "id": "X16",
@@ -305,13 +312,23 @@
     "historical_fresh_copy_status": "pass_S43_raw_S42_distribution",
     "historical_runtime_seconds": 973.905,
     "historical_routes_passed": 12,
-    "current_remediation_status": "author_replay_pass_a3cfafe_external_reproduction_pending"
+    "current_remediation_status": "independent_S46_pass_16be346_S46H_short_gates_pass_ready_owner_commit"
   },
   "noncomputational_rows": [
     {
       "id": "X13",
-      "route": "human_proof_and_classical_source_lock",
-      "boundary": "no standalone numerical replay; not counted as a thirteenth quantitative route"
+      "route": "static_certificate_read_only_checker_and_public_proof",
+      "locus": "artifacts/x13_type_a_lattice_rank_mass_certificate.json",
+      "boundary": "not counted as a thirteenth quantitative route"
+    },
+    {
+      "id": "X15",
+      "claim_id": "X15-002",
+      "claim_owner": "P13",
+      "source_provenance": "P14 signed Type-B/C source row",
+      "route": "self_contained_public_human_proof",
+      "locus": "paper/sections/05_signed_type_bc_source_rows.tex#prop:signed-mirror-union-balance",
+      "boundary": "all-n mirror-union balance only; distinct from X15-001; no classification or P15 theorem/proof import"
     },
     {
       "id": "G-004",
@@ -352,13 +369,27 @@
     "reviewer_preparation_head_full_replay_certified": false,
     "next_gate": "S46_independent_external_red_team"
   },
+  "s46_record": {
+    "scope": "exact public commit 16be346502e754bd6282adb5216599bed26ab8d6",
+    "status": "PASS_PUBLIC_REPLAY_ENVELOPE",
+    "independent_external": true,
+    "runtime_seconds": 1256.112,
+    "routes_passed": 12,
+    "route_checks_passed": 86,
+    "route_contract_checks_passed": 156,
+    "distributed_artifacts_immutable": 12,
+    "manifest_entries": 113,
+    "release_checksum_entries": 2,
+    "envelope_sha256": "BB946A10C5264C30B9D64051AF8266F7C4CA3DED9D251E415C272FE59B22DDFD",
+    "verdict": "mathematics_and_replay_hold_five_bounded_source_governance_fixes_assigned_S46H"
+  },
   "companion_source_notes": [
     {
       "id": "X10",
       "owner": "P07/P33",
       "admission": "not_admitted",
       "pointer_status": "public_companion",
-      "boundary": "bounded fixed results only; no theorem transfer"
+      "boundary": "bounded context only; neither theorem nor proof imported; no all-n tiling claim"
     },
     {
       "id": "X11",

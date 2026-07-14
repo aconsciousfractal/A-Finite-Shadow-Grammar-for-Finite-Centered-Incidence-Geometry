@@ -1,6 +1,6 @@
 # Scripts
 
-This directory contains the bounded verifier and public evidence scripts. The remediated payload at commit `a3cfafe3a3bb244ce9a293173a963e3cf6929a68` passed one S44H-R author replay from a new true Git clone. The current reviewer-preparation head keeps the quantitative scripts, route registry, paper, PDF, and route artifacts unchanged; independent external replay of that exact head is pending.
+This directory contains the bounded verifier and public evidence scripts. Commit `16be346502e754bd6282adb5216599bed26ab8d6` passed one independent S46 replay from a fresh public clone. S46H leaves the twelve quantitative route scripts, route registry, and distributed route artifacts byte-identical and adds only the read-only X13 static-certificate checker.
 
 ## Verifier contract
 
@@ -32,9 +32,10 @@ e8_projective_source_channel_replay.py  X26 projective E8 source-channel replay
 
 Exact helpers, seeds, selected source files, certificates, bounded arguments, and support artifacts are declared in `artifacts/public_evidence_routes.json`. X15 recompute output is verifier-owned and ignored so a run cannot mutate a manifest-pinned distributed artifact.
 
-## Noncomputational rows
+## Static and human-proof rows outside the route count
 
-- X13 uses the public manuscript proof and classical source lock; it is not a thirteenth replay.
+- X13 uses the public proof, classical source lock, manifest-pinned certificate, and `x13_type_a_lattice_rank_mass_certificate_check.py`. The checker is read-only and is not a thirteenth route.
+- X15-002 is the self-contained mirror-union human proof; X15-001 remains the six-row quantitative route.
 - `G-004/CPL-001` uses human proof and classical sources for the retained S36/S37 guardrail; it has no numerical replay, novelty claim, new X-ID, or imported descent/transfer theorem.
 
 ## Optional X05 regeneration

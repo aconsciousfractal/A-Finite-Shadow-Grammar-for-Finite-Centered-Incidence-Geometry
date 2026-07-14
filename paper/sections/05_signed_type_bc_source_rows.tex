@@ -1,8 +1,21 @@
 \section{Signed Type-B/C Source Rows}
 
-The signed source row comes from the companion signed Type-B/C source package.  It works with the finite shadow \(B_n\leq S_{2n}\), using the pair model for signed coordinates.  Standard Coxeter background for signed permutations is classical\cite{BjornerBrenti2005}.
+The signed finite rows come from the companion Type-B/C source package.  For
+the all-\(n\) balance statement below, however, we give the elementary proof in
+full.  Write a signed permutation as \(g=(\pi,\varepsilon)\in B_n=C_2\wr S_n\)
+and embed \(B_n\leq S_{2n}\) through its action on
+\(\{+1,\ldots,+n,-1,\ldots,-n\}\), where
+\(g(+i)=\varepsilon_i(+\pi(i))\) and \(g(-i)=\varepsilon_i(-\pi(i))\).
+Standard Coxeter background for signed permutations is classical\cite{BjornerBrenti2005}.
 
-The signed incidence rows \(BI_n(k,l)\) record positive fixed signed pairs and sign-flip-in-place pairs.  The signed artifact verifies that the same fingerprint channel can process these rows through the ambient symmetric group.  The manuscript uses this as a bounded second finite-shadow instance.
+The signed incidence row \(BI_n(k,l)\) consists of those
+\(g=(\pi,\varepsilon)\) with exactly \(k\) indices satisfying
+\(\pi(i)=i,\varepsilon_i=+1\) and exactly \(l\) satisfying
+\(\pi(i)=i,\varepsilon_i=-1\).  It is a union of \(B_n\)-conjugacy classes.
+The signed artifact verifies that the same fingerprint channel can process six
+selected rows through the ambient symmetric group.  Those six numerical rows
+and the human-proof all-\(n\) proposition below have separate verification
+postures.
 
 \begin{table}[ht]
 \centering
@@ -42,8 +55,46 @@ Equivalently, the ambient standard block vanishes:
 \]
 \end{proposition}
 
-\begin{proof}[Source-locked proof sketch]
-The signed source lock decomposes the ambient permutation module \(\mathbb{C}^{2n}\) into the constant line plus two nontrivial signed constituents: a pair-standard channel and a reflection channel.  For a single layer \(BI_n(k,l)\), the pair-standard scalar is proportional to \(k+l-1\), while the reflection scalar is proportional to \(k-l\).  Thus a single nonempty layer cannot kill both channels.  The two layers \(BI_n(1,0)\) and \(BI_n(0,1)\) each kill the pair-standard channel, and their equal sizes make the reflection scalars cancel in the union.  \Cref{prop:standard-block-balance} then gives the displayed position-value balance and the vanishing of \(M_{(2n-1,1)}\).
+\begin{proof}
+Put \(f_i^+=e_{+i}+e_{-i}\) and \(f_i^-=e_{+i}-e_{-i}\).  The ambient
+permutation module splits as the \(B_n\)-stable direct sum
+\[
+  \mathbb C^{2n}=U_+\oplus U_-,\qquad
+  g f_i^+=f_{\pi(i)}^+,\qquad
+  g f_i^-=\varepsilon_i f_{\pi(i)}^-.
+\]
+Here \(U_+=\mathbb C\mathbf 1\oplus V_{\rm pair}\), where
+\(V_{\rm pair}\) is the inflated \(S_n\)-standard module of dimension
+\(n-1\), while \(U_-=V_{\rm ref}\) is the \(n\)-dimensional reflection
+module.  Hence the ambient \(S_{2n}\)-standard module restricts to
+\(V_{\rm pair}\oplus V_{\rm ref}\).
+
+Let \(T_{k,l}=\sum_{g\in BI_n(k,l)}g\).  Since the layer is conjugacy
+invariant, \(T_{k,l}\) acts by scalars on these two irreducibles.  On every
+element of the layer the characters of \(U_+\) and \(U_-\) are respectively
+\(k+l\) and \(k-l\).  Taking traces, and subtracting the constant line from
+\(U_+\), gives
+\[
+  \omega_{\rm pair}(T_{k,l})
+    =\frac{|BI_n(k,l)|(k+l-1)}{n-1},\qquad
+  \omega_{\rm ref}(T_{k,l})
+    =\frac{|BI_n(k,l)|(k-l)}{n}.
+\]
+For both \((k,l)=(1,0)\) and \((0,1)\), the pair-standard scalar is zero.
+Moreover
+\[
+  |BI_n(1,0)|=|BI_n(0,1)|=n2^{n-1}D_{n-1}:
+\]
+choose the fixed coordinate, derange the other \(n-1\) coordinates, and
+choose their signs.  The two reflection scalars are therefore equal and
+opposite.  Their union kills \(V_{\rm pair}\oplus V_{\rm ref}\), so
+\cref{prop:standard-block-balance} gives \(M_{(2n-1,1)}(Y_n^B)=0\) and a
+constant position--value matrix.  Finally
+\[
+  |Y_n^B|=2n2^{n-1}D_{n-1}=n2^nD_{n-1},\qquad
+  \frac{|Y_n^B|}{2n}=2^{n-1}D_{n-1},
+\]
+which proves the displayed formula for \(N_{Y_n^B}\).
 \end{proof}
 
 For example, at \(n=3,4,5,6\) the signed-balance check gives \(|Y^B_n|=24,128,1440,16896\) and constants \(4,16,144,1408\), respectively.  This is the concrete signed use of the standard-block dictionary: Type A balances a single one-incidence layer in its mature theorem row, while the signed row balances a mirror-union because the ambient standard splits into two signed channels.
@@ -71,4 +122,4 @@ row & \(\rankmass\) & \(\rank_\mathbb{Q}M_{(5,1)}\) & \(\SNFL_{(5,1)}\) \\
 \end{tabular}
 \end{table}
 
-No broader Coxeter-group statement is made in this section.  The signed row is a source-locked finite artifact and a grammar test.
+No broader Coxeter-group or classification statement is made in this section.  The six rank-mass rows remain bounded P14 artifact data; the mirror-union proposition is the separate P13-owned elementary human-proof claim X15-002.  Neither imports the P15 signed-reversal theorem.

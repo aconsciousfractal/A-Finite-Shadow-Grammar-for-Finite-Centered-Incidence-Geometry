@@ -8,7 +8,13 @@ In the notation of \cref{prop:standard-block-balance}, the Type-A balance theore
 \]
 so the standard block \(M_{(n-1,1)}(I_n)\) vanishes.  This is not merely vocabulary: it is the exact point where the centered-operator language and the Specht block language meet.
 
-The same row can be replayed through the Fourier/Specht fingerprint artifact.  The left-ideal checks below are finite support rows, not new counting theorems.
+The same row can be replayed through the Fourier/Specht fingerprint artifact.
+The left-ideal checks below are finite support rows, not new counting theorems.
+Their exact partition ranks and weighted sums are recorded in the
+manifest-pinned static certificate
+\path{artifacts/x13_type_a_lattice_rank_mass_certificate.json}; the companion
+read-only checker performs 61 exact checks without creating a thirteenth
+quantitative replay route.
 
 \begin{table}[ht]
 \centering
@@ -33,6 +39,17 @@ A second Type-A support row shows why \(\PhiFCIG\) cannot be reduced to a conjug
 \]
 They have the same class histogram \((4):1,(3,1):2,(2,1,1):1\), but the \((3,1)\) block separates them.
 
+For this witness the integral model is explicitly
+\[
+  L_{(3,1)}^{A_3}
+  =\mathbb Z(e_1-e_4)\oplus\mathbb Z(e_2-e_4)
+   \oplus\mathbb Z(e_3-e_4),
+\]
+with \(D(w)(e_i-e_4)=e_{w(i)}-e_{w(4)}\) and matrices acting on columns.
+Thus every Smith form in the following table is qualified by this displayed
+lattice.  The static certificate records the two block matrices,
+determinantal divisors, ranks, and Smith factors.
+
 \begin{table}[ht]
 \centering
 \caption{Type-A value witness: same class histogram, different \(\Phi\)-data.}
@@ -47,4 +64,4 @@ row & \(\rank_\mathbb{Q}M_{(3,1)}\) & \(\SNFL_{(3,1)}\) \\
 \end{tabular}
 \end{table}
 
-The \(S_4\) witness layer\cite{BabanskyyS4Layer2026} supplies a smaller finite source row for structured subsets and extension-set comparisons.  It is used here as context for how finite rows enter the grammar, not as a license to broaden the Type-A theorem boundary.  One notation warning is needed: the public poset-cone paper uses a label P038 for a proved extension-tiler witness, while X10 names the exceptional six-element benchmark family.  The bounded P07 syntheme result and P33 six-element certificate are companion-owned routes\cite{BabanskyyS6Syntheme2026,BabanskyyS6TileClassification2026}; P13 imports neither theorem and claims no all-\(n\) classification.
+The \(S_4\) witness layer\cite{BabanskyyS4Layer2026} supplies a smaller finite source row for structured subsets and extension-set comparisons.  It is used here as context for how finite rows enter the grammar, not as a license to broaden the Type-A theorem boundary.  One notation warning is needed: the public poset-cone paper uses a label P038 for a proved extension-tiler witness, while X10 names the exceptional six-element benchmark family.  The bounded P07 syntheme result and P33 six-element certificate are companion-owned routes\cite{BabanskyyS6Syntheme2026,BabanskyyS6TileClassification2026}; P13 imports neither theorem nor proof, makes no all-\(n\) tiling claim, and claims no all-\(n\) classification.
