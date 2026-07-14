@@ -51,7 +51,8 @@ single final terminator are LF, encoded as UTF-8 without BOM. Expected digest:
 
 ## Exact 75-path allowlist
 
-```text`n.gitattributes
+```text
+.gitattributes
 .gitignore
 artifacts/d5_projective_source_channel_replay.json
 artifacts/dihedral_vertex_shadow_replay.json
