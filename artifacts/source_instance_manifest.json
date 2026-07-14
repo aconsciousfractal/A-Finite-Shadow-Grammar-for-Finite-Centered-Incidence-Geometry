@@ -1,14 +1,17 @@
 {
   "schema_version": 3,
   "paper": "A Finite-Shadow Grammar for Finite Centered Incidence Geometry",
-  "version_date": "2026-07-13",
+  "version_date": "2026-07-14",
   "package_status": {
-    "current_gate": "S44_BLOCKER_REMEDIATION",
+    "current_gate": "S46_INDEPENDENT_EXTERNAL_RED_TEAM",
     "publication_authorized": false,
-    "fresh_copy_replay": "pass_S43_raw_S42_distribution",
-    "red_team": "S44_blockers_under_remediation",
-    "post_fix_verification": "pending_S44H",
-    "owner_publication": "pending_S45"
+    "publication_scope": "public_untagged_external_review_candidate_only",
+    "public_origin": "available_on_origin_master",
+    "review_candidate_authorized": true,
+    "fresh_copy_replay": "pass_S44HR_author_replay_commit_a3cfafe",
+    "red_team": "independent_external_pending",
+    "post_fix_verification": "pass_S44HR_on_a3cfafe",
+    "owner_publication": "no_tag_release_doi_arxiv_without_new_gate"
   },
   "grammar": {
     "core_slots": ["N", "X", "I", "rho", "Phi"],
@@ -20,9 +23,9 @@
     "universal_fcig_category_claimed": false
   },
   "canonical_registry": {
-    "status": "CANONICAL_POST_S44_REMEDIATION_REGISTRY",
+    "status": "CANONICAL_S44HR_PUBLIC_REVIEW_REGISTRY",
     "authority": "artifacts/source_instance_manifest.json#/registry_rows",
-    "s44h_verified": false,
+    "s44h_verified": true,
     "admission_values": ["admitted", "not_admitted"],
     "pointer_status_values": ["not_applicable", "future", "public_companion"],
     "typing_rule": "admission and pointer_status are independent; pointer rows do not receive filled concrete five-slot records",
@@ -302,7 +305,7 @@
     "historical_fresh_copy_status": "pass_S43_raw_S42_distribution",
     "historical_runtime_seconds": 973.905,
     "historical_routes_passed": 12,
-    "current_remediation_status": "pending_S44H"
+    "current_remediation_status": "author_replay_pass_a3cfafe_external_reproduction_pending"
   },
   "noncomputational_rows": [
     {
@@ -330,6 +333,24 @@
     "sanitized_summary": "docs/S43_REPLAY_SUMMARY.md",
     "raw_envelope_sha256": "76F1062442064076A150700C1195C02861217F49BF9BF84F5E6FF2721375290A",
     "current_bytes_certified": false
+  },
+  "s44hr_record": {
+    "scope": "commit a3cfafe and tree 9acf53f8",
+    "status": "PASS_PUBLIC_REPLAY_ENVELOPE",
+    "author_operated": true,
+    "external_reproduction": false,
+    "runtime_seconds": 783.885,
+    "routes_passed": 12,
+    "route_checks_passed": 86,
+    "route_contract_checks_passed": 156,
+    "distributed_artifacts_immutable": 12,
+    "manifest_entries": 112,
+    "release_checksum_entries": 2,
+    "pdf_sha256": "36DA47522259F31924A4B679275901235E4842CB6139D2B8A01B94F7B635C26F",
+    "sanitized_summary": "docs/S44HR_AUTHOR_REPLAY_SUMMARY.md",
+    "raw_envelope_sha256": "A974ACCD2ACF319EEAC28BDD07E6C77370FC41C250B6C9ADA599058BCD88A85F",
+    "reviewer_preparation_head_full_replay_certified": false,
+    "next_gate": "S46_independent_external_red_team"
   },
   "companion_source_notes": [
     {

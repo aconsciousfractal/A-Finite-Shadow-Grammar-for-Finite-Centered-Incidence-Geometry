@@ -1,8 +1,8 @@
 # A Finite-Shadow Grammar for Finite Centered Incidence Geometry
 
-This repository is the public-package candidate for the paper **A Finite-Shadow Grammar for Finite Centered Incidence Geometry**.
+This repository is the public external-review candidate for the paper **A Finite-Shadow Grammar for Finite Centered Incidence Geometry**.
 
-> Gate status: the exact raw S42 distribution passed one S43 fresh-copy replay. S44 found blocking release defects; this worktree is an S44 remediation candidate awaiting S44H verification. S45 owner authorization and publication remain blocked.
+> Gate status: the remediated payload at commit `a3cfafe` passed the S44H-R author replay from a true Git clone. The public origin is available on `master`; S45 scoped authorization is complete and S46 independent external red team is next. No tag, GitHub Release, DOI, arXiv deposit, or independent external reproduction is claimed.
 
 ## Interface
 
@@ -18,7 +18,7 @@ Admitted concrete rows are governed by the normative source-lock schema covering
 
 The paper uses the standard-block balance dictionary as an interface lens, records characteristic- and lattice-sensitive centered channels, and compares bounded source-aware fingerprints. `Phi` is descriptive: it is not a classifier, a tiling oracle, or a substitute for a separately owned theorem.
 
-## Recorded evidence and remediation state
+## Recorded evidence and review state
 
 The route registry `artifacts/public_evidence_routes.json` contains exactly twelve quantitative routes:
 
@@ -37,7 +37,9 @@ X25  E7 projective source-channel replay
 X26  E8 projective source-channel replay
 ```
 
-The exact raw S42 109-file surface passed the single S43 replay in 973.905 seconds: 12/12 routes, 12/12 zero subprocess exits, 12/12 passing artifact semantics, and 60/60 route checks. See the path-free `docs/S43_REPLAY_SUMMARY.md`. Those historical results do not certify the changed S44 remediation bytes; S44H remains required.
+The remediated payload at commit `a3cfafe3a3bb244ce9a293173a963e3cf6929a68` and tree `9acf53f8f5068872e0a0273139efac87dee224f2` passed one S44H-R author replay from a new true Git clone in 783.885 seconds: 12/12 routes, 86/86 route checks, 156/156 route-contract checks, manifest 112/112 pre/post, outer checksum 2/2 pre/post, and 12/12 distributed artifacts byte-immutable. The canonical build reproduced the 35-page PDF byte-for-byte. See the path-free `docs/S44HR_AUTHOR_REPLAY_SUMMARY.md`.
+
+The earlier S43 replay of the raw S42 surface remains historical evidence and is recorded in `docs/S43_REPLAY_SUMMARY.md`. The reviewer-preparation commit after `a3cfafe` changes only public governance/reviewer documentation, `artifacts/source_instance_manifest.json`, and checksum metadata; it does not change the paper, PDF, quantitative scripts, route registry, or route artifacts. It is reviewer-ready after static checks, but the S44H-R full replay certificate continues to bind exactly `a3cfafe`. Independent full replay of the public review head is the S46 gate.
 
 X13 is intentionally noncomputational: its Fourier/Specht dictionary and `SNF^L` conventions are supported by the manuscript proof and classical source lock, not by a thirteenth numerical replay.
 
@@ -56,7 +58,7 @@ artifacts/   Canonical registry, route registry, inputs, and replay artifacts
 scripts/     Fail-closed verifier and bounded replay scripts
 ```
 
-See `REPRODUCE.md` for the bounded verification and paper-build commands. The recorded S43 result applies to the raw S42 bytes; the current remediation candidate has not yet passed S44H.
+See `README_REVIEWER.md` for the ten-minute and thirty-minute review paths, and `REPRODUCE.md` for the bounded verifier and paper-build commands.
 
 ## Ownership and nonimport boundaries
 

@@ -1,6 +1,6 @@
 # Public Claim Boundary
 
-The exact raw S42 distribution passed one S43 fresh-copy replay. S44 subsequently found blocking release defects. This repository is now an S44 remediation candidate, not a published release; S44H verification and S45 owner authorization remain outstanding.
+This repository is a public, untagged external-review candidate. The remediated payload at commit `a3cfafe` passed the S44H-R author replay; S45 scoped review preparation is complete and S46 independent external red team is next. No tag, GitHub Release, DOI, arXiv deposit, formal release, or independent external reproduction is claimed.
 
 ## Promoted interface claims
 
@@ -21,11 +21,13 @@ The route registry declares exactly twelve quantitative routes:
 
 `X05,X15,X16,X18,X19,X20,X21,X22,X23,X24,X25,X26`.
 
-The raw S42 109-file surface passed the single S43 replay in 973.905 seconds with 12/12 routes, 12/12 zero subprocess exits, 12/12 passing artifact semantics, and 60/60 route checks. `docs/S43_REPLAY_SUMMARY.md` is the sanitized public record. That historical result does not certify the changed S44 remediation bytes.
+Commit `a3cfafe3a3bb244ce9a293173a963e3cf6929a68` and tree `9acf53f8f5068872e0a0273139efac87dee224f2` passed one S44H-R author replay from a new true Git clone in 783.885 seconds: 12/12 routes, 86/86 route checks, 156/156 route-contract checks, manifest 112/112 pre/post, outer checksum 2/2 pre/post, and every distributed artifact byte-immutable. The 35-page PDF rebuilt byte-for-byte. `docs/S44HR_AUTHOR_REPLAY_SUMMARY.md` is the path-free public record.
+
+The reviewer-preparation commit after `a3cfafe` changes only public governance/reviewer documents, `artifacts/source_instance_manifest.json`, and checksum metadata. It does not change the paper, PDF, quantitative scripts, route registry, or route artifacts. Its short gates make it reviewer-ready; independent full replay of its exact commit remains S46.
 
 X13 has no standalone numerical replay. Its Fourier/Specht dictionary, rank-mass discussion, and `SNF^L` convention are checked by human review of the public manuscript proof and classical source lock. `G-004/CPL-001` is also noncomputational. Neither is counted as a quantitative route.
 
-The full X05 census generator is optional, takes about 26 minutes in the reference environment, and was excluded from S43.
+The full X05 census generator is optional, takes about 26 minutes in the reference environment, and is excluded from the bounded verifier.
 
 ## Ownership and nonimport boundaries
 
@@ -52,4 +54,4 @@ This package does not claim:
 - a theorem-level bridge from the number `5568`;
 - a P15 signed-reversal proof, a P18 theorem, or any theorem imported from P28/P29/P30/P32/P33;
 - a second hidden group for the full `lat565` rank locus or a classification of broader out-of-`G0` exceptions;
-- S44H completion, S45 authorization, or publication.
+- independent external reproduction, a tag, GitHub Release, DOI, arXiv deposit, or formal release.

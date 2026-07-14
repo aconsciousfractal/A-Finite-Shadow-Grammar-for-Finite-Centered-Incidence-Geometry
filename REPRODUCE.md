@@ -1,31 +1,35 @@
-# Reproduce the S44 Remediation Candidate
+# Reproduce the Public External-Review Candidate
 
-The exact raw S42 distribution passed the single S43 fresh-copy replay summarized in `docs/S43_REPLAY_SUMMARY.md`. S44 then found blocking release defects. The current bytes are an S44 remediation candidate and have not yet passed S44H verification from a Git-normalized clone. Publication is not authorized.
+The remediated payload at commit `a3cfafe3a3bb244ce9a293173a963e3cf6929a68` passed one complete S44H-R author replay from a new true Git clone. The later reviewer-preparation commit changes public governance/navigation, `artifacts/source_instance_manifest.json`, and checksum metadata only; the paper, PDF, quantitative scripts, route registry, and route artifacts are unchanged. That later commit is the S46 external-review target and is not itself covered by the author full-replay certificate.
 
 ## Python environment
 
-Use Python 3.10 or newer and install the pinned environment:
+Use Python 3.11 or newer and install the pinned environment:
 
 ```powershell
 python -m pip install -r requirements.txt
 ```
 
-The recorded S43 environment was Python 3.14.3, SymPy 1.14.0, and NumPy 2.4.2. SymPy supports the bounded signed Type-B/C route. NumPy is exercised only by the optional X05 full-census regeneration; the default verifier audits frozen X05 evidence.
+The recorded S44H-R environment used Python 3.14.3, SymPy 1.14.0, and NumPy 2.4.2. SymPy supports the bounded signed Type-B/C route. NumPy is exercised only by the optional X05 full-census regeneration; the default verifier audits frozen X05 evidence.
 
-## Bounded verifier
+## Short static gate
 
-From the repository root, the short preflight is:
+From the repository root:
 
 ```powershell
-python -B scripts/verify.py --static-only
+python -B scripts/verify.py --static-only --out ../p13_static_review.json
 ```
 
-The static preflight validates `SHA256SUMS.txt`, `RELEASE_SHA256.txt`, exact route coverage, required files, and artifact semantics before loading the route registry or executing a quantitative route. It took about 2 seconds in the reference environment and executes no quantitative route.
+This standard-library-only preflight validates `SHA256SUMS.txt`, `RELEASE_SHA256.txt`, exact package coverage, the twelve-route contract, required files, and artifact semantics without executing a quantitative route.
 
-The full bounded command is:
+Expected on the reviewer-preparation head: exit 0; schema 3; `PASS_PUBLIC_REPLAY_ENVELOPE`; `mode=static_only`; 12 routes evaluated, zero invoked; manifest 113/113; outer checksum 2/2; no `.verify` directory; clean tracked worktree.
+
+## Full bounded verifier
+
+Run once from a fresh clone of the exact review commit:
 
 ```powershell
-python -B scripts/verify.py --timeout 600
+python -B scripts/verify.py --timeout 600 --out ../p13_full_review.json
 ```
 
 It covers exactly:
@@ -36,11 +40,27 @@ X05, X15, X16, X18, X19, X20, X21, X22, X23, X24, X25, X26
 
 X13 and `G-004/CPL-001` are human-proof/classical-source-lock rows and are intentionally outside the numerical replay count.
 
-The single historical S43 run of the raw S42 bytes took 973.905 seconds (about 16.2 minutes) and passed 12/12 routes. That result does not certify the current remediation bytes. Do not launch a new full run until the S44 fixes, Git-normalized file set, manifest, and outer checksum are final and the S44H gate is ready. S45 remains an explicit owner-authorization gate after S44H; these commands do not authorize release or publication.
+The S44H-R author run on `a3cfafe` completed in 783.885 seconds with exit 0: 12/12 routes, 86/86 route checks, 156/156 route-contract checks, 12/12 distributed artifacts immutable, manifest 112/112 pre/post, and outer checksum 2/2 pre/post. X15 validated an ignored verifier-owned runtime artifact and cleaned it. See `docs/S44HR_AUTHOR_REPLAY_SUMMARY.md`.
+
+For the current reviewer-preparation head, the expected quantitative counts are unchanged and manifest coverage is 113/113. An independent successful run on that exact commit may be recorded as external reproduction; the author run alone may not.
+
+After a full run:
+
+```powershell
+Test-Path artifacts/.verify
+git status --short
+Get-FileHash ../p13_full_review.json -Algorithm SHA256
+```
+
+Expected: `False`, no Git output, and a retained external envelope hash.
+
+## Historical S43 replay
+
+The exact raw S42 distribution passed the earlier S43 fresh-copy replay in 973.905 seconds with 12/12 routes and 60/60 checks. It remains historical evidence only; `docs/S43_REPLAY_SUMMARY.md` records it.
 
 ## Optional X05 full census
 
-The default X05 command audits the frozen 1000+1000 census and bounded `lat565` evidence. Full regeneration is optional, takes about 26 minutes in the reference environment, writes to `m19_census/`, and is outside S43/S44H bounded replay:
+The default X05 command audits the frozen 1000+1000 census and bounded `lat565` evidence. Full regeneration is optional, takes about 26 minutes in the reference environment, writes to `m19_census/`, and is outside the bounded verifier:
 
 ```powershell
 python -B scripts/x05_m19_census_full_regeneration.py
@@ -58,14 +78,24 @@ pdflatex -jobname=A_Finite-Shadow_Grammar_for_Finite_Centered_Incidence_Geometry
 pdflatex -jobname=A_Finite-Shadow_Grammar_for_Finite_Centered_Incidence_Geometry -interaction=nonstopmode -halt-on-error main.tex
 ```
 
-The fourth total `pdflatex` invocation (the fifth command overall) is the label-stabilization pass. The recorded S43 build was 34 pages and byte-identical to its S42 source PDF, but the final S44H PDF hash must be recorded after all paper and bibliography repairs.
-
-Expected candidate PDF:
+Expected PDF:
 
 ```text
 paper/A_Finite-Shadow_Grammar_for_Finite_Centered_Incidence_Geometry.pdf
+35 pages
+675797 bytes
+SHA-256 36DA47522259F31924A4B679275901235E4842CB6139D2B8A01B94F7B635C26F
 ```
 
 ## Verify final hashes
 
-`SHA256SUMS.txt` uses forward-slash paths and covers the distributed payload except the two checksum metadata files. `RELEASE_SHA256.txt` pins exactly `SHA256SUMS.txt` and the title PDF. The verifier validates both layers before loading any route. From the repository root, an independent GNU-compatible check is `sha256sum -c RELEASE_SHA256.txt` followed by `sha256sum -c SHA256SUMS.txt`. These checksums bind candidate bytes; they do not authorize S45, release, or publication.
+`SHA256SUMS.txt` uses forward-slash paths and covers every distributed payload file except the two checksum metadata files. `RELEASE_SHA256.txt` pins exactly `SHA256SUMS.txt` and the title PDF.
+
+An independent GNU-compatible check is:
+
+```powershell
+sha256sum -c RELEASE_SHA256.txt
+sha256sum -c SHA256SUMS.txt
+```
+
+These checksums bind the reviewer target bytes. They do not establish a theorem, independent reproduction, a tag, a release, a DOI, or an arXiv deposit.

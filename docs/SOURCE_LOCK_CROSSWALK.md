@@ -18,8 +18,9 @@ is typed independently from `pointer_status`:
 - a future or companion pointer does not receive a filled five-slot instance
   merely because it has an X-ID.
 
-The registry is an S44 remediation artifact.  It is not an S44H pass or a
-release authorization.
+The registry content at `a3cfafe` is part of the S44H-R author-replayed
+baseline.  The later reviewer-preparation commit updates only its package-state
+metadata; independent replay of that exact later commit remains pending.
 
 ## Required-field crosswalk
 
@@ -37,7 +38,7 @@ release authorization.
 | `channel_rho` | `paper/sections/03_fingerprint_channel.tex`, `paper/sections/03b_modular_centered_channels.tex`, and the relevant row section | Includes domain/codomain or centered operator. |
 | `fingerprint_Phi` | The channel sections, relevant row section, and replay artifact where quantitative | Includes basis/lattice qualification when used. |
 | `source_locator` | `paper/refs.bib`, the registry `verification` field, and `artifacts/public_evidence_routes.json` | Primary citation or exact bundled path. |
-| `source_version` | Registry `verification`, bibliographic locator, Git source pin where cited, and the final package checksum layer | The historical S43 hash certifies only the raw S42 bytes; the remediation manifest and outer checksum remain S44H inputs until clone verification passes. |
+| `source_version` | Registry `verification`, bibliographic locator, Git source pin where cited, and the package checksum layer | S44H-R author replay binds commit `a3cfafe` and tree `9acf53f8`; the later reviewer-preparation commit has its own checksum layer and remains the S46 independent-review target. |
 | `admission` | Registry `admission` | Typed only as `admitted` or `not_admitted`. |
 | `claim_owner` | Registry `owner` | P13 or the named companion owner. |
 | `verification_route` | Registry `verification` plus `artifacts/public_evidence_routes.json` for the twelve quantitative routes | X13 and G-004/CPL-001 use human proof and classical sources, not numerical replay. |
