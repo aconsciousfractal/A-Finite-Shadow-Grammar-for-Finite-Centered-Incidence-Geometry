@@ -67,6 +67,7 @@ See `README_REVIEWER.md` for the ten-minute and optional full-replay review path
 - X11 is a version-neutral future P18 pointer and is not admitted; no release pin is required while it remains a nonimporting pointer.
 - X12 is a future P17 pointer with `admission=not_admitted`; `pointer_status=future` is recorded separately.
 - P28, P29, P30, P32, and P33 remain companion theorem or certificate routes. Their cited results are not reassigned to P13.
+- The two P39-derived packages (`FCIG-Higher-Star-Defect-Design-Lattice`; `FCIG-Common-Marked-Lattice-Designs`, both published untagged 2026-07-24) are companion routes on design incidence lattices. Design incidence lattices are not admitted X-rows; no X-ID is created and no theorem is imported into P13.
 
 The package does not claim a complete FCIG theory, a general Coxeter/Weyl or Type-E theorem, a root-subsystem classification, a modular Specht novelty theorem, a new coupling/descent theorem, a `5568` bridge, or any classification or tiling criterion derived from `Phi`.
 
