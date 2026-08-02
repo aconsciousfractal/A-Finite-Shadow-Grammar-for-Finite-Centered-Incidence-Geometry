@@ -48,7 +48,7 @@ def digest(path: Path) -> str:
 
 class VerifierFixture:
     def __init__(self) -> None:
-        temp_root = os.environ.get("P13_TEST_TMPDIR")
+        temp_root = os.environ.get("FCIG_TEST_TMPDIR") or os.environ.get("P13_TEST_TMPDIR")
         self.temp = tempfile.TemporaryDirectory(
             prefix="p13_s44h_verify_",
             dir=temp_root,

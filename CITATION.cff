@@ -1,12 +1,13 @@
 cff-version: 1.2.0
-message: "If you use this repository, please cite it as below. Repository documentation is MIT-licensed; paper text and PDF artifacts are CC-BY-4.0 as specified in LICENSE."
-title: "A Finite-Shadow Grammar for Finite Centered Incidence Geometry"
+message: "Please cite the paper below. The repository contains its reproducible companion package."
+title: "Reproducible companion package for A Finite-Shadow Grammar for Finite Centered Incidence Geometry"
 type: software
 authors:
   - family-names: Babanskyy
     given-names: Oleksiy
     orcid: "https://orcid.org/0009-0001-6176-6208"
 repository-code: "https://github.com/aconsciousfractal/A-Finite-Shadow-Grammar-for-Finite-Centered-Incidence-Geometry"
+url: "https://oleksiybabanskyy.com/"
 license: MIT
 preferred-citation:
   type: article

@@ -1,17 +1,14 @@
 {
   "schema_version": 3,
   "paper": "A Finite-Shadow Grammar for Finite Centered Incidence Geometry",
-  "version_date": "2026-07-14",
+  "version_date": "2026-08-02",
   "package_status": {
-    "current_gate": "S47_PUBLIC_REVIEW_CANDIDATE",
-    "publication_authorized": false,
-    "publication_scope": "public_untagged_post_review_candidate_only",
-    "public_origin": "available_on_origin_master",
-    "review_candidate_authorized": true,
-    "fresh_copy_replay": "pass_S46_independent_replay_commit_16be346",
-    "red_team": "pass_math_and_replay_five_bounded_fixes_assigned_S46H",
-    "post_fix_verification": "pass_S46H_short_gates_quantitative_surface_unchanged",
-    "owner_publication": "no_tag_release_doi_arxiv_without_new_gate"
+    "status": "public_reproducible_companion_package",
+    "public_origin": "origin/master",
+    "formal_release": false,
+    "doi": null,
+    "arxiv_identifier": null,
+    "verification_record": "docs/REPRODUCIBILITY_RECORD.md"
   },
   "grammar": {
     "core_slots": ["N", "X", "I", "rho", "Phi"],
@@ -23,13 +20,12 @@
     "universal_fcig_category_claimed": false
   },
   "canonical_registry": {
-    "status": "CANONICAL_S46H_POST_REVIEW_REGISTRY",
+    "status": "canonical_public_registry",
     "authority": "artifacts/source_instance_manifest.json#/registry_rows",
-    "s44h_verified": true,
+    "schema_verified": true,
     "admission_values": ["admitted", "not_admitted"],
     "pointer_status_values": ["not_applicable", "future", "public_companion"],
-    "typing_rule": "admission and pointer_status are independent; pointer rows do not receive filled concrete five-slot records",
-    "supersedes_for_public_governance": "the stale S39 registry snapshot"
+    "typing_rule": "admission and pointer_status are independent; pointer rows do not receive filled concrete five-slot records"
   },
   "source_lock_schema": {
     "path": "docs/SOURCE_LOCK_SCHEMA.md",
@@ -47,7 +43,7 @@
     {
       "id": "X01",
       "family": "Type-A poset cones L(P)",
-      "owner": "P03/P11 and Type-A companion",
+      "owner": "Type-A standard-space and poset-cone companion papers",
       "admission": "admitted",
       "role": "prose",
       "pointer_status": "not_applicable",
@@ -57,7 +53,7 @@
     {
       "id": "X02",
       "family": "Type-A extension tilers",
-      "owner": "Type-A companion; P07/P33 as bounded companion routes",
+      "owner": "Type-A and exceptional six-element companion papers",
       "admission": "admitted",
       "role": "prose_exhibit",
       "pointer_status": "not_applicable",
@@ -67,27 +63,27 @@
     {
       "id": "X03",
       "family": "subgroup and coset rows",
-      "owner": "P03/P12",
+      "owner": "Type-A source papers",
       "admission": "admitted",
       "role": "core_exhibit",
       "pointer_status": "not_applicable",
-      "verification": "P03 public plus bounded dependency artifacts",
+      "verification": "public Type-A sources plus bounded dependency artifacts",
       "boundary": "classical control row only"
     },
     {
       "id": "X04",
       "family": "finite S4 witness",
-      "owner": "P03",
+      "owner": "Linear-Extension Sets and Subgroup Rows in S4 companion paper",
       "admission": "admitted",
       "role": "core_exhibit",
       "pointer_status": "not_applicable",
-      "verification": "P03 v1.0.1",
+      "verification": "public companion release v1.0.1",
       "boundary": "one bounded witness separation"
     },
     {
       "id": "X05",
       "family": "Sudoku/M19 centered rank loci",
-      "owner": "P05 and public Latin/Sudoku companions",
+      "owner": "public Latin-square and Sudoku-operator companion papers",
       "admission": "admitted",
       "role": "core_exhibit_prose",
       "pointer_status": "not_applicable",
@@ -97,7 +93,7 @@
     {
       "id": "X06",
       "family": "Latin determinant-defect loci",
-      "owner": "P05 and public Latin companion",
+      "owner": "Determinant Divisibility of Centered Latin Squares companion paper",
       "admission": "admitted",
       "role": "prose",
       "pointer_status": "not_applicable",
@@ -107,67 +103,67 @@
     {
       "id": "X07",
       "family": "magic/Endpoint-24 defect loci",
-      "owner": "P05/P08",
+      "owner": "future work",
       "admission": "not_admitted",
       "role": "future_pointer",
       "pointer_status": "future",
-      "verification": "no current P13 public replay",
+      "verification": "no current public replay",
       "boundary": "no filled concrete row and no unresolved affine or finite-field claim"
     },
     {
       "id": "X08",
       "family": "one-incidence layers I_n(k,l)",
-      "owner": "P11/P12",
+      "owner": "public one-incidence source papers",
       "admission": "admitted",
       "role": "core",
       "pointer_status": "not_applicable",
-      "verification": "P11 v1.0.0; P12 provenance",
-      "boundary": "P11 theorem boundary; no 5568 bridge"
+      "verification": "public companion source and provenance records",
+      "boundary": "companion theorem boundary; no 5568 bridge"
     },
     {
       "id": "X09",
       "family": "prefix/shadow subsets",
-      "owner": "P01/P03",
+      "owner": "Type-A source papers",
       "admission": "admitted",
       "role": "prose",
       "pointer_status": "not_applicable",
-      "verification": "provenance through P03",
+      "verification": "public Type-A provenance",
       "boundary": "no independent theorem row"
     },
     {
       "id": "X10",
       "family": "exceptional six-element extension-tiler benchmark",
-      "owner": "P07/P33",
+      "owner": "A Syntheme Transversal and Exact Left-Factor Orbits in S6; A Certified Six-Element Classification of Poset Linear-Extension Tiles",
       "admission": "not_admitted",
       "role": "companion_pointer",
       "pointer_status": "public_companion",
-      "verification": "P07 v1.0.0; P33 v1.0.0",
-      "boundary": "bounded P07/P33 results cited as context; neither theorem nor proof imported; no all-n tiling claim"
+      "verification": "both public companion releases v1.0.0",
+      "boundary": "bounded companion results cited as context; neither theorem nor proof imported; no all-n tiling claim"
     },
     {
       "id": "X11",
       "family": "nonconvex Coxeter-pure tilers",
-      "owner": "P18",
+      "owner": "future work",
       "admission": "not_admitted",
       "role": "future_pointer",
       "pointer_status": "future",
-      "verification": "version-neutral P18 future pointer; no release pin required while nonimporting",
+      "verification": "future pointer; no release pin required while nonimporting",
       "boundary": "no filled five-slot instance and no theorem import"
     },
     {
       "id": "X12",
       "family": "motion/contact atlas objects",
-      "owner": "P17",
+      "owner": "future work",
       "admission": "not_admitted",
       "role": "future_pointer",
       "pointer_status": "future",
-      "verification": "P17 context only; finite CL3 material is not a current P13 row",
+      "verification": "future context only; finite candidate material is not a current row",
       "boundary": "future pointer, not a rejected/admitted composite; no theorem import"
     },
     {
       "id": "X13",
       "family": "Fourier/Specht fingerprint rows",
-      "owner": "P12",
+      "owner": "this paper and cited classical sources",
       "admission": "admitted",
       "role": "core_artifact",
       "pointer_status": "not_applicable",
@@ -177,7 +173,7 @@
     {
       "id": "X14",
       "family": "grammar interface",
-      "owner": "P13",
+      "owner": "this paper",
       "admission": "admitted",
       "role": "meta",
       "pointer_status": "not_applicable",
@@ -187,17 +183,17 @@
     {
       "id": "X15",
       "family": "signed Type-B/C finite shadows B_n <= S_2n",
-      "owner": "P14 (X15-001 finite rows); P13 (X15-002 proof)",
+      "owner": "bundled finite replay for X15-001; this paper for X15-002",
       "admission": "admitted",
       "role": "core_artifact",
       "pointer_status": "not_applicable",
       "verification": "X15-001: artifacts/public_evidence_routes.json#X15; X15-002: self-contained manuscript proof",
-      "boundary": "six finite replay rows plus the all-n mirror-union human proof; no Type-B/C classification and no P15 theorem/proof import"
+      "boundary": "six finite replay rows plus the all-n mirror-union proof; no Type-B/C classification and no signed-reversal theorem/proof import"
     },
     {
       "id": "X16",
       "family": "modular centered operators",
-      "owner": "P16/P13",
+      "owner": "this paper",
       "admission": "admitted",
       "role": "core_exhibit",
       "pointer_status": "not_applicable",
@@ -207,17 +203,17 @@
     {
       "id": "X17",
       "family": "signed-reversal noncentral layer",
-      "owner": "P15",
+      "owner": "Exact Standard-Channel Rank of a Signed-Reversal Incidence Layer",
       "admission": "not_admitted",
       "role": "companion_pointer",
       "pointer_status": "public_companion",
-      "verification": "public P15 companion cited in paper/refs.bib",
-      "boundary": "P15 owns the theorem; P13 imports no proof"
+      "verification": "public companion cited in paper/refs.bib",
+      "boundary": "the companion paper owns the theorem; this paper imports no proof"
     },
     {
       "id": "X18",
       "family": "dihedral vertex shadows I_2(m) <= S_m",
-      "owner": "P19",
+      "owner": "this paper",
       "admission": "admitted",
       "role": "core_exhibit",
       "pointer_status": "not_applicable",
@@ -227,7 +223,7 @@
     {
       "id": "X19",
       "family": "length-colored G2 root shadow",
-      "owner": "P20",
+      "owner": "this paper",
       "admission": "admitted",
       "role": "core_exhibit",
       "pointer_status": "not_applicable",
@@ -237,27 +233,27 @@
     {
       "id": "X20",
       "family": "24-point projective F4 root shadow",
-      "owner": "P21",
+      "owner": "this paper",
       "admission": "admitted",
       "role": "core_exhibit",
       "pointer_status": "not_applicable",
       "verification": "artifacts/public_evidence_routes.json#X20 exported public replay",
-      "boundary": "source-layer exhibit only; P28/P29/P30/P32 refinements remain companion nonimports"
+      "boundary": "source-layer exhibit only; later length-coloring, golden-channel, exceptional-census, and placement refinements remain companion nonimports"
     },
     {
       "id": "X21",
       "family": "15-point projective H3 root shadow",
-      "owner": "P22",
+      "owner": "this paper",
       "admission": "admitted",
       "role": "core_exhibit",
       "pointer_status": "not_applicable",
       "verification": "artifacts/public_evidence_routes.json#X21",
-      "boundary": "source-channel exhibit; P29 is a distinct companion refinement"
+      "boundary": "source-channel exhibit; the golden-channel paper is a distinct companion refinement"
     },
     {
       "id": "X22",
       "family": "60-point projective H4 root shadow",
-      "owner": "P23",
+      "owner": "this paper",
       "admission": "admitted",
       "role": "core_exhibit",
       "pointer_status": "not_applicable",
@@ -267,41 +263,41 @@
     {
       "id": "X23",
       "family": "20-point projective D5 root shadow",
-      "owner": "P24",
+      "owner": "this paper",
       "admission": "admitted",
       "role": "core_exhibit",
       "pointer_status": "not_applicable",
       "verification": "artifacts/public_evidence_routes.json#X23",
-      "boundary": "bounded source recovery control; P30 owns later census routes"
+      "boundary": "bounded source recovery control; the exceptional-root-shadow paper owns later census routes"
     },
     {
       "id": "X24",
       "family": "36-point projective E6 root shadow",
-      "owner": "P25; P30 companion",
+      "owner": "this paper; exceptional-root-shadow companion",
       "admission": "admitted",
       "role": "core_exhibit",
       "pointer_status": "not_applicable",
-      "verification": "artifacts/public_evidence_routes.json#X24 plus P30 companion pointer",
-      "boundary": "P13 owns the interface row, not the P30 theorem census"
+      "verification": "artifacts/public_evidence_routes.json#X24 plus cited companion pointer",
+      "boundary": "this paper owns the interface row, not the companion theorem census"
     },
     {
       "id": "X25",
       "family": "63-point projective E7 root shadow",
-      "owner": "P26; P30/P32 companions",
+      "owner": "this paper; exceptional-root-shadow and E7-placement companions",
       "admission": "admitted",
       "role": "core_exhibit",
       "pointer_status": "not_applicable",
-      "verification": "artifacts/public_evidence_routes.json#X25 plus P30/P32 pointers",
-      "boundary": "P32 is a nonfaithfulness/placement limit, not a universal separator"
+      "verification": "artifacts/public_evidence_routes.json#X25 plus cited companion pointers",
+      "boundary": "the placement companion records a nonfaithfulness limit, not a universal separator"
     },
     {
       "id": "X26",
       "family": "120-point projective E8 root shadow",
-      "owner": "P27; P30 companion",
+      "owner": "this paper; exceptional-root-shadow companion",
       "admission": "admitted",
       "role": "core_exhibit",
       "pointer_status": "not_applicable",
-      "verification": "artifacts/public_evidence_routes.json#X26 plus P30 companion pointer",
+      "verification": "artifacts/public_evidence_routes.json#X26 plus cited companion pointer",
       "boundary": "bounded source/subsystem row; no classification import"
     }
   ],
@@ -309,10 +305,8 @@
     "registry": "artifacts/public_evidence_routes.json",
     "route_ids": ["X05", "X15", "X16", "X18", "X19", "X20", "X21", "X22", "X23", "X24", "X25", "X26"],
     "route_count": 12,
-    "historical_fresh_copy_status": "pass_S43_raw_S42_distribution",
-    "historical_runtime_seconds": 973.905,
-    "historical_routes_passed": 12,
-    "current_remediation_status": "independent_S46_pass_16be346_S46H_short_gates_pass_ready_owner_commit"
+    "current_static_status": "PASS_PUBLIC_REPLAY_ENVELOPE",
+    "independent_replay_record": "docs/REPRODUCIBILITY_RECORD.md"
   },
   "noncomputational_rows": [
     {
@@ -324,100 +318,55 @@
     {
       "id": "X15",
       "claim_id": "X15-002",
-      "claim_owner": "P13",
-      "source_provenance": "P14 signed Type-B/C source row",
+      "claim_owner": "this paper",
+      "source_provenance": "bundled signed Type-B/C finite-row source",
       "route": "self_contained_public_human_proof",
       "locus": "paper/sections/05_signed_type_bc_source_rows.tex#prop:signed-mirror-union-balance",
-      "boundary": "all-n mirror-union balance only; distinct from X15-001; no classification or P15 theorem/proof import"
+      "boundary": "all-n mirror-union balance only; distinct from X15-001; no classification or signed-reversal theorem/proof import"
     },
     {
-      "id": "G-004",
-      "record_id": "CPL-001",
+      "id": "source_coupling_guardrail",
+      "record_id": "classical_quotient_coupling",
       "route": "human_proof_and_classical_source_lock",
       "locus": "paper/sections/16_value_and_limits_of_phi.tex",
       "boundary": "classical source-coupling/descent guardrail; no numerical replay, novelty, new X-ID, or imported descent/transfer theorem"
     }
   ],
-  "s43_record": {
-    "scope": "exact raw S42 109-file distribution",
-    "status": "PASS_PUBLIC_REPLAY_ENVELOPE",
-    "routes_passed": 12,
-    "subprocesses_exit_zero": 12,
-    "artifacts_semantics_passed": 12,
-    "route_checks_passed": 60,
-    "runtime_seconds": 973.905,
-    "full_x05_census_run": false,
-    "sanitized_summary": "docs/S43_REPLAY_SUMMARY.md",
-    "raw_envelope_sha256": "76F1062442064076A150700C1195C02861217F49BF9BF84F5E6FF2721375290A",
-    "current_bytes_certified": false
-  },
-  "s44hr_record": {
-    "scope": "commit a3cfafe and tree 9acf53f8",
-    "status": "PASS_PUBLIC_REPLAY_ENVELOPE",
-    "author_operated": true,
-    "external_reproduction": false,
-    "runtime_seconds": 783.885,
-    "routes_passed": 12,
-    "route_checks_passed": 86,
-    "route_contract_checks_passed": 156,
-    "distributed_artifacts_immutable": 12,
-    "manifest_entries": 112,
-    "release_checksum_entries": 2,
-    "pdf_sha256": "36DA47522259F31924A4B679275901235E4842CB6139D2B8A01B94F7B635C26F",
-    "sanitized_summary": "docs/S44HR_AUTHOR_REPLAY_SUMMARY.md",
-    "raw_envelope_sha256": "A974ACCD2ACF319EEAC28BDD07E6C77370FC41C250B6C9ADA599058BCD88A85F",
-    "reviewer_preparation_head_full_replay_certified": false,
-    "next_gate": "S46_independent_external_red_team"
-  },
-  "s46_record": {
-    "scope": "exact public commit 16be346502e754bd6282adb5216599bed26ab8d6",
-    "status": "PASS_PUBLIC_REPLAY_ENVELOPE",
-    "independent_external": true,
-    "runtime_seconds": 1256.112,
-    "routes_passed": 12,
-    "route_checks_passed": 86,
-    "route_contract_checks_passed": 156,
-    "distributed_artifacts_immutable": 12,
-    "manifest_entries": 113,
-    "release_checksum_entries": 2,
-    "envelope_sha256": "BB946A10C5264C30B9D64051AF8266F7C4CA3DED9D251E415C272FE59B22DDFD",
-    "verdict": "mathematics_and_replay_hold_five_bounded_source_governance_fixes_assigned_S46H"
-  },
   "companion_source_notes": [
     {
       "id": "X10",
-      "owner": "P07/P33",
+      "owner": "A Syntheme Transversal and Exact Left-Factor Orbits in S6; A Certified Six-Element Classification of Poset Linear-Extension Tiles",
       "admission": "not_admitted",
       "pointer_status": "public_companion",
       "boundary": "bounded context only; neither theorem nor proof imported; no all-n tiling claim"
     },
     {
       "id": "X11",
-      "owner": "P18",
+      "owner": "future nonconvex-tiler work",
       "admission": "not_admitted",
       "pointer_status": "future",
       "boundary": "version-neutral future pointer; no pin or theorem import"
     },
     {
       "id": "X12",
-      "owner": "P17",
+      "owner": "future motion/contact work",
       "admission": "not_admitted",
       "pointer_status": "future",
       "boundary": "future context only; no current row or theorem import"
     },
     {
       "id": "X17",
-      "owner": "P15",
+      "owner": "Exact Standard-Channel Rank of a Signed-Reversal Incidence Layer",
       "admission": "not_admitted",
       "pointer_status": "public_companion",
-      "boundary": "P15 owns the signed-reversal theorem; P13 imports no proof"
+      "boundary": "the companion paper owns the signed-reversal theorem; this paper imports no proof"
     },
     {
-      "id": "P28/P29/P30/P32/P33",
+      "id": "named_public_companions",
       "owner": "named companion projects",
       "admission": "not_admitted",
       "pointer_status": "public_companion",
-      "boundary": "nonimports attached to existing families; no new X-ID and no P13 theorem ownership"
+      "boundary": "nonimports attached to existing families; no new X-ID and no transfer of theorem ownership"
     }
   ]
 }

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fail-closed public verifier for the P13 standalone package."""
+"""Fail-closed public verifier for the finite-shadow grammar package."""
 
 from __future__ import annotations
 

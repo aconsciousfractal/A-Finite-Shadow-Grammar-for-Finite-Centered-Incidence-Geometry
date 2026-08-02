@@ -5,9 +5,17 @@
 %% Build target: pdflatex, bibtex, pdflatex, pdflatex, pdflatex.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \documentclass[11pt,a4paper]{article}
-\pdfinfoomitdate=1
-\pdfsuppressptexinfo=-1
-\pdftrailerid{}
+% Keep pdfTeX builds deterministic without making the source fail under XeTeX
+% (used by the repository's portable Tectonic build path).
+\ifdefined\pdfinfoomitdate
+  \pdfinfoomitdate=1
+\fi
+\ifdefined\pdfsuppressptexinfo
+  \pdfsuppressptexinfo=-1
+\fi
+\ifdefined\pdftrailerid
+  \pdftrailerid{}
+\fi
 
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}

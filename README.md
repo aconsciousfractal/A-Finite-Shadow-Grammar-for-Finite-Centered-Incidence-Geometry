@@ -1,94 +1,78 @@
 # A Finite-Shadow Grammar for Finite Centered Incidence Geometry
 
-This repository is the public external-review candidate for the paper **A Finite-Shadow Grammar for Finite Centered Incidence Geometry**.
+This repository contains the paper, LaTeX source, exact computational evidence, and reproducibility tools for **A Finite-Shadow Grammar for Finite Centered Incidence Geometry** by Oleksiy Babanskyy.
 
-> Gate status: commit `16be346502e754bd6282adb5216599bed26ab8d6` passed the independent S46 replay and mathematical red team. This S47 public review candidate includes the five bounded S46H source/governance remediations; their short gates pass with the pre-existing quantitative surface byte-identical. No tag, GitHub Release, DOI, arXiv deposit, or formal release is claimed.
-
-## Interface
-
-A concrete finite row is the five-slot datum
+The paper introduces a bounded five-slot interface
 
 ```text
 S = (N, X, I, rho, Phi)
 ```
 
-with `X` a finite subset of `S_N`. Here `N` is the ambient permutation degree. Canonical IDs `X01` through `X26` identify source/family slots, not individual subsets; a family parameter such as `n` is distinct from the concrete ambient degree `N`.
+for source-locked finite rows. Here `N` is the ambient permutation degree, `X` is a finite subset of `S_N`, `I` is the incidence or selection rule, `rho` is the representation or centered-operator channel, and `Phi` is the recorded fingerprint package. The interface is applied to Type-A, signed Type-B/C, dihedral, `G2`, projective `F4`, `H3`, `H4`, `D5`, `E6`, `E7`, and `E8` rows, together with centered-operator examples.
 
-Admitted concrete rows are governed by the public normative schema `docs/SOURCE_LOCK_SCHEMA.md`, covering provenance, action conventions, channels, versions, verification, and import boundaries. The package does not assert that one consolidated `L(S)` object has already been published for every row. The field-routing map is `docs/SOURCE_LOCK_CROSSWALK.md`; the canonical admission registry is `artifacts/source_instance_manifest.json`. Source-lock metadata is not a sixth mathematical slot and does not assert a universal category of FCIG objects.
+The central point is deliberately limited: coarse data such as rational rank, an uncolored carrier, or a conjugacy-class histogram can erase structure that remains visible in a source-aware channel. The fingerprint is descriptive; it is not a complete invariant, a classifier, or a tiling oracle.
 
-The paper uses the standard-block balance dictionary as an interface lens, records characteristic- and lattice-sensitive centered channels, and compares bounded source-aware fingerprints. `Phi` is descriptive: it is not a classifier, a tiling oracle, or a substitute for a separately owned theorem.
+## Read the work
 
-## Recorded evidence and review state
+- [Paper PDF](paper/A_Finite-Shadow_Grammar_for_Finite_Centered_Incidence_Geometry.pdf)
+- [LaTeX source](paper/)
+- [Independent review guide](README_REVIEWER.md)
+- [Reproducibility instructions](REPRODUCE.md)
+- [Public claim boundary](docs/CLAIM_BOUNDARY.md)
+- [Source-lock specification](docs/SOURCE_LOCK.md)
+- [Author website](https://oleksiybabanskyy.com/)
 
-The route registry `artifacts/public_evidence_routes.json` contains exactly twelve quantitative routes:
+## Evidence package
 
-```text
-X05  frozen M19/lat565 evidence audit
-X15  signed Type-B/C bounded replay
-X16  modular centered-channel replay
-X18  dihedral vertex-shadow replay
-X19  G2 source-channel replay
-X20  F4 source-layer replay
-X21  H3 projective source-channel replay
-X22  H4 projective source-channel replay
-X23  D5 projective source-channel replay
-X24  E6 projective source-channel replay
-X25  E7 projective source-channel replay
-X26  E8 projective source-channel replay
+The route registry in `artifacts/public_evidence_routes.json` declares twelve bounded quantitative checks. They cover the centered-rank census, signed Type-B/C rows, modular centered channels, dihedral shadows, and the selected `G2`, `F4`, `H3`, `H4`, `D5`, `E6`, `E7`, and `E8` source rows.
+
+The Type-A Fourier/Specht dictionary is supported separately by a manifest-pinned exact certificate and a read-only 61-check verifier. It is intentionally not counted as an additional quantitative route.
+
+Run the short integrity review from the repository root:
+
+```powershell
+python -B scripts/x13_type_a_lattice_rank_mass_certificate_check.py
+python -B scripts/verify.py --static-only --out ../finite_shadow_static_review.json
 ```
 
-The remediated payload at commit `a3cfafe3a3bb244ce9a293173a963e3cf6929a68` and tree `9acf53f8f5068872e0a0273139efac87dee224f2` passed one S44H-R author replay from a new true Git clone in 783.885 seconds: 12/12 routes, 86/86 route checks, 156/156 route-contract checks, manifest 112/112 pre/post, outer checksum 2/2 pre/post, and 12/12 distributed artifacts byte-immutable. The canonical build reproduced the 35-page PDF byte-for-byte. See the path-free `docs/S44HR_AUTHOR_REPLAY_SUMMARY.md`.
+Expected status:
 
-The earlier S43 replay remains historical evidence. The exact public review commit `16be346502e754bd6282adb5216599bed26ab8d6` passed the independent S46 replay in 1256.112 seconds with 12/12 routes, 86/86 route checks, 156/156 route-contract checks, manifest 113/113, outer checksum 2/2, and immutable distributed artifacts. See `docs/S46_EXTERNAL_REPLAY_SUMMARY.md`. S46H changes only the bounded paper/source-governance allowlist and adds the read-only X13 checker; the existing quantitative surface remains byte-identical.
+```text
+PASS_X13_TYPE_A_LATTICE_RANK_MASS_CERTIFICATE checks=61/61
+PASS_PUBLIC_REPLAY_ENVELOPE
+```
 
-X13 is outside the quantitative route count: its Fourier/Specht dictionary, Type-A rank masses, lattice, block matrices, and `SNF^L` values are supported by the manuscript proof, classical source lock, a manifest-pinned certificate, and a read-only 61-check exact checker. It is not a thirteenth route.
-
-`G-004/CPL-001` is a human-proof/classical-source-lock row for the retained S36/S37 source-coupling/descent guardrail. X15-002 is the separate self-contained mirror-union human proof, while X15-001 remains the six-row quantitative route. Neither creates a thirteenth route or imports a general descent, transfer, or P15 theorem.
-
-The default X05 route audits the frozen 1000+1000 census and the bounded `lat565` witness. The optional full X05 census regeneration takes about 26 minutes in the reference environment and was excluded from S43.
-
-The H4 public wording is controlling: the row uses the same 60 projective points, equivalently 60 antipodal pairs of H4 roots, and distinguishes the flat-size and Gram-square channels without promoting a general H4 theorem.
+`SHA256SUMS.txt` covers every distributed payload except the checksum metadata files. `RELEASE_SHA256.txt` pins the manifest and the paper PDF.
 
 ## Repository layout
 
 ```text
-paper/       LaTeX source and title-named candidate PDF
-docs/        Normative schema/crosswalk, claim boundary/ledger, and replay summaries
-artifacts/   Canonical registry, route registry, inputs, and replay artifacts
-scripts/     Fail-closed verifier and bounded replay scripts
+paper/       Paper PDF and LaTeX source
+docs/        Public scope, source-lock, claim, and reproducibility records
+artifacts/   Canonical registries and immutable evidence
+results/     Bounded numerical outputs used by the replay routes
+scripts/     Verification and replay programs
+tests/       Fail-closed integrity tests
 ```
 
-See `README_REVIEWER.md` for the ten-minute and optional full-replay review paths, and `REPRODUCE.md` for the bounded verifier and paper-build commands.
+## Related public work
 
-## Ownership and nonimport boundaries
+The paper cites companion results by their public titles and immutable GitHub references. Important related packages include:
 
-- X10 is a companion-owned P07/P33 pointer; P13 cites bounded results as context, imports neither theorem nor proof, and makes no all-`n` tiling claim.
-- X15-001 is the bounded P14 six-row replay; X15-002 is the P13-owned elementary mirror-union proof with P14 provenance. The separate P15 signed-reversal theorem/proof is not imported.
-- X11 is a version-neutral future P18 pointer and is not admitted; no release pin is required while it remains a nonimporting pointer.
-- X12 is a future P17 pointer with `admission=not_admitted`; `pointer_status=future` is recorded separately.
-- P28, P29, P30, P32, and P33 remain companion theorem or certificate routes. Their cited results are not reassigned to P13.
-- The two P39-derived packages (`FCIG-Higher-Star-Defect-Design-Lattice`; `FCIG-Common-Marked-Lattice-Designs`, both published untagged 2026-07-24) are companion routes on design incidence lattices. Design incidence lattices are not admitted X-rows; no X-ID is created and no theorem is imported into P13.
+- [Finite Centered Incidence Geometry on the Type-A Standard Space](https://github.com/aconsciousfractal/Finite-Centered-Incidence-Geometry-Type-A-Standard-Space/tree/v1.0.0)
+- [Type-A Poset Cones and Extension Tilers](https://github.com/aconsciousfractal/type-a-poset-cones-and-extension-tilers/tree/v0.2-public-release)
+- [Linear-Extension Sets and Subgroup Rows in S4](https://github.com/aconsciousfractal/Linear-Extension-Sets-and-Subgroup-Rows-in-S4-A-Finite-Witness-Separation/tree/v1.0.1)
+- [Determinant Divisibility of Centered Latin Squares](https://github.com/aconsciousfractal/Determinant-Divisibility-of-Centered-Latin-Squares/tree/8984359d0f7fd66e4eaa7864a557d6b907e9f9ec)
+- [Odd-Rank Loci and Box-Induced Symmetries of Centered Sudoku Operators](https://github.com/aconsciousfractal/Odd-Rank-Loci-and-Box-Induced-Symmetries-of-Centered-Sudoku-Operators/tree/4af472a8235732aa8f6e75371f23225f0b6a2b23)
 
-The package does not claim a complete FCIG theory, a general Coxeter/Weyl or Type-E theorem, a root-subsystem classification, a modular Specht novelty theorem, a new coupling/descent theorem, a `5568` bridge, or any classification or tiling criterion derived from `Phi`.
+The complete bibliography and all companion-source pins are in `paper/refs.bib`.
 
-## Build the paper
+## Scope
 
-From `paper/`:
+This repository does not claim a universal FCIG theory, a general Coxeter or Weyl theorem, a root-subsystem classification, a modular Specht novelty theorem, a new quotient-transfer theorem, or a classification or tiling criterion derived from `Phi`.
 
-```powershell
-pdflatex -jobname=A_Finite-Shadow_Grammar_for_Finite_Centered_Incidence_Geometry -interaction=nonstopmode -halt-on-error main.tex
-bibtex A_Finite-Shadow_Grammar_for_Finite_Centered_Incidence_Geometry
-pdflatex -jobname=A_Finite-Shadow_Grammar_for_Finite_Centered_Incidence_Geometry -interaction=nonstopmode -halt-on-error main.tex
-pdflatex -jobname=A_Finite-Shadow_Grammar_for_Finite_Centered_Incidence_Geometry -interaction=nonstopmode -halt-on-error main.tex
-pdflatex -jobname=A_Finite-Shadow_Grammar_for_Finite_Centered_Incidence_Geometry -interaction=nonstopmode -halt-on-error main.tex
-```
+## Citation and license
 
-Expected candidate PDF:
+Citation metadata is provided in `CITATION.cff`.
 
-```text
-paper/A_Finite-Shadow_Grammar_for_Finite_Centered_Incidence_Geometry.pdf
-```
-
-## License
-
-Code, scripts, artifacts, and repository documentation are MIT-licensed. The paper text and PDF under `paper/` are CC-BY-4.0; see `LICENSE`.
+Code, scripts, artifacts, and repository documentation are MIT-licensed. The paper text and PDF under `paper/` are CC BY 4.0; see `LICENSE`.
